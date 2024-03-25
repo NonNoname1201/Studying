@@ -1,0 +1,75 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableView class="oracle.dbtools.crest.model.design.relational.TableView" directorySegmentName="seg_0" id="F2310179-3559-3078-C5CF-6813C88B2243" name="V_Country">
+<createdBy>User</createdBy>
+<createdTime>2023-01-31 10:28:43 UTC</createdTime>
+<ownerDesignName>ProjectBilet</ownerDesignName>
+<userDefined>true</userDefined>
+<userDefinedSQL><![CDATA[CREATE VIEW V_Country
+  ( CountryID
+   , CountryName
+   , CountryCode )
+ AS SELECT
+    CountryID
+   , CountryName
+   , CountryCode
+ FROM 
+    Country ;]]></userDefinedSQL>
+<parsed>true</parsed>
+<originalTableID>B3A58F8E-4FBD-7F18-1588-5C456250D6B5</originalTableID>
+<usedContainers>
+<container containerID="B3A58F8E-4FBD-7F18-1588-5C456250D6B5"/>
+</usedContainers>
+<viewElements>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="CountryID" id="AD0D4EDA-9844-1E47-D815-37B58CB6C4D9">
+<createdBy>User</createdBy>
+<createdTime>2023-01-31 10:28:43 UTC</createdTime>
+<ownerDesignName>ProjectBilet</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<dataType>NUMBER (3)</dataType>
+<reference>false</reference>
+<referencedColumn>EBFAB453-F2C5-1AC3-D92B-03A9CBD9538B</referencedColumn>
+<table>B3A58F8E-4FBD-7F18-1588-5C456250D6B5</table>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="CountryName" id="2DC38512-1F1C-E4CF-16DB-76426B80C7E8">
+<createdBy>User</createdBy>
+<createdTime>2023-01-31 10:28:43 UTC</createdTime>
+<ownerDesignName>ProjectBilet</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<dataType>CHAR (40)</dataType>
+<reference>false</reference>
+<referencedColumn>4A12F0EA-6B00-AE1B-4FD1-ABFCF4294181</referencedColumn>
+<table>B3A58F8E-4FBD-7F18-1588-5C456250D6B5</table>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="CountryCode" id="4C7BEC1F-3FB9-FE7D-532B-25AB2CF81531">
+<createdBy>User</createdBy>
+<createdTime>2023-01-31 10:28:43 UTC</createdTime>
+<ownerDesignName>ProjectBilet</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<dataType>CHAR (3)</dataType>
+<reference>false</reference>
+<referencedColumn>EFA13F20-8CE9-2414-64B7-6131FEC021E2</referencedColumn>
+<table>B3A58F8E-4FBD-7F18-1588-5C456250D6B5</table>
+</viewElement>
+</viewElements>
+<usedObjects>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="B3A58F8E-4FBD-7F18-1588-5C456250D6B5">
+<container>true</container>
+<tableName>Country</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="EBFAB453-F2C5-1AC3-D92B-03A9CBD9538B">
+<columnName>CountryID</columnName>
+<tableName>Country</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="4A12F0EA-6B00-AE1B-4FD1-ABFCF4294181">
+<columnName>CountryName</columnName>
+<tableName>Country</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="EFA13F20-8CE9-2414-64B7-6131FEC021E2">
+<columnName>CountryCode</columnName>
+<tableName>Country</tableName>
+</UsedObject>
+</usedObjects>
+</TableView>

@@ -1,0 +1,98 @@
+body {
+  background: #ffffff;
+  width: 90%;
+  margin: auto;
+  margin-top: 10px;
+  color: #000070;
+}
+
+h1,
+h2,
+h3 {
+  margin: 0;
+  padding: 0;
+}
+
+#menu {
+  float:left;
+  width:100%;
+  margin:0;
+  padding:0;
+  background:#ffffff;
+}
+#nav {
+  text-align: left;
+  overflow: hidden;
+  font-family: calibri, tahoma;
+}
+ul#nav li {
+  border: 1px solid #0000a0;
+  list-style-type: none;
+  float: left;
+  background: rgb(132, 206, 255);
+  margin-left: 3px;
+}
+ul#nav li:hover {
+  border: 1px solid #0000a0;
+  list-style-type: none;
+  float: left;
+  background: #ffffff;
+  margin-left: 3px;
+}
+ul#nav li a {
+  display: block;
+  padding: 4pt;
+  text-decoration: none;
+}
+ul#nav li li a {
+  width: 160px;
+}
+ul#nav li li:hover {
+  background: #ffffff;
+}
+ul#nav li ul {
+  overflow: hidden;
+  display: none;
+}
+ul#nav li:hover ul {
+  position: absolute;
+  background: #0000a0;
+  padding: 0;
+  display: block;
+  width: 177px;
+}
+
+#tresc {
+  background: rgb(132, 206, 255);
+  float: left;
+  width: 75%;
+  padding: 1%;
+}
+
+#pasek {
+  float: right;
+  width: 20%;
+  padding: 1%;
+}
+
+h1,
+#baner,
+#stopka {
+  clear: both;
+  background-color: #0000a0;
+  color: #ffffff;
+  width: 100%;
+  padding: 5px 0 5px 0;
+  text-align: center;
+}
+
+*.box {
+  background: #0000a0;
+  color: #dbffff;
+  padding: 5px;
+  margin: 5px;
+  font-size: 90%;
+}
+*.box a {
+  color: #ffffb0;
+}

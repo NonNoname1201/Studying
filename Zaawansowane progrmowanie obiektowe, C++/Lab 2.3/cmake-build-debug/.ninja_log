@@ -1,0 +1,8 @@
+# ninja log v5
+5	458	7195122819256695	build.ninja	821c7e5f7a8685ef
+2	1092	7195122830871428	CMakeFiles/Lab_2_3.dir/main.cpp.obj	aa6ddaf696996bc
+26	1116	7195122831126190	CMakeFiles/Lab_2_3.dir/MeanBufor.cpp.obj	ed9a52d4c537fbaf
+13	1140	7195122831406148	CMakeFiles/Lab_2_3.dir/Bufor.cpp.obj	ad0bfe674b9746ad
+11	875	7195123018413473	CMakeFiles/Lab_2_3.dir/main.cpp.obj	aa6ddaf696996bc
+27	906	7195123018737139	CMakeFiles/Lab_2_3.dir/MaxBufor.cpp.obj	7583e197fdf46acc
+906	1206	7195123021625343	Lab_2_3.exe	15a189d0c8cc70ef

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Szybki kurs HTML</title>
+  </head>
+  <body>
+    <h1>Kreator pizzy</h1>
+    <form action="mailto:s97813@pollub.edu.pl" method="post">
+      <fieldset>
+        <legend>Rozmiar:</legend>
+        <input type="radio" name="rozmiar" value="mała" />mała
+        <input type="radio" name="rozmiar" value="średnia" />średnia
+        <input type="radio" name="rozmiar" value="duża" />duża
+      </fieldset>
+      <fieldset>
+        <legend>Dodatki:</legend>
+        <input type="checkbox" name="dodatki" value="ser" />ser <br />
+        <input type="checkbox" name="dodatki" value="pieczarki" />pieczarki
+        <br />
+        <input type="checkbox" name="dodatki" value="salami" />salami <br />
+        <input type="checkbox" name="dodatki" value="szynka" />szynka <br />
+        <input type="checkbox" name="dodatki" value="cebula" />cebula <br />
+        <input type="checkbox" name="dodatki" value="oliwki" />oliwki <br />
+      </fieldset>
+      <fieldset>
+        <legend>Sosy:</legend>
+        Wybież sos: <br />
+        <select name="sosy" multiple="multiple">
+          <option value="barbecue">barbecue</option>
+          <option value="czosnkowy">czosnkowy</option>
+          <option value="paprykowy">paprykowy</option>
+          <option value="pomidorowy">pomidorowy</option>
+          <option value="serowy">serowy</option>
+        </select>
+        <br />
+        Inne uwagi: <br />
+        <textarea name="uwagi" rows="5" cols="70"></textarea>
+      </fieldset>
+      <input type="reset" value="Wyczyść dane" />
+      <input type="submit" value="Wyślij zamówienie" />
+    </form>
+  </body>
+</html>

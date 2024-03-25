@@ -1,0 +1,99 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="ED6B6563-2602-33D3-0735-CF50A5BEA70D" name="Photo">
+<createdBy>IdeaPad Gaming</createdBy>
+<createdTime>2023-01-25 15:05:12 UTC</createdTime>
+<ownerDesignName>ProjectBilet</ownerDesignName>
+<engineerTo>
+<item key="E202BAE5-01D0-2528-2D66-3FE008319869" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="PhotoID" id="0C3CCAE5-3F36-0705-BF03-2C30CCD1EF1E">
+<createdBy>IdeaPad Gaming</createdBy>
+<createdTime>2023-01-25 15:05:44 UTC</createdTime>
+<ownerDesignName>ProjectBilet</ownerDesignName>
+<engineerTo>
+<item key="E202BAE5-01D0-2528-2D66-3FE008319869" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>25</dataTypePrecision>
+<ownDataTypeParameters>,25,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="PhotoURL" id="F10E40E1-58B3-2FBF-AB30-52983AFE26D9">
+<createdBy>IdeaPad Gaming</createdBy>
+<createdTime>2023-01-25 15:05:52 UTC</createdTime>
+<ownerDesignName>ProjectBilet</ownerDesignName>
+<engineerTo>
+<item key="E202BAE5-01D0-2528-2D66-3FE008319869" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="PhotoAddTime" id="9FEE9553-0AAB-AF0A-E158-CA6187D4341C">
+<createdBy>IdeaPad Gaming</createdBy>
+<createdTime>2023-01-25 15:06:02 UTC</createdTime>
+<ownerDesignName>ProjectBilet</ownerDesignName>
+<engineerTo>
+<item key="E202BAE5-01D0-2528-2D66-3FE008319869" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Event EventID" id="A9EA8A78-8BD2-E59A-5C85-C1B149703BF5">
+<createdBy>IdeaPad Gaming</createdBy>
+<createdTime>2023-01-25 16:55:46 UTC</createdTime>
+<generatorID>863939C2-759D-7156-3BE6-7A93097FB7EB</generatorID>
+<ownerDesignName>ProjectBilet</ownerDesignName>
+<engineerTo>
+<item key="E202BAE5-01D0-2528-2D66-3FE008319869" value="true"/>
+</engineerTo>
+<referedAttribute>C89CADC5-35AC-3BA3-2A66-FD52AF095FE5</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="2E054A7D-C42A-2FA3-BE27-C640B228304F" name="Photo PK">
+<createdBy>IdeaPad Gaming</createdBy>
+<createdTime>2023-01-25 15:05:51 UTC</createdTime>
+<ownerDesignName>ProjectBilet</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="E202BAE5-01D0-2528-2D66-3FE008319869" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>0C3CCAE5-3F36-0705-BF03-2C30CCD1EF1E</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="9B5DD7CA-B65D-E2FC-783C-A89912857129" name="PhotoURL UN">
+<createdBy>User</createdBy>
+<createdTime>2023-01-31 10:30:37 UTC</createdTime>
+<generatorID>C4F19E0F-D421-6B15-3D0F-7D93019BAA59</generatorID>
+<ownerDesignName>ProjectBilet</ownerDesignName>
+<engineerTo>
+<item key="E202BAE5-01D0-2528-2D66-3FE008319869" value="true"/>
+</engineerTo>
+<usedAttributes>
+<attributeRef>F10E40E1-58B3-2FBF-AB30-52983AFE26D9</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

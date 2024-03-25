@@ -1,0 +1,123 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\POLIBUDA\\Integracja\\IS_Lab1_XML\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{9931FF3B-007E-44AE-9216-A288A2326383}|IS_Lab1_XML\\IS_Lab1_XML.csproj|d:\\polibuda\\integracja\\is_lab1_xml\\is_lab1_xml\\xmldeepreadanalysis.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9931FF3B-007E-44AE-9216-A288A2326383}|IS_Lab1_XML\\IS_Lab1_XML.csproj|solutionrelative:is_lab1_xml\\xmldeepreadanalysis.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9931FF3B-007E-44AE-9216-A288A2326383}|IS_Lab1_XML\\IS_Lab1_XML.csproj|d:\\polibuda\\integracja\\is_lab1_xml\\is_lab1_xml\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9931FF3B-007E-44AE-9216-A288A2326383}|IS_Lab1_XML\\IS_Lab1_XML.csproj|solutionrelative:is_lab1_xml\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9931FF3B-007E-44AE-9216-A288A2326383}|IS_Lab1_XML\\IS_Lab1_XML.csproj|d:\\polibuda\\integracja\\is_lab1_xml\\is_lab1_xml\\assets\\data.xml||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{9931FF3B-007E-44AE-9216-A288A2326383}|IS_Lab1_XML\\IS_Lab1_XML.csproj|solutionrelative:is_lab1_xml\\assets\\data.xml||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9931FF3B-007E-44AE-9216-A288A2326383}|IS_Lab1_XML\\IS_Lab1_XML.csproj|d:\\polibuda\\integracja\\is_lab1_xml\\is_lab1_xml\\xmlreadwithssaxapproach.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9931FF3B-007E-44AE-9216-A288A2326383}|IS_Lab1_XML\\IS_Lab1_XML.csproj|solutionrelative:is_lab1_xml\\xmlreadwithssaxapproach.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9931FF3B-007E-44AE-9216-A288A2326383}|IS_Lab1_XML\\IS_Lab1_XML.csproj|d:\\polibuda\\integracja\\is_lab1_xml\\is_lab1_xml\\xmlreadwithxlstdom.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9931FF3B-007E-44AE-9216-A288A2326383}|IS_Lab1_XML\\IS_Lab1_XML.csproj|solutionrelative:is_lab1_xml\\xmlreadwithxlstdom.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9931FF3B-007E-44AE-9216-A288A2326383}|IS_Lab1_XML\\IS_Lab1_XML.csproj|d:\\polibuda\\integracja\\is_lab1_xml\\is_lab1_xml\\xmlreadwithdomapproach.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9931FF3B-007E-44AE-9216-A288A2326383}|IS_Lab1_XML\\IS_Lab1_XML.csproj|solutionrelative:is_lab1_xml\\xmlreadwithdomapproach.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "data.xml",
+              "DocumentMoniker": "D:\\POLIBUDA\\Integracja\\IS_Lab1_XML\\IS_Lab1_XML\\Assets\\data.xml",
+              "RelativeDocumentMoniker": "IS_Lab1_XML\\Assets\\data.xml",
+              "ToolTip": "D:\\POLIBUDA\\Integracja\\IS_Lab1_XML\\IS_Lab1_XML\\Assets\\data.xml",
+              "RelativeToolTip": "IS_Lab1_XML\\Assets\\data.xml",
+              "ViewState": "AQIAAIwAAAAAAAAAAAAAAIMAAAAVAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003576|",
+              "WhenOpened": "2024-02-27T21:12:17.971Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "XMLReadWithSSAXApproach.cs",
+              "DocumentMoniker": "D:\\POLIBUDA\\Integracja\\IS_Lab1_XML\\IS_Lab1_XML\\XMLReadWithSSAXApproach.cs",
+              "RelativeDocumentMoniker": "IS_Lab1_XML\\XMLReadWithSSAXApproach.cs",
+              "ToolTip": "D:\\POLIBUDA\\Integracja\\IS_Lab1_XML\\IS_Lab1_XML\\XMLReadWithSSAXApproach.cs",
+              "RelativeToolTip": "IS_Lab1_XML\\XMLReadWithSSAXApproach.cs",
+              "ViewState": "AQIAADwAAAAAAAAAAAAYwFUAAABkAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-01T13:34:55.161Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "XMLReadWithXLSTDOM.cs",
+              "DocumentMoniker": "D:\\POLIBUDA\\Integracja\\IS_Lab1_XML\\IS_Lab1_XML\\XMLReadWithXLSTDOM.cs",
+              "RelativeDocumentMoniker": "IS_Lab1_XML\\XMLReadWithXLSTDOM.cs",
+              "ToolTip": "D:\\POLIBUDA\\Integracja\\IS_Lab1_XML\\IS_Lab1_XML\\XMLReadWithXLSTDOM.cs",
+              "RelativeToolTip": "IS_Lab1_XML\\XMLReadWithXLSTDOM.cs",
+              "ViewState": "AQIAACoAAAAAAAAAAAAYwD8AAABBAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-29T09:25:59.349Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "XMLReadWithDOMApproach.cs",
+              "DocumentMoniker": "D:\\POLIBUDA\\Integracja\\IS_Lab1_XML\\IS_Lab1_XML\\XMLReadWithDOMApproach.cs",
+              "RelativeDocumentMoniker": "IS_Lab1_XML\\XMLReadWithDOMApproach.cs",
+              "ToolTip": "D:\\POLIBUDA\\Integracja\\IS_Lab1_XML\\IS_Lab1_XML\\XMLReadWithDOMApproach.cs",
+              "RelativeToolTip": "IS_Lab1_XML\\XMLReadWithDOMApproach.cs",
+              "ViewState": "AQIAACoAAAAAAAAAAAAcwDIAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-27T22:17:34.232Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "XMLDeepReadAnalysis.cs",
+              "DocumentMoniker": "D:\\POLIBUDA\\Integracja\\IS_Lab1_XML\\IS_Lab1_XML\\XMLDeepReadAnalysis.cs",
+              "RelativeDocumentMoniker": "IS_Lab1_XML\\XMLDeepReadAnalysis.cs",
+              "ToolTip": "D:\\POLIBUDA\\Integracja\\IS_Lab1_XML\\IS_Lab1_XML\\XMLDeepReadAnalysis.cs",
+              "RelativeToolTip": "IS_Lab1_XML\\XMLDeepReadAnalysis.cs",
+              "ViewState": "AQIAACsAAAAAAAAAAAAQwDUAAAAOAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-01T10:38:04.48Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\POLIBUDA\\Integracja\\IS_Lab1_XML\\IS_Lab1_XML\\Program.cs",
+              "RelativeDocumentMoniker": "IS_Lab1_XML\\Program.cs",
+              "ToolTip": "D:\\POLIBUDA\\Integracja\\IS_Lab1_XML\\IS_Lab1_XML\\Program.cs",
+              "RelativeToolTip": "IS_Lab1_XML\\Program.cs",
+              "ViewState": "AQIAABkAAAAAAAAAAAAQwCYAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-27T20:56:42.48Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

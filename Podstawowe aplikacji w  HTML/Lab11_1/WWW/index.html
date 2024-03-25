@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Formularz</title>
+    <script src="JS/przyciski.js"></script>
+    <style>
+        #basketTable, #lookupTable {
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        #basketTable th, #basketTable td,
+        #lookupTable th, #lookupTable td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: center;
+        }
+
+        #searchRow {
+            width: 60%;
+        }
+
+    </style>
+</head>
+<body>
+    <form method="post">
+        <fieldset>
+            <legend>Formularz</legend>
+            <table>
+                <tr>
+                    <td>Nazwa produktu</td>
+                    <td><input type="text" id="product" placeholder="Butelka"></td>
+                </tr>
+                <tr>
+                    <td>Cena</td>
+                    <td><input type="text" id="price" placeholder="10"></td>
+                </tr>
+                <tr>
+                    <td>Kolor</td>
+                    <td><input type="text" id="color" placeholder="czerwona"></td>
+                </tr>
+                <tr>
+                    <td>Liczba sztuk</td>
+                    <td><input type="text" id="quantity" placeholder="2"></td>
+                </tr>
+                <tr>
+                    <td><input type="button" value="Zapisz produkt do koszyka" onclick="saveProduct()"></td>
+                    <td><input type="button" value="Wyświetl koszyk" onclick="displayBasket()"></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><input type="button" value="Usuń wszystkie produkty" onclick="deleteAll()"></td>
+                </tr>
+            </table>
+        </fieldset>
+    </form>
+    <div id="lookup">
+        <h3>Wyszukiwarka</h3>
+        <table id="searchRow">
+            <tr>
+                <th>Wyszukaj produkt po nazwie:</th>
+                <th><input type="text" id="search"></th>
+                <th id="searchButton"><input type="button" value="Szukaj" onclick="searchProduct()"></th>
+            </tr>
+        </table>
+        <table id="lookupTable">
+            <tr>
+                <th style="width: 20%">Nazwa produktu</th>
+                <th style="width: 20%">Cena</th>
+                <th style="width: 20%">Kolor</th>
+                <th style="width: 20%">Liczba sztuk</th>
+                <th style="width: 20%">Usuń produkt</th>
+            </tr>
+        </table>
+    </div>
+    <div id="basket">
+        <h3>Koszyk</h3>
+        <table id="basketTable">
+            <tr>
+                <th style="width: 20%">Nazwa produktu</th>
+                <th style="width: 20%">Cena</th>
+                <th style="width: 20%">Kolor</th>
+                <th style="width: 20%">Liczba sztuk</th>
+                <th style="width: 20%">Usuń produkt</th>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>

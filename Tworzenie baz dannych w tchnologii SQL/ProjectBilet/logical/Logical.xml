@@ -1,0 +1,7 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<LogicalDesign class="oracle.dbtools.crest.model.design.logical.LogicalDesign" name="Logical" id="3A239BBD-1346-0CE9-2487-25729267428D" mainViewID="CA345D8E-A9C4-5703-8F90-AB2BA7CB7727">
+<createdBy>IdeaPad Gaming</createdBy>
+<createdTime>2023-01-25 14:50:53 UTC</createdTime>
+<ownerDesignName>ProjectBilet</ownerDesignName>
+<shouldBeOpen>false</shouldBeOpen>
+</LogicalDesign>

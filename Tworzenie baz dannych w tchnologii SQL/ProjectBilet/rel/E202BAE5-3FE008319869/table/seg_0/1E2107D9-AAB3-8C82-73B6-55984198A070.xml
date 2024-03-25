@@ -1,0 +1,168 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="1E2107D9-AAB3-8C82-73B6-55984198A070" name="User">
+<createdBy>IdeaPad Gaming</createdBy>
+<createdTime>2023-01-25 16:57:01 UTC</createdTime>
+<generatorID>30FE6225-A76F-3ACA-A141-FC2BBF25D6C6</generatorID>
+<ownerDesignName>ProjectBilet</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="UserID" id="CB502AC8-2DB8-D15A-BDAE-952B610BB0DE">
+<createdBy>IdeaPad Gaming</createdBy>
+<createdTime>2023-01-25 16:57:01 UTC</createdTime>
+<generatorID>235EFCAB-B603-6316-A0A6-593E96E71433</generatorID>
+<ownerDesignName>ProjectBilet</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,5,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TypeUser_TypeUserID" id="600CB67B-25FD-25DF-6401-5BDCA8950EBE">
+<createdBy>IdeaPad Gaming</createdBy>
+<createdTime>2023-01-25 16:57:01 UTC</createdTime>
+<generatorID>7E1A16E4-7824-45B6-C28A-148C746B2771</generatorID>
+<ownerDesignName>ProjectBilet</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="4C88196C-2FB7-F31B-7238-3EC594383697" referredColumn="8AC18E3E-F2E3-19F0-2973-32550755ED3A"/>
+</associations>
+</Column>
+<Column name="UserEmail" id="59B98C08-784A-E6EA-7ACD-01A7A5CA2F0B">
+<createdBy>IdeaPad Gaming</createdBy>
+<createdTime>2023-01-25 16:57:01 UTC</createdTime>
+<generatorID>25E055DC-577A-0851-9A60-279F8378557F</generatorID>
+<ownerDesignName>ProjectBilet</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="FirstName" id="47A15E75-FEEE-D552-7EDC-0B59BD7BA010">
+<createdBy>IdeaPad Gaming</createdBy>
+<createdTime>2023-01-25 16:57:01 UTC</createdTime>
+<generatorID>47BA1520-3438-B766-769B-A9266E42DFBF</generatorID>
+<ownerDesignName>ProjectBilet</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="LastName" id="8F9DEF44-7F5D-2971-7440-8E76D253B84F">
+<createdBy>IdeaPad Gaming</createdBy>
+<createdTime>2023-01-25 16:57:01 UTC</createdTime>
+<generatorID>F38823E4-7E87-504C-D9A4-33EFACCF891A</generatorID>
+<ownerDesignName>ProjectBilet</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>40</dataTypeSize>
+<ownDataTypeParameters>40,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="UserRegistrationTime" id="A3BBF827-969F-2251-E083-BAECE0841CB9">
+<createdBy>IdeaPad Gaming</createdBy>
+<createdTime>2023-01-25 16:57:01 UTC</createdTime>
+<generatorID>1C62DBF9-2E05-1065-7CA4-B559D0D9127E</generatorID>
+<ownerDesignName>ProjectBilet</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="UserDateBirth" id="73A39584-EE9A-4602-7F70-D3EA8B77DCD2">
+<createdBy>IdeaPad Gaming</createdBy>
+<createdTime>2023-01-25 16:57:01 UTC</createdTime>
+<generatorID>DC91F6B1-4E79-5141-930C-CBF6C9F31AC8</generatorID>
+<ownerDesignName>ProjectBilet</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="UserPhoneNum" id="459AA56A-964B-93E8-E214-FBC0F9D392B0">
+<createdBy>IdeaPad Gaming</createdBy>
+<createdTime>2023-01-25 16:57:01 UTC</createdTime>
+<generatorID>2385E687-C400-251B-FDC7-CF115A63F481</generatorID>
+<ownerDesignName>ProjectBilet</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>11</dataTypePrecision>
+<ownDataTypeParameters>,11,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="UserPhoneNumKey" id="A68E08F7-5891-7F24-3B16-8AFFF93B0A8F">
+<createdBy>IdeaPad Gaming</createdBy>
+<createdTime>2023-01-25 16:57:01 UTC</createdTime>
+<generatorID>CF32E266-110F-794D-B76C-425230281CA3</generatorID>
+<ownerDesignName>ProjectBilet</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,4,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="21D2ED0D-FF71-D5CE-695F-72E40B70D633" name="User_PK">
+<createdBy>IdeaPad Gaming</createdBy>
+<createdTime>2023-01-25 16:57:01 UTC</createdTime>
+<generatorID>8C8902D8-0504-5A1C-6AE8-39375797D9E0</generatorID>
+<ownerDesignName>ProjectBilet</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="CB502AC8-2DB8-D15A-BDAE-952B610BB0DE"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="8AD5C9BA-7919-A16E-CC4F-72548034BB4A" name="UserEmail_UN">
+<createdBy>IdeaPad Gaming</createdBy>
+<createdTime>2023-01-25 16:57:01 UTC</createdTime>
+<generatorID>2A90B3DB-58B8-1728-029D-762904AF547F</generatorID>
+<ownerDesignName>ProjectBilet</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="59B98C08-784A-E6EA-7ACD-01A7A5CA2F0B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="7D0E1B46-847B-01FE-755C-D38D2C48A5B1" name="UserPhoneNum_UN">
+<createdBy>User</createdBy>
+<createdTime>2023-01-31 10:14:11 UTC</createdTime>
+<ownerDesignName>ProjectBilet</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="459AA56A-964B-93E8-E214-FBC0F9D392B0"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="6DA5457A-44D6-FAD6-015F-790E1210669C" name="User_TypeUser_FK">
+<createdBy>IdeaPad Gaming</createdBy>
+<createdTime>2023-01-25 16:57:01 UTC</createdTime>
+<generatorID>51E18657-D729-13DD-62BE-943937ADF547</generatorID>
+<ownerDesignName>ProjectBilet</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="600CB67B-25FD-25DF-6401-5BDCA8950EBE"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

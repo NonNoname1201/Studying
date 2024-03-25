@@ -1,0 +1,88 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="77405C53-825B-C3B2-DE5D-15AB0BE1FB97" name="Subcategory">
+<createdBy>IdeaPad Gaming</createdBy>
+<createdTime>2023-01-25 16:57:00 UTC</createdTime>
+<generatorID>61ECF93C-46CD-5CD0-F47B-67C8DA4ACFA6</generatorID>
+<ownerDesignName>ProjectBilet</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="SubcategoryID" id="80DDA6C8-A083-C106-79AB-0567F33CA991">
+<createdBy>IdeaPad Gaming</createdBy>
+<createdTime>2023-01-25 16:57:00 UTC</createdTime>
+<generatorID>C7430B32-48B8-FA02-8ABF-1C6D260D9C79</generatorID>
+<ownerDesignName>ProjectBilet</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="SubcategoryName" id="7D418A42-69F6-22DE-9BD8-726877BC1291">
+<createdBy>IdeaPad Gaming</createdBy>
+<createdTime>2023-01-25 16:57:00 UTC</createdTime>
+<generatorID>8AD079F7-52EC-E0E0-2474-8FBACC5CD9D6</generatorID>
+<ownerDesignName>ProjectBilet</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Category_CategoryID" id="F6EEFB41-1632-0D18-4A74-052CA76AD958">
+<createdBy>IdeaPad Gaming</createdBy>
+<createdTime>2023-01-25 16:57:00 UTC</createdTime>
+<generatorID>1AFFE341-419F-33A3-3138-80D11701E6C2</generatorID>
+<ownerDesignName>ProjectBilet</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,5,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="7B3EF1EA-EB8E-76CE-AFF7-53AC1D2A2438" referredColumn="79FE19B6-BC8A-32D5-A9F2-780434B60527"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="993ACC00-3468-576F-6220-483C9AE942E7" name="Subcategory_PK">
+<createdBy>IdeaPad Gaming</createdBy>
+<createdTime>2023-01-25 16:57:00 UTC</createdTime>
+<generatorID>4DF64D48-3AA1-1A44-7651-D6EB52D5F39E</generatorID>
+<ownerDesignName>ProjectBilet</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="80DDA6C8-A083-C106-79AB-0567F33CA991"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D7BCD1D0-057C-9DDA-F799-A04C5545B625" name="SubcategoryName_UN">
+<createdBy>IdeaPad Gaming</createdBy>
+<createdTime>2023-01-25 16:57:00 UTC</createdTime>
+<generatorID>871BF1ED-D1C9-D3CE-4F84-B718FC68D9AD</generatorID>
+<ownerDesignName>ProjectBilet</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7D418A42-69F6-22DE-9BD8-726877BC1291"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="9AE68CAE-3350-36CC-29C2-682DE600B269" name="Subcategory_Category_FK">
+<createdBy>IdeaPad Gaming</createdBy>
+<createdTime>2023-01-25 16:57:01 UTC</createdTime>
+<generatorID>1ECFFF25-33AE-4FB4-CC2C-337230B10783</generatorID>
+<ownerDesignName>ProjectBilet</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F6EEFB41-1632-0D18-4A74-052CA76AD958"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

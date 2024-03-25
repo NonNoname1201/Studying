@@ -1,0 +1,58 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableView class="oracle.dbtools.crest.model.design.relational.TableView" directorySegmentName="seg_0" id="2F48A4AF-D681-495F-05BD-C2D211F0C660" name="V_TypeUser">
+<createdBy>User</createdBy>
+<createdTime>2023-01-31 10:28:43 UTC</createdTime>
+<ownerDesignName>ProjectBilet</ownerDesignName>
+<userDefined>true</userDefined>
+<userDefinedSQL><![CDATA[CREATE VIEW V_TypeUser
+  ( TypeUserID
+   , TypeName )
+ AS SELECT
+    TypeUserID
+   , TypeName
+ FROM 
+    TypeUser ;]]></userDefinedSQL>
+<parsed>true</parsed>
+<originalTableID>9F7451DD-FF0A-C903-3D13-AD05BC8757F2</originalTableID>
+<usedContainers>
+<container containerID="9F7451DD-FF0A-C903-3D13-AD05BC8757F2"/>
+</usedContainers>
+<viewElements>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="TypeUserID" id="F993024D-033D-38B7-7D57-8A78EC8B851B">
+<createdBy>User</createdBy>
+<createdTime>2023-01-31 10:28:43 UTC</createdTime>
+<ownerDesignName>ProjectBilet</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<dataType>NUMBER (2)</dataType>
+<reference>false</reference>
+<referencedColumn>8AC18E3E-F2E3-19F0-2973-32550755ED3A</referencedColumn>
+<table>9F7451DD-FF0A-C903-3D13-AD05BC8757F2</table>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="TypeName" id="91ECAEAC-7339-F1E1-E6DB-5B208EFDF8E6">
+<createdBy>User</createdBy>
+<createdTime>2023-01-31 10:28:43 UTC</createdTime>
+<ownerDesignName>ProjectBilet</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<dataType>VARCHAR2 (10)</dataType>
+<reference>false</reference>
+<referencedColumn>0906A18A-837F-ED5A-05EB-B560061B4D10</referencedColumn>
+<table>9F7451DD-FF0A-C903-3D13-AD05BC8757F2</table>
+</viewElement>
+</viewElements>
+<usedObjects>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="9F7451DD-FF0A-C903-3D13-AD05BC8757F2">
+<container>true</container>
+<tableName>TypeUser</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="8AC18E3E-F2E3-19F0-2973-32550755ED3A">
+<columnName>TypeUserID</columnName>
+<tableName>TypeUser</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="0906A18A-837F-ED5A-05EB-B560061B4D10">
+<columnName>TypeName</columnName>
+<tableName>TypeUser</tableName>
+</UsedObject>
+</usedObjects>
+</TableView>

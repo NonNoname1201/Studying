@@ -1,0 +1,6 @@
+# ninja log v5
+17	786	7237454134657460	build.ninja	78ca75b7fff72076
+9	951	7237453627323188	CMakeFiles/Kartkuwka.dir/Student.cpp.obj	dd9aeb095d0184fa
+36	1240	7237456496812748	CMakeFiles/Kartkuwka.dir/Student.cpp.obj	dd9aeb095d0184fa
+13	5079	7237456535141417	CMakeFiles/Kartkuwka.dir/main.cpp.obj	436fe7a08f07cbf2
+5092	5610	7237456540395750	Kartkuwka.exe	67d2e21fd0c8a84d

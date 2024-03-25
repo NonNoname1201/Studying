@@ -1,0 +1,84 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="B3A58F8E-4FBD-7F18-1588-5C456250D6B5" name="Country">
+<createdBy>IdeaPad Gaming</createdBy>
+<createdTime>2023-01-25 16:57:00 UTC</createdTime>
+<generatorID>5E1FE367-2C1A-A4C3-CC6D-CCFB9ACA1521</generatorID>
+<ownerDesignName>ProjectBilet</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="CountryID" id="EBFAB453-F2C5-1AC3-D92B-03A9CBD9538B">
+<createdBy>IdeaPad Gaming</createdBy>
+<createdTime>2023-01-25 16:57:00 UTC</createdTime>
+<generatorID>9FEE009C-8D91-1A98-29C4-4CB19783F8B1</generatorID>
+<ownerDesignName>ProjectBilet</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CountryName" id="4A12F0EA-6B00-AE1B-4FD1-ABFCF4294181">
+<createdBy>IdeaPad Gaming</createdBy>
+<createdTime>2023-01-25 16:57:00 UTC</createdTime>
+<generatorID>D4556B2A-8F10-5C83-3E1B-F4FA2E7AE72F</generatorID>
+<ownerDesignName>ProjectBilet</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>40</dataTypeSize>
+<ownDataTypeParameters>40,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CountryCode" id="EFA13F20-8CE9-2414-64B7-6131FEC021E2">
+<createdBy>IdeaPad Gaming</createdBy>
+<createdTime>2023-01-25 16:57:00 UTC</createdTime>
+<generatorID>D18162FE-93B3-04AF-29EF-D41CD231739E</generatorID>
+<ownerDesignName>ProjectBilet</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>3</dataTypeSize>
+<ownDataTypeParameters>3,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="F8997474-D6AF-E03D-EE7A-9EE923E5165F" name="Country_PK">
+<createdBy>IdeaPad Gaming</createdBy>
+<createdTime>2023-01-25 16:57:00 UTC</createdTime>
+<generatorID>B276406E-58FA-ACF4-E14B-A30E5305BFA2</generatorID>
+<ownerDesignName>ProjectBilet</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="EBFAB453-F2C5-1AC3-D92B-03A9CBD9538B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="0184F1C0-A770-0E78-120B-86B94EFFF5D6" name="CountryName_UN">
+<createdBy>IdeaPad Gaming</createdBy>
+<createdTime>2023-01-25 16:57:00 UTC</createdTime>
+<generatorID>AD861FA6-05C8-1D12-BD99-B265689EF60A</generatorID>
+<ownerDesignName>ProjectBilet</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4A12F0EA-6B00-AE1B-4FD1-ABFCF4294181"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="02E87DC2-38A4-4250-CCFE-096369404391" name="CountryCode_UN">
+<createdBy>IdeaPad Gaming</createdBy>
+<createdTime>2023-01-25 16:57:00 UTC</createdTime>
+<generatorID>8864D21D-C81C-9120-8EF8-586F3B637292</generatorID>
+<ownerDesignName>ProjectBilet</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="EFA13F20-8CE9-2414-64B7-6131FEC021E2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

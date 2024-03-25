@@ -1,0 +1,113 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="A89548F7-BD28-F058-C75A-4048D082F41D" name="Ticket">
+<createdBy>IdeaPad Gaming</createdBy>
+<createdTime>2023-01-25 16:57:00 UTC</createdTime>
+<generatorID>0959CD13-2BD0-45DF-8F2C-1DB1F642DA17</generatorID>
+<ownerDesignName>ProjectBilet</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="TicketSeatPrice" id="455A549F-5E2E-AAA1-9E5E-B93DEDC3DAF1">
+<createdBy>IdeaPad Gaming</createdBy>
+<createdTime>2023-01-25 16:57:00 UTC</createdTime>
+<generatorID>6A367744-D621-3FB4-CC15-D145F5534CFC</generatorID>
+<ownerDesignName>ProjectBilet</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TicketSeat" id="C20080D9-E26C-F7A8-73F4-B52F6CA7F5E3">
+<createdBy>IdeaPad Gaming</createdBy>
+<createdTime>2023-01-25 16:57:00 UTC</createdTime>
+<generatorID>885B4110-BF8A-0A36-A811-856B8C4619C5</generatorID>
+<ownerDesignName>ProjectBilet</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>60</dataTypeSize>
+<ownDataTypeParameters>60,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TicketID" id="4C41C417-3F9E-D16E-D201-7347A4604A7D">
+<createdBy>IdeaPad Gaming</createdBy>
+<createdTime>2023-01-25 16:57:00 UTC</createdTime>
+<generatorID>9E9741CA-55DA-58BF-E9D6-098336FD7135</generatorID>
+<ownerDesignName>ProjectBilet</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="User_UserID" id="F1136CE7-B079-E3D3-630D-76B59B8439C4">
+<createdBy>IdeaPad Gaming</createdBy>
+<createdTime>2023-01-25 16:57:00 UTC</createdTime>
+<generatorID>82BD2EA7-B23F-F21D-8D12-E8DE00DBCD94</generatorID>
+<ownerDesignName>ProjectBilet</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="913EC4E6-CC92-DF44-3228-E41B32649382" referredColumn="CB502AC8-2DB8-D15A-BDAE-952B610BB0DE"/>
+</associations>
+</Column>
+<Column name="Event_EventID" id="D28A94D0-F1F9-95D8-27CC-8F85767547FD">
+<createdBy>IdeaPad Gaming</createdBy>
+<createdTime>2023-01-25 16:57:00 UTC</createdTime>
+<generatorID>C912E832-4DA5-FB0F-F658-EA11F62F595A</generatorID>
+<ownerDesignName>ProjectBilet</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="BFCA5403-46F5-9E26-8B63-2964634C5B5A" referredColumn="40D795DE-7EC0-CFF3-69C7-FF36A5E60CD6"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="5D1A0A74-7AED-1334-4B46-016586EF2365" name="TicketID_UN">
+<createdBy>User</createdBy>
+<createdTime>2023-01-31 10:19:33 UTC</createdTime>
+<ownerDesignName>ProjectBilet</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4C41C417-3F9E-D16E-D201-7347A4604A7D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="148464C3-6E2D-8188-5FED-1CECFBE9778E" name="Ticket_Event_FK">
+<createdBy>IdeaPad Gaming</createdBy>
+<createdTime>2023-01-25 16:57:01 UTC</createdTime>
+<generatorID>B04BDC79-4FE9-7D71-BC1D-FBC9295A95EA</generatorID>
+<ownerDesignName>ProjectBilet</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D28A94D0-F1F9-95D8-27CC-8F85767547FD"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="B03EBC8E-1A61-CCB4-0905-E12DF37C3357" name="Ticket_User_FK">
+<createdBy>IdeaPad Gaming</createdBy>
+<createdTime>2023-01-25 16:57:01 UTC</createdTime>
+<generatorID>142340BC-88A4-2EDA-E9D4-7FDD23067353</generatorID>
+<ownerDesignName>ProjectBilet</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F1136CE7-B079-E3D3-630D-76B59B8439C4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

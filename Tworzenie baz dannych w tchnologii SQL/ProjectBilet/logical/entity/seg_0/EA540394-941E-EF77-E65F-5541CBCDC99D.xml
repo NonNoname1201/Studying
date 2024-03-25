@@ -1,0 +1,88 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="EA540394-941E-EF77-E65F-5541CBCDC99D" name="City">
+<createdBy>IdeaPad Gaming</createdBy>
+<createdTime>2023-01-25 14:59:25 UTC</createdTime>
+<ownerDesignName>ProjectBilet</ownerDesignName>
+<engineerTo>
+<item key="E202BAE5-01D0-2528-2D66-3FE008319869" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="CityID" id="6D2EDDD7-A2E5-3555-7A40-DB390BDB7A8C">
+<createdBy>IdeaPad Gaming</createdBy>
+<createdTime>2023-01-25 14:59:31 UTC</createdTime>
+<ownerDesignName>ProjectBilet</ownerDesignName>
+<engineerTo>
+<item key="E202BAE5-01D0-2528-2D66-3FE008319869" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="CityName" id="BC18D145-4D99-1BDB-82F8-B4AB6266345D">
+<createdBy>IdeaPad Gaming</createdBy>
+<createdTime>2023-01-25 14:59:35 UTC</createdTime>
+<ownerDesignName>ProjectBilet</ownerDesignName>
+<engineerTo>
+<item key="E202BAE5-01D0-2528-2D66-3FE008319869" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>40</dataTypeSize>
+<ownDataTypeParameters>40,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Region RegionID" id="86DB6644-1516-EC28-8805-60AF298C1EE3">
+<createdBy>IdeaPad Gaming</createdBy>
+<createdTime>2023-01-25 16:55:02 UTC</createdTime>
+<generatorID>E7ACA327-8F67-5448-D3EB-FCF2EB238DB6</generatorID>
+<ownerDesignName>ProjectBilet</ownerDesignName>
+<engineerTo>
+<item key="E202BAE5-01D0-2528-2D66-3FE008319869" value="true"/>
+</engineerTo>
+<referedAttribute>8FDCE8F4-2E61-6068-B5A5-73F6B007119E</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="D73D8397-901A-510C-0B11-1D020B05F6E5" name="City PK">
+<createdBy>IdeaPad Gaming</createdBy>
+<createdTime>2023-01-25 15:00:05 UTC</createdTime>
+<ownerDesignName>ProjectBilet</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="E202BAE5-01D0-2528-2D66-3FE008319869" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>6D2EDDD7-A2E5-3555-7A40-DB390BDB7A8C</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="67996E2C-4D1A-3E79-6BB7-61B9FB646A02" name="CityName_UN">
+<createdBy>IdeaPad Gaming</createdBy>
+<createdTime>2023-01-25 15:17:44 UTC</createdTime>
+<ownerDesignName>ProjectBilet</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="E202BAE5-01D0-2528-2D66-3FE008319869" value="false"/>
+</engineerTo>
+<newElementsIDs>BC18D145-4D99-1BDB-82F8-B4AB6266345D</newElementsIDs>
+<usedAttributes>
+<attributeRef>BC18D145-4D99-1BDB-82F8-B4AB6266345D</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

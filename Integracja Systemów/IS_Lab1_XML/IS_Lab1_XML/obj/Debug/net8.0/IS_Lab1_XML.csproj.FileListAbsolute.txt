@@ -1,0 +1,15 @@
+D:\POLIBUDA\Integracja\IS_Lab1_XML\IS_Lab1_XML\obj\Debug\net8.0\IS_Lab1_XML.GeneratedMSBuildEditorConfig.editorconfig
+D:\POLIBUDA\Integracja\IS_Lab1_XML\IS_Lab1_XML\obj\Debug\net8.0\IS_Lab1_XML.AssemblyInfoInputs.cache
+D:\POLIBUDA\Integracja\IS_Lab1_XML\IS_Lab1_XML\obj\Debug\net8.0\IS_Lab1_XML.AssemblyInfo.cs
+D:\POLIBUDA\Integracja\IS_Lab1_XML\IS_Lab1_XML\obj\Debug\net8.0\IS_Lab1_XML.csproj.CoreCompileInputs.cache
+D:\POLIBUDA\Integracja\IS_Lab1_XML\IS_Lab1_XML\bin\Debug\net8.0\IS_Lab1_XML.exe
+D:\POLIBUDA\Integracja\IS_Lab1_XML\IS_Lab1_XML\bin\Debug\net8.0\Assets\data.xml
+D:\POLIBUDA\Integracja\IS_Lab1_XML\IS_Lab1_XML\bin\Debug\net8.0\IS_Lab1_XML.deps.json
+D:\POLIBUDA\Integracja\IS_Lab1_XML\IS_Lab1_XML\bin\Debug\net8.0\IS_Lab1_XML.runtimeconfig.json
+D:\POLIBUDA\Integracja\IS_Lab1_XML\IS_Lab1_XML\bin\Debug\net8.0\IS_Lab1_XML.dll
+D:\POLIBUDA\Integracja\IS_Lab1_XML\IS_Lab1_XML\bin\Debug\net8.0\IS_Lab1_XML.pdb
+D:\POLIBUDA\Integracja\IS_Lab1_XML\IS_Lab1_XML\obj\Debug\net8.0\IS_Lab1_XML.dll
+D:\POLIBUDA\Integracja\IS_Lab1_XML\IS_Lab1_XML\obj\Debug\net8.0\refint\IS_Lab1_XML.dll
+D:\POLIBUDA\Integracja\IS_Lab1_XML\IS_Lab1_XML\obj\Debug\net8.0\IS_Lab1_XML.pdb
+D:\POLIBUDA\Integracja\IS_Lab1_XML\IS_Lab1_XML\obj\Debug\net8.0\IS_Lab1_XML.genruntimeconfig.cache
+D:\POLIBUDA\Integracja\IS_Lab1_XML\IS_Lab1_XML\obj\Debug\net8.0\ref\IS_Lab1_XML.dll

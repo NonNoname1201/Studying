@@ -1,0 +1,6 @@
+{
+    "files.associations": {
+        "includebitmaparrays.h": "c",
+        "iolib.h": "c"
+    }
+}

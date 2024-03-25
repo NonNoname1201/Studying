@@ -1,0 +1,64 @@
+<!DOCTYPE CrossStudio_Session_File>
+<session>
+ <Bookmarks/>
+ <Breakpoints groups="Breakpoints" active_group="Breakpoints"/>
+ <ExecutionProfileWindow/>
+ <FrameBuffer/>
+ <Memory1>
+  <MemoryWindow addressSpace="" dataSize="1" autoEvaluate="0" viewMode="0" viewType="4" addressOrder="0" columnsText="" refreshPeriod="0" name="GE12_project" sizeText="" addressText=""/>
+ </Memory1>
+ <Memory2>
+  <MemoryWindow addressSpace="" dataSize="1" autoEvaluate="0" viewMode="0" viewType="4" addressOrder="0" columnsText="" refreshPeriod="0" name="GE12_project" sizeText="" addressText=""/>
+ </Memory2>
+ <Memory3>
+  <MemoryWindow addressSpace="" dataSize="1" autoEvaluate="0" viewMode="0" viewType="4" addressOrder="0" columnsText="" refreshPeriod="0" name="GE12_project" sizeText="" addressText=""/>
+ </Memory3>
+ <Memory4>
+  <MemoryWindow addressSpace="" dataSize="1" autoEvaluate="0" viewMode="0" viewType="4" addressOrder="0" columnsText="" refreshPeriod="0" name="GE12_project" sizeText="" addressText=""/>
+ </Memory4>
+ <Project>
+  <ProjectSessionItem path="GE12_project"/>
+  <ProjectSessionItem path="GE12_project;GE12_project"/>
+  <ProjectSessionItem path="GE12_project;GE12_project;Source Files"/>
+ </Project>
+ <Register1>
+  <RegisterWindow visibleNodes="" binaryNodes="" asciiNodes="" openNodes="" name="GE12_project" decimalNodes="" octalNodes="" unsignedNodes=""/>
+ </Register1>
+ <Register2>
+  <RegisterWindow visibleNodes="" binaryNodes="" asciiNodes="" openNodes="" name="GE12_project" decimalNodes="" octalNodes="" unsignedNodes=""/>
+ </Register2>
+ <Register3>
+  <RegisterWindow visibleNodes="" binaryNodes="" asciiNodes="" openNodes="" name="GE12_project" decimalNodes="" octalNodes="" unsignedNodes=""/>
+ </Register3>
+ <Register4>
+  <RegisterWindow visibleNodes="" binaryNodes="" asciiNodes="" openNodes="" name="GE12_project" decimalNodes="" octalNodes="" unsignedNodes=""/>
+ </Register4>
+ <TargetWindow programLoadAddress="" programSize="" programMemoryInterface="" programFileName="" programFileType="" programAction=""/>
+ <Threads>
+  <ThreadsWindow showLists=""/>
+ </Threads>
+ <TraceWindow>
+  <Trace enabled="Yes"/>
+ </TraceWindow>
+ <Watch1>
+  <Watches active="1" update="Never"/>
+ </Watch1>
+ <Watch2>
+  <Watches active="0" update="Never"/>
+ </Watch2>
+ <Watch3>
+  <Watches active="0" update="Never"/>
+ </Watch3>
+ <Watch4>
+  <Watches active="0" update="Never"/>
+ </Watch4>
+ <Files>
+  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="56" useTextEdit="1" path="main_GE12.c" left="0" selected="1" top="52" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="6" y="189" useTextEdit="1" openedFrom="D:/Surtel Lab/Volodymyr Dobrohorskyi/Sam 7 lab/Projekt/main_GE12.c" path="PCF8833U8_lcd.h" left="0" top="132" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="46" useTextEdit="1" path="ioLib.h" left="0" top="46" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="808" useTextEdit="1" path="pcf8833u8_lcd.c" left="0" top="751" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="7" y="80" useTextEdit="1" path="ioLib.c" left="0" top="80" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="3" y="0" useTextEdit="1" path="includeBitMapArrays.h" left="0" top="0" codecName="Default"/>
+ </Files>
+ <ARMCrossStudioWindow activeProject="GE12_project" fileDialogDefaultFilter="*.c" autoConnectTarget="SEGGER J-Link" buildConfiguration="ARM RAM Release" sessionSettings="" debugSearchFileMap="" fileDialogInitialDirectory="C:/Users/Damian/Desktop/biblioteka LCD GE12" debugSearchPath="" autoConnectCapabilities="1151"/>
+</session>

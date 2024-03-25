@@ -1,0 +1,101 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="0959CD13-2BD0-45DF-8F2C-1DB1F642DA17" name="Ticket">
+<createdBy>IdeaPad Gaming</createdBy>
+<createdTime>2023-01-25 16:48:35 UTC</createdTime>
+<ownerDesignName>ProjectBilet</ownerDesignName>
+<engineerTo>
+<item key="E202BAE5-01D0-2528-2D66-3FE008319869" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="TicketSeatPrice" id="6A367744-D621-3FB4-CC15-D145F5534CFC">
+<createdBy>IdeaPad Gaming</createdBy>
+<createdTime>2023-01-25 16:48:59 UTC</createdTime>
+<ownerDesignName>ProjectBilet</ownerDesignName>
+<engineerTo>
+<item key="E202BAE5-01D0-2528-2D66-3FE008319869" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="TicketSeat" id="885B4110-BF8A-0A36-A811-856B8C4619C5">
+<createdBy>IdeaPad Gaming</createdBy>
+<createdTime>2023-01-25 16:49:19 UTC</createdTime>
+<ownerDesignName>ProjectBilet</ownerDesignName>
+<engineerTo>
+<item key="E202BAE5-01D0-2528-2D66-3FE008319869" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>60</dataTypeSize>
+<ownDataTypeParameters>60,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="TicketID" id="9E9741CA-55DA-58BF-E9D6-098336FD7135">
+<createdBy>IdeaPad Gaming</createdBy>
+<createdTime>2023-01-25 16:49:22 UTC</createdTime>
+<ownerDesignName>ProjectBilet</ownerDesignName>
+<engineerTo>
+<item key="E202BAE5-01D0-2528-2D66-3FE008319869" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="User UserID" id="82BD2EA7-B23F-F21D-8D12-E8DE00DBCD94">
+<createdBy>IdeaPad Gaming</createdBy>
+<createdTime>2023-01-25 16:55:36 UTC</createdTime>
+<generatorID>142340BC-88A4-2EDA-E9D4-7FDD23067353</generatorID>
+<ownerDesignName>ProjectBilet</ownerDesignName>
+<engineerTo>
+<item key="E202BAE5-01D0-2528-2D66-3FE008319869" value="true"/>
+</engineerTo>
+<referedAttribute>235EFCAB-B603-6316-A0A6-593E96E71433</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,5,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Event EventID" id="C912E832-4DA5-FB0F-F658-EA11F62F595A">
+<createdBy>IdeaPad Gaming</createdBy>
+<createdTime>2023-01-25 16:55:40 UTC</createdTime>
+<generatorID>B04BDC79-4FE9-7D71-BC1D-FBC9295A95EA</generatorID>
+<ownerDesignName>ProjectBilet</ownerDesignName>
+<engineerTo>
+<item key="E202BAE5-01D0-2528-2D66-3FE008319869" value="true"/>
+</engineerTo>
+<referedAttribute>C89CADC5-35AC-3BA3-2A66-FD52AF095FE5</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="3972EF3F-A1E4-C4C1-B53F-F9AD4060D127" name="TicketID UN">
+<createdBy>User</createdBy>
+<createdTime>2023-01-31 10:30:37 UTC</createdTime>
+<generatorID>5D1A0A74-7AED-1334-4B46-016586EF2365</generatorID>
+<ownerDesignName>ProjectBilet</ownerDesignName>
+<engineerTo>
+<item key="E202BAE5-01D0-2528-2D66-3FE008319869" value="true"/>
+</engineerTo>
+<usedAttributes>
+<attributeRef>9E9741CA-55DA-58BF-E9D6-098336FD7135</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="ProjectBilet" id="DD4851D7-7EDE-6581-ED02-A68AF13B9A2A" version="3.5">
+<createdBy>IdeaPad Gaming</createdBy>
+<createdTime>2023-01-25 14:50:53 UTC</createdTime>
+<ownerDesignName>ProjectBilet</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>DD4851D7-7EDE-6581-ED02-A68AF13B9A2A</designId>
+</OSDM_Design>

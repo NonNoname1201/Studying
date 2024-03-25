@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<relationalModel class="oracle.dbtools.crest.model.design.relational.RelationalDesign" name="Relational_1" id="E202BAE5-01D0-2528-2D66-3FE008319869" mainViewID="5439C0A1-B775-F2FB-97F0-F5B242CF1A2A">
+<createdBy>IdeaPad Gaming</createdBy>
+<createdTime>2023-01-25 14:52:13 UTC</createdTime>
+<ownerDesignName>ProjectBilet</ownerDesignName>
+<shouldBeOpen>true</shouldBeOpen>
+<selectedRDBMSSite>32076570-2523-435C-2E92-BF29817DFF70</selectedRDBMSSite>
+</relationalModel>

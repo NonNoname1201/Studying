@@ -1,0 +1,58 @@
+Zadanie 4.1. Przykładowy kod
+Uruchom kod przedstawiony podczas laboratorium.
+Zadanie 4.2. Losowanie
+Napisz program, który losuje dodatnią liczbę całkowitą n a następnie losuje n liczb
+całkowitych z przedziału [-100,100] i wstawia je do listy, w taki sposób aby na początku listy
+były elementy dodatnie lub równe 0 a na końcu ujemne. Program powinien wypisać na wyjściu
+zawartość listy.
+Zadanie 4.3. Miasto
+Stwórz klasę Citizen, która będzie reprezentowała mieszkańca i będzie zawierać następujące
+pola oraz metody:
+• pola prywatne: name, surname typu string, age typu int, sex typu char oraz postal_code
+typu string;
+• konstruktory: bezargumentowy oraz pozwalający na inicjalizację pól klasy;
+• metodę show wyświetlającą informację o mieszkańcu;
+50
+Zintegrowany Program Rozwoju Politechniki Lubelskiej – część druga
+• odpowiednie gettery do pól.
+Stwórz klasę City, która będzie zawierać następujące pola oraz metody:
+• pola prywatne: citizens - wektor przechowujący mieszkańców – obiekty z klasy Citizen,
+city_name – nazwa miasta;
+• konstruktor inicjalizujący nazwę miejscowości;
+• metodę addCitizen, która umożliwia dodanie mieszkańca do miejscowości. Metoda ma
+przyjąć obiekt klasy Citizen;
+• metodę deleteCitizen, która usuwa mieszkańca o podanym nazwisku i wieku.
+Zakładamy, że połączenie nazwiska i wieku jest unikatowe. Nazwisko oraz wiek
+powinny zostać przekazane jako argumenty metody;
+• metodę show_citizens, która wyświetla wszystkich mieszkańców miasta;
+• metodę show_city, która wyświetla informację o nazwie miasta;
+• metodę women(), która zwraca liczbę kobiet w mieście;
+• metodę city_citizens(), która zwraca liczbę mieszkańców w mieście;
+• metodę adults(), która zwraca liczbę pełnoletnich mieszkańców miasta;
+• metodę postal_codes(), metoda wyświetla statystykę kodów pocztowych swoich
+mieszkańców, np. : „20-389 -> 3 mieszkańców, 30-678 -> 10 mieszkańców” oraz
+zwraca liczbę unikatowych kodów pocztowych;
+Podpowiedź. Nie wiadomo ile jest unikatowych kodów, więc można stworzyć klasę
+pomocniczą przechowując kod pocztowy oraz liczbę mieszkańców i odpowiednio zwiększać
+liczbę mieszkańców. Obiekty tej klasy należy przechowywać w kontenerze. W ramach
+ćwiczenia wybierz inny kontener niż wektor.
+Należy zaimplementować następuje funkcje:
+• void showCities(vector<City> c), funkcja wyświetla informacje o miastach;
+• void the_most(vector<City> c, int mode), funkcja szuka danych określonych przez
+parametr mode (tryb) oraz wyświetla informacje na konsolę. Każdy z podpunktów
+powinien zostać zrealizowany w oddzielnej funkcji. Tryb:
+1. Miasto, w którym jest najwięcej różnych kodów pocztowych;
+2. Miasto, w którym mieszka najmniej mieszkańców;
+• void statatistic(vector <City> c), funkcja wyświetlająca statystykę, dla każdego miasta:
+nazwę miasta, liczbę mieszkańców tego miasta wraz z podziałem na liczbę kobiet oraz
+mężczyzn, osób niepełnoletnich i pełnoletnich;
+• void sort_cities(vector <City> &c), funkcja sortująca miasta rosnąco pod względem
+liczby mieszkańców.
+W funkcji main należy pokazać działanie zaimplementowanych metod oraz funkcji.
+W zadaniu można używać algorytmów z biblioteki STL.
+Zadanie 4.4. Sortowanie
+Stwórz vector, który będzie przechowywał liczby całkowite. Za pomocą funkcji sort
+z biblioteki STL należy posortować dane w kontenerze vector:
+• rosnąco według sumy cyfr w liczbie;
+• malejąco według liczby cyfr.
+Do wyświetlania zawartości kontenera należy użyć funkcji for_each.

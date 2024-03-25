@@ -1,0 +1,98 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="D21D2300-01FE-CCD1-75FF-B8E5FB436319" name="Photo">
+<createdBy>IdeaPad Gaming</createdBy>
+<createdTime>2023-01-25 16:57:00 UTC</createdTime>
+<generatorID>ED6B6563-2602-33D3-0735-CF50A5BEA70D</generatorID>
+<ownerDesignName>ProjectBilet</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="PhotoID" id="96C538B8-DECA-0A8F-8B59-E178283E9821">
+<createdBy>IdeaPad Gaming</createdBy>
+<createdTime>2023-01-25 16:57:00 UTC</createdTime>
+<generatorID>0C3CCAE5-3F36-0705-BF03-2C30CCD1EF1E</generatorID>
+<ownerDesignName>ProjectBilet</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>25</dataTypePrecision>
+<ownDataTypeParameters>,25,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PhotoURL" id="BF6702A4-36F5-7CA0-5A31-C1A0E7F0EEAD">
+<createdBy>IdeaPad Gaming</createdBy>
+<createdTime>2023-01-25 16:57:00 UTC</createdTime>
+<generatorID>F10E40E1-58B3-2FBF-AB30-52983AFE26D9</generatorID>
+<ownerDesignName>ProjectBilet</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PhotoAddTime" id="3FCCA745-2C9C-93D1-7F8B-48B63C88C858">
+<createdBy>IdeaPad Gaming</createdBy>
+<createdTime>2023-01-25 16:57:00 UTC</createdTime>
+<generatorID>9FEE9553-0AAB-AF0A-E158-CA6187D4341C</generatorID>
+<ownerDesignName>ProjectBilet</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Event_EventID" id="E72E572F-4936-94C8-9019-07E3AEDA2AF1">
+<createdBy>IdeaPad Gaming</createdBy>
+<createdTime>2023-01-25 16:57:00 UTC</createdTime>
+<generatorID>A9EA8A78-8BD2-E59A-5C85-C1B149703BF5</generatorID>
+<ownerDesignName>ProjectBilet</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="FD0AC139-8997-94F0-097E-A8E986459733" referredColumn="40D795DE-7EC0-CFF3-69C7-FF36A5E60CD6"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="D8198D44-6EB9-D516-6448-E83D3431DC45" name="Photo_PK">
+<createdBy>IdeaPad Gaming</createdBy>
+<createdTime>2023-01-25 16:57:00 UTC</createdTime>
+<generatorID>2E054A7D-C42A-2FA3-BE27-C640B228304F</generatorID>
+<ownerDesignName>ProjectBilet</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="96C538B8-DECA-0A8F-8B59-E178283E9821"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C4F19E0F-D421-6B15-3D0F-7D93019BAA59" name="PhotoURL_UN">
+<createdBy>User</createdBy>
+<createdTime>2023-01-31 10:20:06 UTC</createdTime>
+<ownerDesignName>ProjectBilet</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="BF6702A4-36F5-7CA0-5A31-C1A0E7F0EEAD"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="71F36C70-3D11-4BFD-5DC8-4ED6128842BB" name="Photo_Event_FK">
+<createdBy>IdeaPad Gaming</createdBy>
+<createdTime>2023-01-25 16:57:01 UTC</createdTime>
+<generatorID>863939C2-759D-7156-3BE6-7A93097FB7EB</generatorID>
+<ownerDesignName>ProjectBilet</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E72E572F-4936-94C8-9019-07E3AEDA2AF1"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

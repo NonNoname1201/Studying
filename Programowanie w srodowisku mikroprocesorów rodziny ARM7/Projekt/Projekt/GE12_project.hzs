@@ -1,0 +1,62 @@
+<!DOCTYPE CrossStudio_for_ARM_Session_File>
+<session>
+ <Bookmarks/>
+ <Breakpoints>
+  <BreakpointListItem line="197" action="" hardwareBreakpoint="" trigger="" useHWbreakpoint="false" group="Breakpoints" type="Breakpoint" state="4" counter="0" isFunctionBreakpoint="false" filename="C:\users\student_pl\desktop\97813\projekt\ioLib.c" expression="" />
+ </Breakpoints>
+ <ExecutionProfileWindow/>
+ <Memory1>
+  <MemoryWindow autoEvaluate="0" addressText="" numColumns="0" sizeText="" dataSize="1" radix="0" name="GE12_project" addressSpace="" />
+ </Memory1>
+ <Memory2>
+  <MemoryWindow autoEvaluate="0" addressText="" numColumns="0" sizeText="" dataSize="1" radix="0" name="GE12_project" addressSpace="" />
+ </Memory2>
+ <Memory3>
+  <MemoryWindow autoEvaluate="0" addressText="" numColumns="0" sizeText="" dataSize="1" radix="0" name="GE12_project" addressSpace="" />
+ </Memory3>
+ <Memory4>
+  <MemoryWindow autoEvaluate="0" addressText="" numColumns="0" sizeText="" dataSize="1" radix="0" name="GE12_project" addressSpace="" />
+ </Memory4>
+ <Project>
+  <ProjectSessionItem path="GE12_project" name="unnamed" />
+  <ProjectSessionItem path="GE12_project;GE12_project" name="unnamed" />
+  <ProjectSessionItem path="GE12_project;GE12_project;Source Files" name="unnamed" />
+ </Project>
+ <Register1>
+  <RegisterWindow openNodes="" binaryNodes="" hiddenNodes="" unsignedNodes="" visibleGroups="" decimalNodes="" octalNodes="" asciiNodes="" name="GE12_project" />
+ </Register1>
+ <Register2>
+  <RegisterWindow openNodes="" binaryNodes="" hiddenNodes="" unsignedNodes="" visibleGroups="" decimalNodes="" octalNodes="" asciiNodes="" name="GE12_project" />
+ </Register2>
+ <Register3>
+  <RegisterWindow openNodes="" binaryNodes="" hiddenNodes="" unsignedNodes="" visibleGroups="" decimalNodes="" octalNodes="" asciiNodes="" name="GE12_project" />
+ </Register3>
+ <Register4>
+  <RegisterWindow openNodes="" binaryNodes="" hiddenNodes="" unsignedNodes="" visibleGroups="" decimalNodes="" octalNodes="" asciiNodes="" name="GE12_project" />
+ </Register4>
+ <TargetWindow programAction="" uploadFileType="" programLoadAddress="" programSize="" uploadFileName="" uploadMemoryInterface="" programFileName="" uploadStartAddress="" programFileType="" uploadSize="" programMemoryInterface="" />
+ <TraceWindow>
+  <Trace enabled="Yes" />
+ </TraceWindow>
+ <Watch1>
+  <Watches active="1" update="Never" />
+ </Watch1>
+ <Watch2>
+  <Watches active="0" update="Never" />
+ </Watch2>
+ <Watch3>
+  <Watches active="0" update="Never" />
+ </Watch3>
+ <Watch4>
+  <Watches active="0" update="Never" />
+ </Watch4>
+ <Files>
+  <SessionOpenFile useTextEdit="1" useBinaryEdit="0" codecName="Latin1" x="53" debugPath="C:\Users\Student_PL\Desktop\97813\Projekt\main_GE12.c" y="131" path="C:\Users\Student_PL\Desktop\97813\Projekt\main_GE12.c" left="0" selected="1" name="unnamed" top="114" />
+  <SessionOpenFile useTextEdit="1" useBinaryEdit="0" codecName="Latin1" x="18" debugPath="C:\users\student_pl\desktop\97813\projekt\ioLib.c" y="175" path="C:\users\student_pl\desktop\97813\projekt\ioLib.c" left="0" selected="0" name="unnamed" top="0" />
+  <SessionOpenFile useTextEdit="1" useBinaryEdit="0" codecName="Latin1" x="20" debugPath="C:\Users\Student_PL\Desktop\97813\Projekt\fonts.h" y="0" path="C:\Users\Student_PL\Desktop\97813\Projekt\fonts.h" left="0" selected="0" name="unnamed" top="0" />
+  <SessionOpenFile useTextEdit="1" useBinaryEdit="0" codecName="Latin1" x="95" debugPath="C:\Users\Student_PL\Desktop\97813\Projekt\ioLib.h" y="147" path="C:\Users\Student_PL\Desktop\97813\Projekt\ioLib.h" left="0" selected="0" name="unnamed" top="114" />
+  <SessionOpenFile useTextEdit="1" useBinaryEdit="0" codecName="Latin1" x="6" debugPath="C:\users\student_pl\desktop\97813\projekt\bitmaparrays\bmp_34.h" y="19" path="C:\users\student_pl\desktop\97813\projekt\bitmaparrays\bmp_34.h" left="0" selected="0" name="unnamed" top="0" />
+  <SessionOpenFile useTextEdit="1" useBinaryEdit="0" codecName="Latin1" x="0" debugPath="C:\Users\Student_PL\Desktop\97813\Projekt\bmp.h" y="156" path="C:\Users\Student_PL\Desktop\97813\Projekt\bmp.h" left="0" selected="0" name="unnamed" top="147" />
+ </Files>
+ <ARMCrossStudioWindow activeProject="GE12_project" autoConnectTarget="SEGGER J-Link" debugSearchFileMap="" fileDialogInitialDirectory="C:\Users\Student_PL\Desktop\97813\Projekt" fileDialogDefaultFilter="" autoConnectCapabilities="1151" debugSearchPath="" buildConfiguration="ARM RAM Release" />
+</session>

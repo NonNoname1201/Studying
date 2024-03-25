@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Subcategory Category FK" directorySegmentName="seg_0" id="1ECFFF25-33AE-4FB4-CC2C-337230B10783">
+<createdBy>IdeaPad Gaming</createdBy>
+<createdTime>2023-01-25 16:55:21 UTC</createdTime>
+<ownerDesignName>ProjectBilet</ownerDesignName>
+<engineerTo>
+<item key="E202BAE5-01D0-2528-2D66-3FE008319869" value="true"/>
+</engineerTo>
+<sourcePk>7D8766AD-330D-B065-5586-B903F775CB01</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>5A1E6FDC-E06A-DBA3-17A7-0E2A76F77A4D</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>61ECF93C-46CD-5CD0-F47B-67C8DA4ACFA6</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

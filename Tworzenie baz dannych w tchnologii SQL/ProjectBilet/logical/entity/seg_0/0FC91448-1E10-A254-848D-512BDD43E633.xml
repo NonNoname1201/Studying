@@ -1,0 +1,167 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="0FC91448-1E10-A254-848D-512BDD43E633" name="Event">
+<createdBy>IdeaPad Gaming</createdBy>
+<createdTime>2023-01-25 16:47:01 UTC</createdTime>
+<ownerDesignName>ProjectBilet</ownerDesignName>
+<engineerTo>
+<item key="E202BAE5-01D0-2528-2D66-3FE008319869" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="EventID" id="C89CADC5-35AC-3BA3-2A66-FD52AF095FE5">
+<createdBy>IdeaPad Gaming</createdBy>
+<createdTime>2023-01-25 16:47:07 UTC</createdTime>
+<ownerDesignName>ProjectBilet</ownerDesignName>
+<engineerTo>
+<item key="E202BAE5-01D0-2528-2D66-3FE008319869" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="EventTitle" id="1308F791-1D00-B469-7B85-53F70279951F">
+<createdBy>IdeaPad Gaming</createdBy>
+<createdTime>2023-01-25 16:47:19 UTC</createdTime>
+<ownerDesignName>ProjectBilet</ownerDesignName>
+<engineerTo>
+<item key="E202BAE5-01D0-2528-2D66-3FE008319869" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="EventSubtitle" id="679621BC-2DF6-B3AC-7963-BDD2D9E24990">
+<createdBy>IdeaPad Gaming</createdBy>
+<createdTime>2023-01-25 16:47:27 UTC</createdTime>
+<ownerDesignName>ProjectBilet</ownerDesignName>
+<engineerTo>
+<item key="E202BAE5-01D0-2528-2D66-3FE008319869" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="EventDescription" id="CBFA56EF-9690-14EB-07A6-B09C7C435837">
+<createdBy>IdeaPad Gaming</createdBy>
+<createdTime>2023-01-25 16:47:39 UTC</createdTime>
+<ownerDesignName>ProjectBilet</ownerDesignName>
+<engineerTo>
+<item key="E202BAE5-01D0-2528-2D66-3FE008319869" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>500</dataTypeSize>
+<ownDataTypeParameters>500,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="EventDateTime" id="F38AE6F4-67AB-32D4-E86E-F6968481F67F">
+<createdBy>IdeaPad Gaming</createdBy>
+<createdTime>2023-01-25 16:47:50 UTC</createdTime>
+<ownerDesignName>ProjectBilet</ownerDesignName>
+<engineerTo>
+<item key="E202BAE5-01D0-2528-2D66-3FE008319869" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="EventTotalSeats" id="BFDA8BBC-CFB4-6B4A-BE87-59D2925B537A">
+<createdBy>IdeaPad Gaming</createdBy>
+<createdTime>2023-01-25 16:47:57 UTC</createdTime>
+<ownerDesignName>ProjectBilet</ownerDesignName>
+<engineerTo>
+<item key="E202BAE5-01D0-2528-2D66-3FE008319869" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="EventFreeSeats" id="990B2E0E-5FF7-BD58-B8DE-85E4B3B92ACC">
+<createdBy>IdeaPad Gaming</createdBy>
+<createdTime>2023-01-25 16:48:05 UTC</createdTime>
+<ownerDesignName>ProjectBilet</ownerDesignName>
+<engineerTo>
+<item key="E202BAE5-01D0-2528-2D66-3FE008319869" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Place PlaceID" id="04D2851E-17DC-66B5-95E3-9120D26ECDC9">
+<createdBy>IdeaPad Gaming</createdBy>
+<createdTime>2023-01-25 16:55:16 UTC</createdTime>
+<generatorID>6B0CCAC2-ECC2-C9C8-23A7-302DF9046554</generatorID>
+<ownerDesignName>ProjectBilet</ownerDesignName>
+<engineerTo>
+<item key="E202BAE5-01D0-2528-2D66-3FE008319869" value="true"/>
+</engineerTo>
+<referedAttribute>9DE6DE73-0531-A9FB-B81B-E2500EB1A9AA</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>30</dataTypePrecision>
+<ownDataTypeParameters>,30,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Subcategory SubcategoryID" id="D2BF9579-48FE-EA69-E024-7502A9BBDA82">
+<createdBy>IdeaPad Gaming</createdBy>
+<createdTime>2023-01-25 16:55:24 UTC</createdTime>
+<generatorID>B119E845-6D3C-DA3D-83A6-C3D8AE924859</generatorID>
+<ownerDesignName>ProjectBilet</ownerDesignName>
+<engineerTo>
+<item key="E202BAE5-01D0-2528-2D66-3FE008319869" value="true"/>
+</engineerTo>
+<referedAttribute>C7430B32-48B8-FA02-8ABF-1C6D260D9C79</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="User UserID" id="2206FE9E-7A3F-49F1-3E28-778FC2D2688A">
+<createdBy>IdeaPad Gaming</createdBy>
+<createdTime>2023-01-25 16:56:01 UTC</createdTime>
+<generatorID>01D2976A-A41B-E2DA-47C7-E06DDC5163C2</generatorID>
+<ownerDesignName>ProjectBilet</ownerDesignName>
+<engineerTo>
+<item key="E202BAE5-01D0-2528-2D66-3FE008319869" value="true"/>
+</engineerTo>
+<referedAttribute>235EFCAB-B603-6316-A0A6-593E96E71433</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,5,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="64515D75-8506-3328-E9A5-96298832B9AA" name="Event PK">
+<createdBy>IdeaPad Gaming</createdBy>
+<createdTime>2023-01-25 16:47:18 UTC</createdTime>
+<ownerDesignName>ProjectBilet</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="E202BAE5-01D0-2528-2D66-3FE008319869" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>C89CADC5-35AC-3BA3-2A66-FD52AF095FE5</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

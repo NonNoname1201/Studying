@@ -1,0 +1,73 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="5A1E6FDC-E06A-DBA3-17A7-0E2A76F77A4D" name="Category">
+<createdBy>IdeaPad Gaming</createdBy>
+<createdTime>2023-01-25 15:25:02 UTC</createdTime>
+<ownerDesignName>ProjectBilet</ownerDesignName>
+<engineerTo>
+<item key="E202BAE5-01D0-2528-2D66-3FE008319869" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="CategoryID" id="94CCE8B3-B2EF-DA63-A5E0-625C7D34810C">
+<createdBy>IdeaPad Gaming</createdBy>
+<createdTime>2023-01-25 15:25:09 UTC</createdTime>
+<ownerDesignName>ProjectBilet</ownerDesignName>
+<engineerTo>
+<item key="E202BAE5-01D0-2528-2D66-3FE008319869" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,5,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="CategoryName" id="46E78D3B-5735-690D-EBCA-88BDFC231863">
+<createdBy>IdeaPad Gaming</createdBy>
+<createdTime>2023-01-25 15:25:17 UTC</createdTime>
+<ownerDesignName>ProjectBilet</ownerDesignName>
+<engineerTo>
+<item key="E202BAE5-01D0-2528-2D66-3FE008319869" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="7D8766AD-330D-B065-5586-B903F775CB01" name="Category PK">
+<createdBy>IdeaPad Gaming</createdBy>
+<createdTime>2023-01-25 15:25:16 UTC</createdTime>
+<ownerDesignName>ProjectBilet</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="E202BAE5-01D0-2528-2D66-3FE008319869" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>94CCE8B3-B2EF-DA63-A5E0-625C7D34810C</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="17854E64-6941-8730-7D73-94CB9BD456F2" name="CategoryName_UN">
+<createdBy>IdeaPad Gaming</createdBy>
+<createdTime>2023-01-25 16:49:51 UTC</createdTime>
+<ownerDesignName>ProjectBilet</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="E202BAE5-01D0-2528-2D66-3FE008319869" value="false"/>
+</engineerTo>
+<newElementsIDs>46E78D3B-5735-690D-EBCA-88BDFC231863</newElementsIDs>
+<usedAttributes>
+<attributeRef>46E78D3B-5735-690D-EBCA-88BDFC231863</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

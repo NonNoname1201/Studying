@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=true">
+    <title>ZenGard</title>
+    <link rel="icon" href="gallery/mini/ico.jpg">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/additional.css">
+    <script src="JS/RandLib.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>window.addEventListener('load', fetchRandomFact());</script>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-light">
+    <a class="navbar-brand" href="index.html">
+        <img src="gallery/mini/ico.jpg" alt="ZenGard logo" class="logo" width="50" height="50">
+        ZenGard
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+            <li class="nav-item active">
+                <a class="nav-link" href="index.html">Strona główna</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="Articles.html">Artykuły</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="Shop.html">Sklep internetowy</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="Contact.html">Kontakt</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<header>
+    <div class="container px-4 px-lg-5">
+        <div class="row gx-4 gx-lg-5 my-5">
+            <div class="col-md-7">
+                <div id="carousel" class="carousel slide w-70" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img class="d-block w-100 h-100 square" src="gallery/photo/1.jpg" alt="First slide">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100 h-100 square" src="gallery/photo/2.jpg" alt="Second slide">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100 h-100 square" src="gallery/photo/3.jpg" alt="Third slide">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-5">
+                <div id="greetings" class="container px-4 px-lg-5 greetings">
+                    <h2>Witaj na naszej stronie!</h2>
+                    <p>Cieszymy się, że tu jesteś. Zapraszamy do odkrywania naszego serwisu i czerpania wiedzy na temat japońskich ogrodów.</p>
+                    <p>Nie wahaj się zadawać pytań i zgłaszać sugestii. Jesteśmy tutaj, aby pomóc i dostarczyć Ci informacji, których szukasz.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<main>
+    <div class="col-md-12">
+        <div id="rand_fact" class="container rand_fact">
+            <!-- Random Facts Content -->
+        </div>
+    </div>
+    <div id="main_content" class="container px-4 px-lg-5">
+        <h1>O nas</h1>
+        <p>Jesteśmy pasjonatami japońskich ogrodów i chcemy podzielić się tą fascynacją z Tobą. Nasza strona powstała z myślą o dostarczaniu informacji na temat różnych aspektów japońskich ogrodów, ich historii, stylów i symboliki.</p>
+        <p>Nasz zespół składa się z doświadczonych ogrodników, historyków sztuki i miłośników kultury japońskiej. Wspólnie zbieramy i udostępniamy wiedzę na temat piękna i harmonii, jakie japońskie ogrody oferują.</p>
+        <p>Chcemy, aby nasza strona była źródłem inspiracji dla wszystkich, którzy są zainteresowani japońskimi ogrodami i chcą poznać ich tajemnice. Niezależnie od tego, czy jesteś początkującym entuzjastą, czy doświadczonym ogrodnikiem, mamy nadzieję, że znajdziesz tu cenne informacje i wskazówki.</p>
+        <a HREF="Articles.html" style="color: #0c4128">Przejdź dalej i odkryj piękno japońskich ogrodów razem z nami!</a>
+    </div>
+</main>
+<footer>
+    <div class="footer">
+        <div class="contact-info">
+            <p>Adres: ul.Nadbystrzycka 44A</p>
+            <p>Telefon: +48 666 123 456</p>
+            <p>Email: qwerty1440u1991@gmail.com</p>
+            <p><a href="Contact.html">Pozostaw swoją opinie!</a></p>
+            <p> &copy;Volodymyr Dobrohorskyi 2023</p>
+        </div>
+        <div>
+            <p>Nasz sklep fizyczny</p>
+            <iframe id="map-iframe"
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2443.630742821434!2d22.572999315787!3d51.231499979583!2m3!1f0!2f39.99999857731426!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471ffb0b0b0b0b0b%3A0x3b0b0b0b0b0b0b0b!2sNadbystrzycka%2036C%2C%2020-501%20Lublin!5e0!3m2!1spl!2spl!4v1614879660009!5m2!1spl!2spl"
+                    width="100%" height="100%" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

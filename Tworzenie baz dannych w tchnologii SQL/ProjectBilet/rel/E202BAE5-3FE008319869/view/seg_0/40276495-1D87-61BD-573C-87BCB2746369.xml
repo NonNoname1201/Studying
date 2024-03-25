@@ -1,0 +1,177 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableView class="oracle.dbtools.crest.model.design.relational.TableView" directorySegmentName="seg_0" id="40276495-1D87-61BD-573C-87BCB2746369" name="V_User">
+<createdBy>User</createdBy>
+<createdTime>2023-01-31 10:28:43 UTC</createdTime>
+<ownerDesignName>ProjectBilet</ownerDesignName>
+<userDefined>true</userDefined>
+<userDefinedSQL><![CDATA[CREATE VIEW V_User
+  ( UserID
+   , TypeUser_TypeUserID
+   , UserEmail
+   , FirstName
+   , LastName
+   , UserRegistrationTime
+   , UserDateBirth
+   , UserPhoneNum
+   , UserPhoneNumKey )
+ AS SELECT
+    UserID
+   , TypeUser_TypeUserID
+   , UserEmail
+   , FirstName
+   , LastName
+   , UserRegistrationTime
+   , UserDateBirth
+   , UserPhoneNum
+   , UserPhoneNumKey
+ FROM 
+    "User" ;]]></userDefinedSQL>
+<parsed>true</parsed>
+<originalTableID>1E2107D9-AAB3-8C82-73B6-55984198A070</originalTableID>
+<usedContainers>
+<container containerID="1E2107D9-AAB3-8C82-73B6-55984198A070"/>
+</usedContainers>
+<viewElements>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="UserID" id="38D9FA38-EDE4-1047-5D2D-A2A187FD01DD">
+<createdBy>User</createdBy>
+<createdTime>2023-01-31 10:28:43 UTC</createdTime>
+<ownerDesignName>ProjectBilet</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<dataType>NUMBER (5)</dataType>
+<reference>false</reference>
+<referencedColumn>CB502AC8-2DB8-D15A-BDAE-952B610BB0DE</referencedColumn>
+<table>1E2107D9-AAB3-8C82-73B6-55984198A070</table>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="TypeUser_TypeUserID" id="C0CAD1A8-B8D4-6F32-BE68-B0F04B7C59F4">
+<createdBy>User</createdBy>
+<createdTime>2023-01-31 10:28:43 UTC</createdTime>
+<ownerDesignName>ProjectBilet</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<dataType>NUMBER (2)</dataType>
+<reference>false</reference>
+<referencedColumn>600CB67B-25FD-25DF-6401-5BDCA8950EBE</referencedColumn>
+<table>1E2107D9-AAB3-8C82-73B6-55984198A070</table>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="UserEmail" id="1EF1E13D-A42B-D6DB-27BB-B948BE324232">
+<createdBy>User</createdBy>
+<createdTime>2023-01-31 10:28:43 UTC</createdTime>
+<ownerDesignName>ProjectBilet</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<dataType>CHAR (50)</dataType>
+<reference>false</reference>
+<referencedColumn>59B98C08-784A-E6EA-7ACD-01A7A5CA2F0B</referencedColumn>
+<table>1E2107D9-AAB3-8C82-73B6-55984198A070</table>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="FirstName" id="8AC60F77-FAAE-C773-AD5B-EBCABE58F0CF">
+<createdBy>User</createdBy>
+<createdTime>2023-01-31 10:28:43 UTC</createdTime>
+<ownerDesignName>ProjectBilet</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<dataType>CHAR (30)</dataType>
+<reference>false</reference>
+<referencedColumn>47A15E75-FEEE-D552-7EDC-0B59BD7BA010</referencedColumn>
+<table>1E2107D9-AAB3-8C82-73B6-55984198A070</table>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="LastName" id="3EEF35FB-69CA-64DF-EA08-9C6564686CCA">
+<createdBy>User</createdBy>
+<createdTime>2023-01-31 10:28:43 UTC</createdTime>
+<ownerDesignName>ProjectBilet</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<dataType>CHAR (40)</dataType>
+<reference>false</reference>
+<referencedColumn>8F9DEF44-7F5D-2971-7440-8E76D253B84F</referencedColumn>
+<table>1E2107D9-AAB3-8C82-73B6-55984198A070</table>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="UserRegistrationTime" id="31D28AE6-03B6-052D-1752-97F1A3FAF724">
+<createdBy>User</createdBy>
+<createdTime>2023-01-31 10:28:43 UTC</createdTime>
+<ownerDesignName>ProjectBilet</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<dataType>DATE</dataType>
+<reference>false</reference>
+<referencedColumn>A3BBF827-969F-2251-E083-BAECE0841CB9</referencedColumn>
+<table>1E2107D9-AAB3-8C82-73B6-55984198A070</table>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="UserDateBirth" id="2CF161F0-0581-D653-C3FB-D1851A3CC2D8">
+<createdBy>User</createdBy>
+<createdTime>2023-01-31 10:28:43 UTC</createdTime>
+<ownerDesignName>ProjectBilet</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<dataType>DATE</dataType>
+<reference>false</reference>
+<referencedColumn>73A39584-EE9A-4602-7F70-D3EA8B77DCD2</referencedColumn>
+<table>1E2107D9-AAB3-8C82-73B6-55984198A070</table>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="UserPhoneNum" id="A671FE69-B55D-353F-7224-C4A64651CBE0">
+<createdBy>User</createdBy>
+<createdTime>2023-01-31 10:28:43 UTC</createdTime>
+<ownerDesignName>ProjectBilet</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<dataType>NUMBER (11)</dataType>
+<reference>false</reference>
+<referencedColumn>459AA56A-964B-93E8-E214-FBC0F9D392B0</referencedColumn>
+<table>1E2107D9-AAB3-8C82-73B6-55984198A070</table>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="UserPhoneNumKey" id="715889D8-51A0-7931-5ECF-552B7B86234C">
+<createdBy>User</createdBy>
+<createdTime>2023-01-31 10:28:43 UTC</createdTime>
+<ownerDesignName>ProjectBilet</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<dataType>NUMBER (4)</dataType>
+<reference>false</reference>
+<referencedColumn>A68E08F7-5891-7F24-3B16-8AFFF93B0A8F</referencedColumn>
+<table>1E2107D9-AAB3-8C82-73B6-55984198A070</table>
+</viewElement>
+</viewElements>
+<usedObjects>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="1E2107D9-AAB3-8C82-73B6-55984198A070">
+<container>true</container>
+<tableName>User</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="CB502AC8-2DB8-D15A-BDAE-952B610BB0DE">
+<columnName>UserID</columnName>
+<tableName>User</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="600CB67B-25FD-25DF-6401-5BDCA8950EBE">
+<columnName>TypeUser_TypeUserID</columnName>
+<tableName>User</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="59B98C08-784A-E6EA-7ACD-01A7A5CA2F0B">
+<columnName>UserEmail</columnName>
+<tableName>User</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="47A15E75-FEEE-D552-7EDC-0B59BD7BA010">
+<columnName>FirstName</columnName>
+<tableName>User</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="8F9DEF44-7F5D-2971-7440-8E76D253B84F">
+<columnName>LastName</columnName>
+<tableName>User</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="A3BBF827-969F-2251-E083-BAECE0841CB9">
+<columnName>UserRegistrationTime</columnName>
+<tableName>User</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="73A39584-EE9A-4602-7F70-D3EA8B77DCD2">
+<columnName>UserDateBirth</columnName>
+<tableName>User</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="459AA56A-964B-93E8-E214-FBC0F9D392B0">
+<columnName>UserPhoneNum</columnName>
+<tableName>User</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="A68E08F7-5891-7F24-3B16-8AFFF93B0A8F">
+<columnName>UserPhoneNumKey</columnName>
+<tableName>User</tableName>
+</UsedObject>
+</usedObjects>
+</TableView>

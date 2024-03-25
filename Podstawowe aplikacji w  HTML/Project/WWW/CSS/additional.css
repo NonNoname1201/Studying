@@ -1,0 +1,310 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-family: Roboto, sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #fff;
+    line-height: 1.5;
+    /*
+    background-image: linear-gradient(to bottom right, #38A2D7, #561139);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    */
+    background: linear-gradient(-45deg, #9af16e, #f66294);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+    height: 100vh;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.navbar {
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px);
+    color: #fff !important;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.logo {
+    margin-right: 10px;
+    width: 50px;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: white !important;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+    color: #9af16e !important;
+}
+
+.navbar-light .navbar-nav .active > .nav-link {
+    color: #9af16e !important;
+}
+
+.navbar-light .navbar-nav .active > .nav-link:hover {
+    color: #9af16e !important;
+}
+
+.navbar-light .navbar-brand {
+    color: white !important;
+}
+
+.navbar-light .navbar-brand:hover {
+    color: #9af16e !important;
+}
+
+.navbar-light .navbar-toggler {
+    color: white !important;
+    border-color: white !important;
+}
+
+.navbar-light .navbar-toggler:hover {
+    color: #9af16e !important;
+}
+
+.webpagename {
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: 0;
+    margin: 85px 0 15px 10%;
+    padding: 0;
+}
+
+.container {
+    background-color: rgba(255, 255, 255, 0.5);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    padding: 3%;
+    border-radius: 30px;
+    margin-bottom: 40px;
+    gap: 3%;
+}
+
+.image-container img {
+    transition: transform 1s ease;
+}
+
+.image-container img:hover {
+    transform: scale(1.1);
+}
+
+.image-container img:hover:not(:hover) {
+    transform: scale(1);
+}
+
+.square {
+    aspect-ratio: 1/1;
+    border-radius: 15px;
+}
+
+.form-tshirt {
+    width: 100%;
+    margin: 0;
+    padding: 20px;
+    border-radius: 15px;
+    background-color: seashell;
+    color: black !important;
+}
+
+.footer {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    z-index: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.footer a {
+    color: #fff;
+    text-decoration: none;
+    border-bottom: 1px solid #fff;
+    padding-bottom: 2px;
+}
+
+.contact-info{
+    text-align: left;
+}
+
+#map-iframe {
+    flex: 1 1 25%;
+    border-radius: 10px;
+    float: right
+}
+
+div#data-box {
+    width: auto;
+    height: 100%;
+    padding: 20px;
+    background-color: #000;
+    color: #fff !important;
+    box-sizing: border-box;
+    text-align: left;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    z-index: 1;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    border-radius: 15px;
+    gap: 3%;
+}
+
+div#data-box p {
+    flex: 1 1 25%;
+}
+
+div#data-box button {
+    background: linear-gradient(-45deg, #ee7752, #e73c7e);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    padding: 13px 20px 13px 20px;
+    margin-bottom: 10px;
+}
+
+input {
+    height: 100%;
+    text-align: left;
+    font-size: 13px;
+    letter-spacing: 0.1em;
+    z-index: 1;
+    border-radius: 5px;
+}
+
+form {
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: left;
+    font-size: 15px;
+    letter-spacing: 0.1em;
+    z-index: 1;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    border-radius: 15px;
+    gap: 3%;
+}
+
+div#data-container button {
+    margin-bottom: 10px;
+    padding: 13px 20px 13px 20px;
+    font-size: 15px;
+    letter-spacing: 0.1em;
+    z-index: 1;
+}
+
+form input[type="submit"] {
+    background: linear-gradient(-45deg, #ee7752, #e73c7e);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    padding: 13px 20px 13px 20px;
+    margin-bottom: 10px;
+}
+
+
+form input[type="reset"] {
+    background: linear-gradient(-45deg, #ee7752, #e73c7e);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    padding: 13px 20px 13px 20px;
+    margin-bottom: 10px;
+}
+
+form textarea {
+    height: 100px;
+    width: 100%;
+    box-sizing: border-box;
+    text-align: left;
+    font-size: 13px;
+    letter-spacing: 0.1em;
+    z-index: 1;
+    border-radius: 5px;
+}
+
+form input[type="checkbox"] {
+    width: 15px;
+    height: 15px;
+    margin-right: 10px;
+}
+
+form input[type="radio"] {
+    width: 15px;
+    height: 15px;
+    margin-right: 10px;
+}
+
+.item {
+    width: 100%;
+    padding: 20px;
+    border-radius: 15px;
+    background-color: seashell;
+    color: black !important;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.item img {
+    border-radius: 10px !important;
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto 10px;
+}
+
+.carousel-inner .carousel-item {
+    transition: transform 0.8s ease-in-out;
+}

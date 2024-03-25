@@ -1,0 +1,75 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableView class="oracle.dbtools.crest.model.design.relational.TableView" directorySegmentName="seg_0" id="53076CA6-2E5E-D780-6706-0D9E23BA86F2" name="V_Region">
+<createdBy>User</createdBy>
+<createdTime>2023-01-31 10:28:43 UTC</createdTime>
+<ownerDesignName>ProjectBilet</ownerDesignName>
+<userDefined>true</userDefined>
+<userDefinedSQL><![CDATA[CREATE VIEW V_Region
+  ( RegionID
+   , RegionName
+   , Country_CountryID )
+ AS SELECT
+    RegionID
+   , RegionName
+   , Country_CountryID
+ FROM 
+    Region ;]]></userDefinedSQL>
+<parsed>true</parsed>
+<originalTableID>66C5477A-CFB1-E728-66F6-206D4EA98A5C</originalTableID>
+<usedContainers>
+<container containerID="66C5477A-CFB1-E728-66F6-206D4EA98A5C"/>
+</usedContainers>
+<viewElements>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="RegionID" id="B33AE34A-89C6-65D8-FE69-FB2CE2BDA802">
+<createdBy>User</createdBy>
+<createdTime>2023-01-31 10:28:43 UTC</createdTime>
+<ownerDesignName>ProjectBilet</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<dataType>NUMBER (3)</dataType>
+<reference>false</reference>
+<referencedColumn>949D9106-B5E3-98B3-5294-B2657C91F62B</referencedColumn>
+<table>66C5477A-CFB1-E728-66F6-206D4EA98A5C</table>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="RegionName" id="8CC39587-392A-9007-4EF5-8E1DD8BD3E23">
+<createdBy>User</createdBy>
+<createdTime>2023-01-31 10:28:43 UTC</createdTime>
+<ownerDesignName>ProjectBilet</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<dataType>CHAR (50)</dataType>
+<reference>false</reference>
+<referencedColumn>E810617D-D2C9-2495-847A-F05884D484B5</referencedColumn>
+<table>66C5477A-CFB1-E728-66F6-206D4EA98A5C</table>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="Country_CountryID" id="147B0586-B341-90D6-9B50-F441FFCB0D20">
+<createdBy>User</createdBy>
+<createdTime>2023-01-31 10:28:43 UTC</createdTime>
+<ownerDesignName>ProjectBilet</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<dataType>NUMBER (3)</dataType>
+<reference>false</reference>
+<referencedColumn>D734EBBB-CBCF-B388-F94F-D160EEE964D2</referencedColumn>
+<table>66C5477A-CFB1-E728-66F6-206D4EA98A5C</table>
+</viewElement>
+</viewElements>
+<usedObjects>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="66C5477A-CFB1-E728-66F6-206D4EA98A5C">
+<container>true</container>
+<tableName>Region</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="949D9106-B5E3-98B3-5294-B2657C91F62B">
+<columnName>RegionID</columnName>
+<tableName>Region</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="E810617D-D2C9-2495-847A-F05884D484B5">
+<columnName>RegionName</columnName>
+<tableName>Region</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="D734EBBB-CBCF-B388-F94F-D160EEE964D2">
+<columnName>Country_CountryID</columnName>
+<tableName>Region</tableName>
+</UsedObject>
+</usedObjects>
+</TableView>

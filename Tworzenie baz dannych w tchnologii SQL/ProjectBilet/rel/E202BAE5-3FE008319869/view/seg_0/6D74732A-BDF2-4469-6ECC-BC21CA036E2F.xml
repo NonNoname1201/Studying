@@ -1,0 +1,75 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableView class="oracle.dbtools.crest.model.design.relational.TableView" directorySegmentName="seg_0" id="6D74732A-BDF2-4469-6ECC-BC21CA036E2F" name="V_Subcategory">
+<createdBy>User</createdBy>
+<createdTime>2023-01-31 10:28:43 UTC</createdTime>
+<ownerDesignName>ProjectBilet</ownerDesignName>
+<userDefined>true</userDefined>
+<userDefinedSQL><![CDATA[CREATE VIEW V_Subcategory
+  ( SubcategoryID
+   , SubcategoryName
+   , Category_CategoryID )
+ AS SELECT
+    SubcategoryID
+   , SubcategoryName
+   , Category_CategoryID
+ FROM 
+    Subcategory ;]]></userDefinedSQL>
+<parsed>true</parsed>
+<originalTableID>77405C53-825B-C3B2-DE5D-15AB0BE1FB97</originalTableID>
+<usedContainers>
+<container containerID="77405C53-825B-C3B2-DE5D-15AB0BE1FB97"/>
+</usedContainers>
+<viewElements>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="SubcategoryID" id="3DB00AE8-CA0C-C453-5A6F-EBF2E57E6B56">
+<createdBy>User</createdBy>
+<createdTime>2023-01-31 10:28:43 UTC</createdTime>
+<ownerDesignName>ProjectBilet</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<dataType>NUMBER (10)</dataType>
+<reference>false</reference>
+<referencedColumn>80DDA6C8-A083-C106-79AB-0567F33CA991</referencedColumn>
+<table>77405C53-825B-C3B2-DE5D-15AB0BE1FB97</table>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="SubcategoryName" id="ECDE0FFF-3CDC-3123-FD5A-7DF12752761D">
+<createdBy>User</createdBy>
+<createdTime>2023-01-31 10:28:43 UTC</createdTime>
+<ownerDesignName>ProjectBilet</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<dataType>VARCHAR2 (50)</dataType>
+<reference>false</reference>
+<referencedColumn>7D418A42-69F6-22DE-9BD8-726877BC1291</referencedColumn>
+<table>77405C53-825B-C3B2-DE5D-15AB0BE1FB97</table>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="Category_CategoryID" id="FB244907-E873-00E1-B432-423C9D67FB65">
+<createdBy>User</createdBy>
+<createdTime>2023-01-31 10:28:43 UTC</createdTime>
+<ownerDesignName>ProjectBilet</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<dataType>NUMBER (5)</dataType>
+<reference>false</reference>
+<referencedColumn>F6EEFB41-1632-0D18-4A74-052CA76AD958</referencedColumn>
+<table>77405C53-825B-C3B2-DE5D-15AB0BE1FB97</table>
+</viewElement>
+</viewElements>
+<usedObjects>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="77405C53-825B-C3B2-DE5D-15AB0BE1FB97">
+<container>true</container>
+<tableName>Subcategory</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="80DDA6C8-A083-C106-79AB-0567F33CA991">
+<columnName>SubcategoryID</columnName>
+<tableName>Subcategory</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="7D418A42-69F6-22DE-9BD8-726877BC1291">
+<columnName>SubcategoryName</columnName>
+<tableName>Subcategory</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="F6EEFB41-1632-0D18-4A74-052CA76AD958">
+<columnName>Category_CategoryID</columnName>
+<tableName>Subcategory</tableName>
+</UsedObject>
+</usedObjects>
+</TableView>

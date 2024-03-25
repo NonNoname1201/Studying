@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="233B0333-AA8C-73C6-0150-377A20402AE3" containerWithKeyObject="042A3819-B725-0415-B739-6E76921E35A4" localFKIndex="CB4AE7A2-A297-AD69-C467-B601D03D7B0C" name="Event_Subcategory_FK">
+<createdBy>IdeaPad Gaming</createdBy>
+<createdTime>2023-01-25 16:57:01 UTC</createdTime>
+<generatorID>B119E845-6D3C-DA3D-83A6-C3D8AE924859</generatorID>
+<ownerDesignName>ProjectBilet</ownerDesignName>
+<referredTableLongName>Subcategory</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>77405C53-825B-C3B2-DE5D-15AB0BE1FB97</referredTableID>
+<keyObject>993ACC00-3468-576F-6220-483C9AE942E7</keyObject>
+<referredKeyID>993ACC00-3468-576F-6220-483C9AE942E7</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>SubcategoryID</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

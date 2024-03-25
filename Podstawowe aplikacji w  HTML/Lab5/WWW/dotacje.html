@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <title>Formularz dotacji</title>
+    <meta charset="UTF-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+</head>
+<body>
+<div><h2>Formularz dotacji</h2></div>
+<div>
+    <form action="#" method="post">
+        <fieldset>
+
+            Beneficjent:
+            <input
+                    list="beneficjent"
+                    name="beneficjent"
+                    required="true"
+                    type="text"
+            />
+            <datalist id="beneficjent">
+                <option value="Fundacja Linia"/>
+                <option value="Fundacja Kropka"/>
+                <option value="Fundacja Płaszczyzna"/>
+            </datalist>
+            <br/>
+            Wielkość dotacji:
+            <input
+                    min="20"
+                    name="wielkosc"
+                    required="true"
+                    step="5"
+                    type="number"
+            />
+
+        </fieldset>
+        <br/>
+        <fieldset>
+            <legend>Dane karty płatniczej</legend>
+            Karta:
+            <input name="karta" required="true" type="radio" value="visa"/>Visa
+            <input
+                    name="karta"
+                    required="true"
+                    type="radio"
+                    value="mastercard"
+            />Master Card
+            <br/>
+            Numer:
+            <input
+                    name="numer"
+                    pattern="[0-9]{13,16}"
+                    required="true"
+                    title="Podaj numer karty złożony z 13 - 16 cyfr"
+                    type="text"
+            />
+            <br/>
+            Data ważności:
+            <input name="data" required="true" type="month"/>
+            <br/>
+            Kod CVV:
+            <input
+                    name="cvv"
+                    pattern="[0-9]{3,4}"
+                    required="true"
+                    title="Podaj kod CVV złożony z 3 lub 4 cyfr podanych na odwrocie karty"
+                    type="text"
+            />
+            <br/>
+        </fieldset>
+        <br/>
+        Darczyńca:
+        <input
+                name="darczyńca"
+                pattern="[a-zA-Z]{3}"
+                required="true"
+                title="Podaj darczyńcę składającego ofiarę złożoną z 3 liter"
+                type="text"
+        />
+        <br/> <br/>
+            <input type="submit" value="Rejestruj"/>
+            <input type="reset" value="Wyczyść dane"/>
+    </form>
+</div>
+</body>
+</html>

@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Ticket Event FK" directorySegmentName="seg_0" id="B04BDC79-4FE9-7D71-BC1D-FBC9295A95EA">
+<createdBy>IdeaPad Gaming</createdBy>
+<createdTime>2023-01-25 16:55:40 UTC</createdTime>
+<ownerDesignName>ProjectBilet</ownerDesignName>
+<engineerTo>
+<item key="E202BAE5-01D0-2528-2D66-3FE008319869" value="true"/>
+</engineerTo>
+<sourcePk>64515D75-8506-3328-E9A5-96298832B9AA</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>0FC91448-1E10-A254-848D-512BDD43E633</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>0959CD13-2BD0-45DF-8F2C-1DB1F642DA17</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

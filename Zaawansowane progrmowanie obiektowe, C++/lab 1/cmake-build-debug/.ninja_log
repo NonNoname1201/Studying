@@ -1,0 +1,15 @@
+# ninja log v5
+14	607	7189050613961991	CMakeFiles/lab_1.dir/student.cpp.obj	63d95bc59ac58831
+5	615	7189068740454665	CMakeFiles/lab_1.dir/person.cpp.obj	3ee89b9de2495d02
+5	469	7189069554291464	CMakeFiles/lab_1.dir/main.cpp.obj	2c70e98547f33908
+469	621	7189069555789947	lab_1.exe	6c6c0fe489209fc0
+25	640	7189068740705681	CMakeFiles/lab_1.dir/Dog.cpp.obj	b3bcdb9e2cf7b3c4
+18	651	7189068740825650	CMakeFiles/lab_1.dir/Cat.cpp.obj	b52f25088a125b04
+33	688	7189068741209197	CMakeFiles/lab_1.dir/Animal.cpp.obj	5a082f8aaf05d9d5
+48	1188	7194386543919896	CMakeFiles/lab_1.dir/src/Dog.cpp.obj	fc7867a2874e8cce
+6	1190	7194386543879214	CMakeFiles/lab_1.dir/src/student.cpp.obj	de6b8b99981fb507
+17	1202	7194386544081374	CMakeFiles/lab_1.dir/src/person.cpp.obj	b8eff72c7c919705
+63	1214	7194386544232803	CMakeFiles/lab_1.dir/src/Animal.cpp.obj	3f35ed4d3d9915f
+38	1215	7194386544232803	CMakeFiles/lab_1.dir/src/Cat.cpp.obj	83ac5ab6c6f98f16
+26	1234	7194386544432797	CMakeFiles/lab_1.dir/main.cpp.obj	2c70e98547f33908
+1234	1658	7194386548662934	lab_1.exe	ccdb6c328036915

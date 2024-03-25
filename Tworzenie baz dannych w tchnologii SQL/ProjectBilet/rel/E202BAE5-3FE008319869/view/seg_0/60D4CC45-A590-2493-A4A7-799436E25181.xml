@@ -1,0 +1,92 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableView class="oracle.dbtools.crest.model.design.relational.TableView" directorySegmentName="seg_0" id="60D4CC45-A590-2493-A4A7-799436E25181" name="V_Place">
+<createdBy>User</createdBy>
+<createdTime>2023-01-31 10:28:43 UTC</createdTime>
+<ownerDesignName>ProjectBilet</ownerDesignName>
+<userDefined>true</userDefined>
+<userDefinedSQL><![CDATA[CREATE VIEW V_Place
+  ( PlaceID
+   , PlaceName
+   , PlaceAdress
+   , City_CityID )
+ AS SELECT
+    PlaceID
+   , PlaceName
+   , PlaceAdress
+   , City_CityID
+ FROM 
+    Place ;]]></userDefinedSQL>
+<parsed>true</parsed>
+<originalTableID>6BD22F1B-BB64-F988-8403-72218C9A6FF6</originalTableID>
+<usedContainers>
+<container containerID="6BD22F1B-BB64-F988-8403-72218C9A6FF6"/>
+</usedContainers>
+<viewElements>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="PlaceID" id="32C2255F-532F-0377-DA26-30C080286CD5">
+<createdBy>User</createdBy>
+<createdTime>2023-01-31 10:28:43 UTC</createdTime>
+<ownerDesignName>ProjectBilet</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<dataType>NUMBER (30)</dataType>
+<reference>false</reference>
+<referencedColumn>7EAB47CE-C1D3-D447-B1AB-866054D60CB4</referencedColumn>
+<table>6BD22F1B-BB64-F988-8403-72218C9A6FF6</table>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="PlaceName" id="C90AEA1A-16AB-B46C-9D59-924CAA6DFAE5">
+<createdBy>User</createdBy>
+<createdTime>2023-01-31 10:28:43 UTC</createdTime>
+<ownerDesignName>ProjectBilet</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<dataType>CHAR (100)</dataType>
+<reference>false</reference>
+<referencedColumn>D831DBD8-3003-A559-18F7-89563FF45B88</referencedColumn>
+<table>6BD22F1B-BB64-F988-8403-72218C9A6FF6</table>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="PlaceAdress" id="6418BE25-D317-473A-D102-8DB97184AEC5">
+<createdBy>User</createdBy>
+<createdTime>2023-01-31 10:28:43 UTC</createdTime>
+<ownerDesignName>ProjectBilet</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<dataType>VARCHAR2 (60)</dataType>
+<reference>false</reference>
+<referencedColumn>B2461C97-80D5-E911-7F16-1F24A16D4DC4</referencedColumn>
+<table>6BD22F1B-BB64-F988-8403-72218C9A6FF6</table>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="City_CityID" id="80BAA1F3-0704-AA4F-2538-95807FD4C2CA">
+<createdBy>User</createdBy>
+<createdTime>2023-01-31 10:28:43 UTC</createdTime>
+<ownerDesignName>ProjectBilet</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<dataType>NUMBER (10)</dataType>
+<reference>false</reference>
+<referencedColumn>1BC84C93-8A9F-EFFB-2F04-B6BAF8A9255B</referencedColumn>
+<table>6BD22F1B-BB64-F988-8403-72218C9A6FF6</table>
+</viewElement>
+</viewElements>
+<usedObjects>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="6BD22F1B-BB64-F988-8403-72218C9A6FF6">
+<container>true</container>
+<tableName>Place</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="7EAB47CE-C1D3-D447-B1AB-866054D60CB4">
+<columnName>PlaceID</columnName>
+<tableName>Place</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="D831DBD8-3003-A559-18F7-89563FF45B88">
+<columnName>PlaceName</columnName>
+<tableName>Place</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="B2461C97-80D5-E911-7F16-1F24A16D4DC4">
+<columnName>PlaceAdress</columnName>
+<tableName>Place</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="1BC84C93-8A9F-EFFB-2F04-B6BAF8A9255B">
+<columnName>City_CityID</columnName>
+<tableName>Place</tableName>
+</UsedObject>
+</usedObjects>
+</TableView>

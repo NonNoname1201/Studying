@@ -1,0 +1,92 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableView class="oracle.dbtools.crest.model.design.relational.TableView" directorySegmentName="seg_0" id="7F6EB968-9D53-4173-3987-D624FAF62A38" name="V_Photo">
+<createdBy>User</createdBy>
+<createdTime>2023-01-31 10:28:43 UTC</createdTime>
+<ownerDesignName>ProjectBilet</ownerDesignName>
+<userDefined>true</userDefined>
+<userDefinedSQL><![CDATA[CREATE VIEW V_Photo
+  ( PhotoID
+   , PhotoURL
+   , PhotoAddTime
+   , Event_EventID )
+ AS SELECT
+    PhotoID
+   , PhotoURL
+   , PhotoAddTime
+   , Event_EventID
+ FROM 
+    Photo ;]]></userDefinedSQL>
+<parsed>true</parsed>
+<originalTableID>D21D2300-01FE-CCD1-75FF-B8E5FB436319</originalTableID>
+<usedContainers>
+<container containerID="D21D2300-01FE-CCD1-75FF-B8E5FB436319"/>
+</usedContainers>
+<viewElements>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="PhotoID" id="29F1E497-DFC1-E0C9-5E65-B40CEB41473D">
+<createdBy>User</createdBy>
+<createdTime>2023-01-31 10:28:43 UTC</createdTime>
+<ownerDesignName>ProjectBilet</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<dataType>NUMBER (25)</dataType>
+<reference>false</reference>
+<referencedColumn>96C538B8-DECA-0A8F-8B59-E178283E9821</referencedColumn>
+<table>D21D2300-01FE-CCD1-75FF-B8E5FB436319</table>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="PhotoURL" id="0923D4C3-7E12-9DA1-005C-EFC2A41A6BE1">
+<createdBy>User</createdBy>
+<createdTime>2023-01-31 10:28:43 UTC</createdTime>
+<ownerDesignName>ProjectBilet</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<dataType>VARCHAR2 (100)</dataType>
+<reference>false</reference>
+<referencedColumn>BF6702A4-36F5-7CA0-5A31-C1A0E7F0EEAD</referencedColumn>
+<table>D21D2300-01FE-CCD1-75FF-B8E5FB436319</table>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="PhotoAddTime" id="F2EB8787-7806-396E-CA4B-8FECCD1B95A6">
+<createdBy>User</createdBy>
+<createdTime>2023-01-31 10:28:43 UTC</createdTime>
+<ownerDesignName>ProjectBilet</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<dataType>DATE</dataType>
+<reference>false</reference>
+<referencedColumn>3FCCA745-2C9C-93D1-7F8B-48B63C88C858</referencedColumn>
+<table>D21D2300-01FE-CCD1-75FF-B8E5FB436319</table>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="Event_EventID" id="5E74D5C2-50C8-1C36-55D2-40814A0D9003">
+<createdBy>User</createdBy>
+<createdTime>2023-01-31 10:28:43 UTC</createdTime>
+<ownerDesignName>ProjectBilet</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<dataType>NUMBER (10)</dataType>
+<reference>false</reference>
+<referencedColumn>E72E572F-4936-94C8-9019-07E3AEDA2AF1</referencedColumn>
+<table>D21D2300-01FE-CCD1-75FF-B8E5FB436319</table>
+</viewElement>
+</viewElements>
+<usedObjects>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="D21D2300-01FE-CCD1-75FF-B8E5FB436319">
+<container>true</container>
+<tableName>Photo</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="96C538B8-DECA-0A8F-8B59-E178283E9821">
+<columnName>PhotoID</columnName>
+<tableName>Photo</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="BF6702A4-36F5-7CA0-5A31-C1A0E7F0EEAD">
+<columnName>PhotoURL</columnName>
+<tableName>Photo</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="3FCCA745-2C9C-93D1-7F8B-48B63C88C858">
+<columnName>PhotoAddTime</columnName>
+<tableName>Photo</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="E72E572F-4936-94C8-9019-07E3AEDA2AF1">
+<columnName>Event_EventID</columnName>
+<tableName>Photo</tableName>
+</UsedObject>
+</usedObjects>
+</TableView>

@@ -1,0 +1,208 @@
+CREATE TABLE faktura (
+    id               INTEGER NOT NULL,
+    numer            CHAR(50) NOT NULL,
+    data_wystawienia DATE NOT NULL,
+    data_platnosci   DATE,
+    status_id        INTEGER NOT NULL,
+    firma_id         INTEGER NOT NULL
+);
+
+ALTER TABLE faktura ADD CONSTRAINT faktura_pk PRIMARY KEY ( id );
+
+CREATE TABLE faktura_produkt (
+    id         INTEGER NOT NULL,
+    faktura_id INTEGER NOT NULL,
+    produkt_id INTEGER NOT NULL,
+    ilosc      NUMBER(10, 2) NOT NULL,
+    cena       NUMBER(20, 2) NOT NULL,
+    upust      NUMBER(5, 2) DEFAULT 0.0 NOT NULL
+);
+
+ALTER TABLE faktura_produkt ADD CONSTRAINT faktura_produkt_pk PRIMARY KEY ( id );
+
+CREATE TABLE firma (
+    id           INTEGER NOT NULL,
+    nazwa        VARCHAR2(100),
+    regon        CHAR(20),
+    nip          CHAR(20) NOT NULL,
+    ulica        VARCHAR2(100) NOT NULL,
+    kod_pocztowy CHAR(5) NOT NULL,
+    miasto       VARCHAR2(100) NOT NULL,
+    email        VARCHAR2(200) NOT NULL
+);
+
+ALTER TABLE firma ADD CONSTRAINT firma_pk PRIMARY KEY ( id );
+
+ALTER TABLE firma ADD CONSTRAINT nip_un UNIQUE ( nip );
+
+CREATE TABLE produkt (
+    id    INTEGER NOT NULL,
+    nazwa CHAR(100) NOT NULL,
+    upc   CHAR(100),
+    ean   CHAR(100),
+    isbn  CHAR(100),
+    vat   NUMBER(5, 2) DEFAULT 23 NOT NULL
+);
+
+ALTER TABLE produkt ADD CONSTRAINT produkt_pk PRIMARY KEY ( id );
+
+CREATE TABLE status (
+    id   INTEGER NOT NULL,
+    name CHAR(20) NOT NULL
+);
+
+ALTER TABLE status ADD CONSTRAINT status_pk PRIMARY KEY ( id );
+
+ALTER TABLE status ADD CONSTRAINT status__un UNIQUE ( name );
+
+ALTER TABLE faktura_produkt
+    ADD CONSTRAINT faktura_fk FOREIGN KEY ( faktura_id )
+        REFERENCES faktura ( id )
+            ON DELETE CASCADE;
+
+ALTER TABLE faktura
+    ADD CONSTRAINT faktura_status_fk FOREIGN KEY ( status_id )
+        REFERENCES status ( id )
+            ON DELETE CASCADE;
+
+ALTER TABLE faktura
+    ADD CONSTRAINT firma_fk FOREIGN KEY ( firma_id )
+        REFERENCES firma ( id )
+            ON DELETE CASCADE;
+
+ALTER TABLE faktura_produkt
+    ADD CONSTRAINT produkt_fk FOREIGN KEY ( produkt_id )
+        REFERENCES produkt ( id )
+            ON DELETE CASCADE;
+
+CREATE SEQUENCE status_id_seq START WITH 1 NOCACHE ORDER;
+
+CREATE OR REPLACE TRIGGER status_id_trg BEFORE
+    INSERT ON status
+    FOR EACH ROW
+    WHEN ( new.id IS NULL )
+BEGIN
+    :new.id := status_id_seq.nextval;
+END;
+/
+
+
+CREATE SEQUENCE faktura_id_seq START WITH 1 NOCACHE ORDER;
+
+CREATE OR REPLACE TRIGGER faktura_id_trg BEFORE
+    INSERT ON faktura
+    FOR EACH ROW
+    WHEN ( new.id IS NULL )
+BEGIN
+    :new.id := faktura_id_seq.nextval;
+END;
+/
+
+CREATE SEQUENCE faktura_produkt_id_seq START WITH 1 NOCACHE ORDER;
+
+CREATE OR REPLACE TRIGGER faktura_produkt_id_trg BEFORE
+    INSERT ON faktura_produkt
+    FOR EACH ROW
+    WHEN ( new.id IS NULL )
+BEGIN
+    :new.id := faktura_produkt_id_seq.nextval;
+END;
+/
+
+CREATE SEQUENCE firma_id_seq START WITH 1 NOCACHE ORDER;
+
+CREATE OR REPLACE TRIGGER firma_id_trg BEFORE
+    INSERT ON firma
+    FOR EACH ROW
+    WHEN ( new.id IS NULL )
+BEGIN
+    :new.id := firma_id_seq.nextval;
+END;
+/
+
+CREATE SEQUENCE produkt_id_seq START WITH 1 NOCACHE ORDER;
+
+CREATE OR REPLACE TRIGGER produkt_id_trg BEFORE
+    INSERT ON produkt
+    FOR EACH ROW
+    WHEN ( new.id IS NULL )
+BEGIN
+    :new.id := produkt_id_seq.nextval;
+END;
+/
+
+CREATE SEQUENCE status_id_seq START WITH 1 NOCACHE ORDER;
+
+CREATE OR REPLACE TRIGGER status_id_trg BEFORE
+    INSERT ON status
+    FOR EACH ROW
+    WHEN ( new.id IS NULL )
+BEGIN
+    :new.id := status_id_seq.nextval;
+END;
+/
+--2
+ALTER TABLE produkt ADD cena_bazowa Char(100);
+
+INSERT INTO status (id, name) VALUES (1, 'oczekująca');
+INSERT INTO status (id, name) VALUES (2,'opłacona');
+
+
+INSERT INTO firma (id, nazwa, regon, nip, ulica, kod_pocztowy, miasto, email) VALUES (1, 'Klient pierwszy', '123456789', '1234567890', 'Nibylandia 16', '20020', 'Lublin', 'info@abc.pl');
+INSERT INTO firma (id, nazwa, regon, nip, ulica, kod_pocztowy, miasto, email) VALUES (2, 'Klient drugi', '987654321 ', '0987654321', 'Nigdziebądź 12', '01200', 'Warszawa', 'biuro@k2.com');
+
+INSERT INTO produkt (id, nazwa, cena_bazowa, upc, vat) VALUES (1, 'Wihajster', '15.25', '12345', 23);
+INSERT INTO produkt (id, nazwa, cena_bazowa, upc, vat) VALUES (2, 'Dynks', '12.00', '12312', 8);
+INSERT INTO produkt (id, nazwa, cena_bazowa, ean, vat) VALUES (3, 'Przyczłapka do bumbulatorka nr 5', '69.99', '98989', 23);
+INSERT INTO produkt (id, nazwa, cena_bazowa, upc, vat) VALUES (4, 'Korbka od reaktorka', '20.00', '43567', 23);
+INSERT INTO produkt (id, nazwa, cena_bazowa, isbn, vat) VALUES (5, 'Kniga', '15.00', '112233', 23);
+
+--3
+INSERT INTO faktura (id, numer, firma_id, status_id, data_wystawienia) VALUES (1, 32424, 1, 1, '1-02-2022');
+INSERT INTO faktura (id, numer, firma_id, status_id, data_wystawienia) VALUES (2, 324, 2, 1, '2-02-2022');
+INSERT INTO faktura (id, numer, firma_id, status_id, data_wystawienia) VALUES (3, 646, 2, 1, '3-02-2022');
+INSERT INTO faktura_produkt (id, faktura_id, produkt_id, ilosc, cena, upust) VALUES (1, 1, 1, 3, 8, 0.1);
+INSERT INTO faktura_produkt (id, faktura_id, produkt_id, ilosc, cena, upust) VALUES (2, 1, 2, 44, 8, 0);
+INSERT INTO faktura_produkt (id, faktura_id, produkt_id, ilosc, cena, upust) VALUES (3, 1,  3, 2, 8, 0.15);
+INSERT INTO faktura_produkt (id, faktura_id, produkt_id, ilosc, cena, upust) VALUES (4, 1, 4, 5, 8, 0.25);
+INSERT INTO faktura_produkt (id, faktura_id, produkt_id, ilosc, cena, upust) VALUES (5, 2, 2, 5, 8, 0.1);
+INSERT INTO faktura_produkt (id, faktura_id, produkt_id, ilosc, cena, upust) VALUES (6, 2, 4, 4, 8, 0);
+INSERT INTO faktura_produkt (id, faktura_id, produkt_id, ilosc, cena, upust) VALUES (7, 3, 1, 4, 8, 0.5);
+INSERT INTO faktura_produkt (id, faktura_id, produkt_id, ilosc, cena, upust) VALUES (8, 3, 3, 1, 8, 0);
+INSERT INTO faktura_produkt (id, faktura_id, produkt_id, ilosc, cena, upust) VALUES (9, 3, 4, 17, 8, 0.05);
+
+
+--4
+SELECT produkt.nazwa, faktura.numer, faktura_produkt.ilosc, faktura_produkt.cena, faktura_produkt.upust FROM produkt, faktura, faktura_produkt WHERE produkt.id = faktura_produkt.produkt_id AND faktura.id = faktura_produkt.faktura_id;
+
+--5
+SELECT f.numer, p.nazwa, fp.ilosc, fp.cena, fp.upust, fp.cena * fp.ilosc AS cena_sumaryczna, fp.cena * fp.ilosc * (1 - fp.upust) AS cena_po_upust, fp.cena * fp.ilosc * (1 - fp.upust) * (1 + p.vat / 100) AS cena_po_upust_i_podatku FROM faktura f JOIN faktura_produkt fp ON f.id = fp.faktura_id JOIN produkt p ON fp.produkt_id = p.id;
+
+--6
+SELECT f.numer, p.nazwa, fp.ilosc, fp.cena, fp.upust, fp.cena * fp.ilosc AS cena_sumaryczna, fp.cena * fp.ilosc * (1 - fp.upust) AS cena_po_upust, fp.cena * fp.ilosc * (1 - fp.upust) * (1 + p.vat / 100) AS cena_po_upust_i_podatku, fp.cena * fp.ilosc * (1 - fp.upust) * (1 + p.vat / 100) - fp.cena * fp.ilosc * (1 - fp.upust) AS podatek FROM faktura f JOIN faktura_produkt fp ON f.id = fp.faktura_id JOIN produkt p ON fp.produkt_id = p.id;
+
+--7
+SELECT f.numer, f.data_wystawienia, SUM(fp.ilosc * fp.cena * (1 - fp.upust)) AS kwota_do_zaplaty, SUM(fp.ilosc * fp.cena * fp.upust) AS upust, SUM(fp.ilosc * fp.cena * (1 - fp.upust) * p.vat / 100) AS podatek FROM faktura f JOIN faktura_produkt fp ON f.id = fp.faktura_id JOIN produkt p ON fp.produkt_id = p.id GROUP BY f.numer, f.data_wystawienia;
+
+--8
+SELECT * FROM produkt ORDER BY nazwa;
+
+--9
+SELECT p.nazwa, SUM(fp.ilosc) AS ilosc_sztuk FROM produkt p JOIN faktura_produkt fp ON p.id = fp.produkt_id GROUP BY p.nazwa ORDER BY p.nazwa;
+
+--10
+SELECT * FROM produkt WHERE upc IS NULL AND ean IS NULL;
+
+--11
+SELECT p.nazwa, SUM(fp.ilosc) AS ilosc_sztuk, SUM(fp.ilosc * fp.cena * (1 - fp.upust)) AS kwota FROM produkt p JOIN faktura_produkt fp ON p.id = fp.produkt_id GROUP BY p.nazwa ORDER BY p.nazwa;
+
+--12
+CREATE VIEW klient_faktura AS SELECT f.numer, f.data_wystawienia, f.firma_id, SUM(fp.ilosc * fp.cena * (1 - fp.upust)) AS kwota_do_zaplaty, SUM(fp.ilosc * fp.cena * fp.upust) AS upust, SUM(fp.ilosc * fp.cena * (1 - fp.upust) * p.vat / 100) AS podatek FROM faktura f JOIN faktura_produkt fp ON f.id = fp.faktura_id JOIN produkt p ON fp.produkt_id = p.id GROUP BY f.numer, f.data_wystawienia, f.firma_id;
+
+-- DROP TABLE faktura_produkt;
+-- DROP TABLE faktura;
+-- DROP TABLE produkt;
+-- DROP TABLE firma;
+-- DROP TABLE status
+
+--VOLODYMYR DOBROHORSKYI

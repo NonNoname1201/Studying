@@ -1,0 +1,88 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="C9AE8703-2D85-B171-F573-CB73E9CC70AF" name="Place">
+<createdBy>IdeaPad Gaming</createdBy>
+<createdTime>2023-01-25 14:58:30 UTC</createdTime>
+<ownerDesignName>ProjectBilet</ownerDesignName>
+<engineerTo>
+<item key="E202BAE5-01D0-2528-2D66-3FE008319869" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="PlaceID" id="9DE6DE73-0531-A9FB-B81B-E2500EB1A9AA">
+<createdBy>IdeaPad Gaming</createdBy>
+<createdTime>2023-01-25 14:58:37 UTC</createdTime>
+<ownerDesignName>ProjectBilet</ownerDesignName>
+<engineerTo>
+<item key="E202BAE5-01D0-2528-2D66-3FE008319869" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>30</dataTypePrecision>
+<ownDataTypeParameters>,30,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="PlaceName" id="AE064246-8C8D-DB1E-00FE-E8B024BCFB70">
+<createdBy>IdeaPad Gaming</createdBy>
+<createdTime>2023-01-25 14:58:41 UTC</createdTime>
+<ownerDesignName>ProjectBilet</ownerDesignName>
+<engineerTo>
+<item key="E202BAE5-01D0-2528-2D66-3FE008319869" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="PlaceAdress" id="8140B614-BC99-486D-CDB8-481DE424E286">
+<createdBy>IdeaPad Gaming</createdBy>
+<createdTime>2023-01-25 14:58:51 UTC</createdTime>
+<ownerDesignName>ProjectBilet</ownerDesignName>
+<engineerTo>
+<item key="E202BAE5-01D0-2528-2D66-3FE008319869" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>60</dataTypeSize>
+<ownDataTypeParameters>60,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="City CityID" id="AD4885CB-19E4-46F5-C9B3-F969B1D46BA9">
+<createdBy>IdeaPad Gaming</createdBy>
+<createdTime>2023-01-25 16:55:06 UTC</createdTime>
+<generatorID>F556DB65-A208-6405-E8CA-503AD57A24EB</generatorID>
+<ownerDesignName>ProjectBilet</ownerDesignName>
+<engineerTo>
+<item key="E202BAE5-01D0-2528-2D66-3FE008319869" value="true"/>
+</engineerTo>
+<referedAttribute>6D2EDDD7-A2E5-3555-7A40-DB390BDB7A8C</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="97197860-91FA-7A85-3755-58F546F31588" name="Place PK">
+<createdBy>IdeaPad Gaming</createdBy>
+<createdTime>2023-01-25 14:58:58 UTC</createdTime>
+<ownerDesignName>ProjectBilet</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="E202BAE5-01D0-2528-2D66-3FE008319869" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>9DE6DE73-0531-A9FB-B81B-E2500EB1A9AA</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

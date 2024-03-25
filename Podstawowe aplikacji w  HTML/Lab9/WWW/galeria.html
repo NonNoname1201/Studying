@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Szybki kurs HTML</title>
+    <link href="CSS/style.css" rel="stylesheet" type="text/css"/>
+    <link href="CSS/galeria.css" rel="stylesheet" type="text/css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-element-bundle.min.js"></script>
+    <script src="JS/lightbox.js"></script>
+    <link href="CSS/lightbox.css" rel="stylesheet"/>
+
+
+</head>
+<body>
+<header><h2>Szybki kurs HTML</h2></header>
+<swiper-container pagination="true" pagination-clickable="true" navigation="true" space-between="30"
+                  loop="true">>
+    <swiper-slide><img src = "galeria/banner/Banner_1.jpg"></swiper-slide>
+    <swiper-slide><img src = "galeria/banner/Banner_2.jpg"></swiper-slide>
+    <swiper-slide><img src = "galeria/banner/Banner_3.jpg"></swiper-slide>
+</swiper-container>
+<nav>
+    <ul id="nav">
+        <li><a href="index.html">Podstawy</a></li>
+        <li><a href="tabele.html">Tabele</a></li>
+        <li>
+            <a href="">Formularze</a>
+            <ul>
+                <li><a href="formularze.html">Pola formularza</a></li>
+                <li><a href="obliczenia.html">Obliczenia w formularzu</a></li>
+                <li><a href="calculator.html">Kalkulator</a></li>
+            </ul>
+        </li>
+        <li><a href="galeria.html">Galeria</a></li>
+    </ul>
+</nav>
+<section>
+    <table>
+        <caption>
+            <h2>Galeria zdjęć</h2>
+        </caption>
+        <tbody>
+        <tr>
+            <td>
+                <a href="galeria/zdjecia/obraz1.JPG" data-lightbox="galeria"
+                   data-title="Obraz 1"><img src="galeria/miniaturki/obraz1.JPG" alt="obraz1"
+                />
+                </a>
+            </td>
+            <td>
+                <a href="galeria/zdjecia/obraz2.JPG" data-lightbox="galeria"
+                   data-title="Obraz 2"><img src="galeria/miniaturki/obraz2.JPG" alt="obraz2"
+                />
+                </a>
+            </td>
+            <td>
+                <a href="galeria/zdjecia/obraz3.JPG" data-lightbox="galeria"
+                   data-title="Obraz 3"><img src="galeria/miniaturki/obraz3.JPG" alt="obraz3"
+                /></a>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a href="galeria/zdjecia/obraz4.JPG" data-lightbox="galeria"
+                   data-title="Obraz 4"><img src="galeria/miniaturki/obraz4.JPG" alt="obraz4"
+                /></a>
+            </td>
+            <td>
+                <a href="galeria/zdjecia/obraz5.JPG" data-lightbox="galeria"
+                   data-title="Obraz 5"><img src="galeria/miniaturki/obraz5.JPG" alt="obraz5"
+                /></a>
+            </td>
+            <td>
+                <a href="galeria/zdjecia/obraz6.JPG" data-lightbox="galeria"
+                   data-title="Obraz 6"><img src="galeria/miniaturki/obraz6.JPG" alt="obraz6"
+                /></a>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a href="galeria/zdjecia/obraz7.JPG" data-lightbox="galeria"
+                   data-title="Obraz 7"><img src="galeria/miniaturki/obraz7.JPG" alt="obraz7"
+                /></a>
+            </td>
+            <td>
+                <a href="galeria/zdjecia/obraz8.JPG" data-lightbox="galeria"
+                   data-title="Obraz 8"><img src="galeria/miniaturki/obraz8.JPG" alt="obraz8"
+                /></a>
+            </td>
+            <td>
+                <a href="galeria/zdjecia/obraz9.JPG" data-lightbox="galeria"
+                   data-title="Obraz 9"><img src="galeria/miniaturki/obraz9.JPG" alt="obraz9"
+                /></a>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+</section>
+<aside>
+    <div class="box">
+        <h3>Walidatory</h3>
+        <ul>
+            <li><a href="http://validator.w3.org/">HTML </a></li>
+            <li><a href="http://jigsaw.w3.org/css-validator/">CSS</a></li>
+        </ul>
+    </div>
+    <div class="box">
+        <h3>Kursy:</h3>
+        <ul>
+            <li><a href="https://www.w3schools.com/html/"> HTML </a></li>
+            <li><a href="https://www.w3schools.com/css/"> CSS </a></li>
+            <li><a href="https://www.w3schools.com/js/"> JS </a></li>
+            <li><a href="https://www.w3schools.com/php/"> PHP </a></li>
+        </ul>
+    </div>
+</aside>
+<footer>&copy;BP</footer>
+</body>
+</html>

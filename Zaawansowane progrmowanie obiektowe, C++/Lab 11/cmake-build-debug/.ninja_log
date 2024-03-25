@@ -1,0 +1,8 @@
+# ninja log v5
+26	986	7267584988059343	CMakeFiles/Lab_11.dir/Shop.cpp.obj	169183e77a3d8fbc
+13	545	7267586008043499	CMakeFiles/Lab_11.dir/Warehouse.cpp.obj	9b32c4ba80e74d7d
+4	883	7267586229010725	CMakeFiles/Lab_11.dir/main.cpp.obj	818931c76cb7c617
+884	1128	7267586231415551	Lab_11.exe	4532f929fab4756b
+11	83	7267604814080705	CMakeFiles/Lab_11.dir/TwoWay.cpp.obj	ec8c5da4f6aabd35
+5	1117	7267605412578726	CMakeFiles/Lab_11.dir/main.cpp.obj	818931c76cb7c617
+1118	1552	7267605416900873	Lab_11.exe	a828e4ce3a93a8de

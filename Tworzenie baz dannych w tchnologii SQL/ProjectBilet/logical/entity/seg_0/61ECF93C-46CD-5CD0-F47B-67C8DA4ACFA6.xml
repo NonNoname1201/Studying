@@ -1,0 +1,88 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="61ECF93C-46CD-5CD0-F47B-67C8DA4ACFA6" name="Subcategory">
+<createdBy>IdeaPad Gaming</createdBy>
+<createdTime>2023-01-25 15:21:36 UTC</createdTime>
+<ownerDesignName>ProjectBilet</ownerDesignName>
+<engineerTo>
+<item key="E202BAE5-01D0-2528-2D66-3FE008319869" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="SubcategoryID" id="C7430B32-48B8-FA02-8ABF-1C6D260D9C79">
+<createdBy>IdeaPad Gaming</createdBy>
+<createdTime>2023-01-25 15:21:51 UTC</createdTime>
+<ownerDesignName>ProjectBilet</ownerDesignName>
+<engineerTo>
+<item key="E202BAE5-01D0-2528-2D66-3FE008319869" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="SubcategoryName" id="8AD079F7-52EC-E0E0-2474-8FBACC5CD9D6">
+<createdBy>IdeaPad Gaming</createdBy>
+<createdTime>2023-01-25 15:22:04 UTC</createdTime>
+<ownerDesignName>ProjectBilet</ownerDesignName>
+<engineerTo>
+<item key="E202BAE5-01D0-2528-2D66-3FE008319869" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Category CategoryID" id="1AFFE341-419F-33A3-3138-80D11701E6C2">
+<createdBy>IdeaPad Gaming</createdBy>
+<createdTime>2023-01-25 16:55:21 UTC</createdTime>
+<generatorID>1ECFFF25-33AE-4FB4-CC2C-337230B10783</generatorID>
+<ownerDesignName>ProjectBilet</ownerDesignName>
+<engineerTo>
+<item key="E202BAE5-01D0-2528-2D66-3FE008319869" value="true"/>
+</engineerTo>
+<referedAttribute>94CCE8B3-B2EF-DA63-A5E0-625C7D34810C</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,5,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="4DF64D48-3AA1-1A44-7651-D6EB52D5F39E" name="Subcategory PK">
+<createdBy>IdeaPad Gaming</createdBy>
+<createdTime>2023-01-25 15:22:21 UTC</createdTime>
+<ownerDesignName>ProjectBilet</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="E202BAE5-01D0-2528-2D66-3FE008319869" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>C7430B32-48B8-FA02-8ABF-1C6D260D9C79</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="871BF1ED-D1C9-D3CE-4F84-B718FC68D9AD" name="SubcategoryName_UN">
+<createdBy>IdeaPad Gaming</createdBy>
+<createdTime>2023-01-25 15:23:26 UTC</createdTime>
+<ownerDesignName>ProjectBilet</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="E202BAE5-01D0-2528-2D66-3FE008319869" value="false"/>
+</engineerTo>
+<newElementsIDs>8AD079F7-52EC-E0E0-2474-8FBACC5CD9D6</newElementsIDs>
+<usedAttributes>
+<attributeRef>8AD079F7-52EC-E0E0-2474-8FBACC5CD9D6</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

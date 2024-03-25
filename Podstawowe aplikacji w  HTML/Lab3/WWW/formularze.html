@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Szybki kurs HTML</title>
+    <link rel="stylesheet" href="CSS/style.css" type="text/css" />
+    <link rel="stylesheet" href="CSS/formularze.css" type="text/css" />
+  </head>
+  <body>
+    <div id="baner"><h2>Szybki kurs HTML</h2></div>
+    <div id="menu">
+      <ul id="nav">
+        <li><a href="index.html">Podstawy</a></li>
+        <li><a href="tabele.html">Tabele</a></li>
+        <li>
+          <a href="">Formularze</a>
+          <ul>
+            <li><a href="formularze.html">Pola formularza</a></li>
+            <li><a href="obliczenia.html">Obliczenia w formularzu</a></li>
+          </ul>
+        </li>
+        <li><a href="galeria.html">Galeria</a></li>
+      </ul>
+    </div>
+    <div id="tresc">
+      <div>
+        <h3><b>Podstawowe znaczniki formularza HTML to:</b></h3>
+        <ul>
+          <li>
+            &lt;form&gt; - znacznik podstawiony zawierający pola formularza
+          </li>
+          <li>
+            &lt;input&gt; - znacznik umożliwia wstawienie różnych pól (pole
+            tekstowe, przycisk tupu radio, przycisk typu checkbox) w zależności
+            od wartości jego atrybutu type
+          </li>
+          <li>&lt;select&gt; - pole formularza typu lista rozwijana</li>
+          <li>&lt;textarea&gt; - pole formularza typu obszar tekstowy</li>
+          <li>&lt;button&gt; - pole formularza typu przycisk</li>
+        </ul>
+      </div>
+
+      <div>
+        <h3><b>Przykladowy formularz HTML</b></h3>
+        <form action="mailto:s97813@pollub.edu.pl" method="post">
+          <table>
+            <tr>
+              <td>Nazwisko:</td>
+              <td><input type="text" name="login" /></td>
+            </tr>
+            <tr>
+              <td>Wiek:</td>
+              <td><input type="number" name="pass" /></td>
+            </tr>
+            <tr>
+              <td>Panstwo:</td>
+              <td>
+                <select size="1" name="country">
+                  <option value="Polska">Polska</option>
+                  <option value="Niemcy">Niemcy</option>
+                  <option value="Czechy">Czechy</option>
+                  <option value="Szwecja">Szwecja</option>
+                  <option value="Wielka Brytania">Wielka Brytania</option>
+                </select>
+              </td>
+            </tr>
+            <tr>
+              <td>Adres e-mail:</td>
+              <td><input type="email" name="email" /></td>
+            </tr>
+          </table>
+          <br />
+          <b>Zamawiam tutorial z języka:</b><br /><br />
+          <input type="checkbox" name="PHP" value="PHP" /> PHP
+          <input type="checkbox" name="C/C++" value="C/C++" /> C/C++
+          <input type="checkbox" name="Java" value="Java" /> Java <br /><br />
+          <b>Sposób zapłaty:</b><br /><br />
+          <input type="radio" name="paymentmethod" value="eurocard" />eurocard
+          <input type="radio" name="paymentmethod" value="visa" />visa
+          <input
+            type="radio"
+            name="paymentmethod"
+            value="przelew bankowy"
+          />przelew bankowy<br />
+          <input type="submit" value="Wyślij" />
+          <input type="reset" value="Anuluj" />
+        </form>
+      </div>
+    </div>
+    <div id="pasek">
+      <div class="box">
+        <h3>Walidatory</h3>
+        <ul>
+          <li><a href="http://validator.w3.org/">HTML </a></li>
+          <li><a href="http://jigsaw.w3.org/css-validator/">CSS</a></li>
+        </ul>
+      </div>
+      <div class="box">
+        <h3>Kursy:</h3>
+        <ul>
+          <li><a href="https://www.w3schools.com/html/"> HTML </a></li>
+          <li><a href="https://www.w3schools.com/css/"> CSS </a></li>
+          <li><a href="https://www.w3schools.com/js/"> JS </a></li>
+          <li><a href="https://www.w3schools.com/php/"> PHP </a></li>
+        </ul>
+      </div>
+    </div>
+    <div id="stopka"><br />&copy;BP</div>
+  </body>
+</html>

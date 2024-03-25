@@ -1,0 +1,109 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableView class="oracle.dbtools.crest.model.design.relational.TableView" directorySegmentName="seg_0" id="D3AABD20-1B8D-240E-43DC-734F98B8E5BD" name="V_Ticket">
+<createdBy>User</createdBy>
+<createdTime>2023-01-31 10:28:43 UTC</createdTime>
+<ownerDesignName>ProjectBilet</ownerDesignName>
+<userDefined>true</userDefined>
+<userDefinedSQL><![CDATA[CREATE VIEW V_Ticket
+  ( TicketSeatPrice
+   , TicketSeat
+   , TicketID
+   , User_UserID
+   , Event_EventID )
+ AS SELECT
+    TicketSeatPrice
+   , TicketSeat
+   , TicketID
+   , User_UserID
+   , Event_EventID
+ FROM 
+    Ticket ;]]></userDefinedSQL>
+<parsed>true</parsed>
+<originalTableID>A89548F7-BD28-F058-C75A-4048D082F41D</originalTableID>
+<usedContainers>
+<container containerID="A89548F7-BD28-F058-C75A-4048D082F41D"/>
+</usedContainers>
+<viewElements>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="TicketSeatPrice" id="AF288306-6094-AB9B-E282-596A498248B4">
+<createdBy>User</createdBy>
+<createdTime>2023-01-31 10:28:43 UTC</createdTime>
+<ownerDesignName>ProjectBilet</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<dataType>NUMBER</dataType>
+<reference>false</reference>
+<referencedColumn>455A549F-5E2E-AAA1-9E5E-B93DEDC3DAF1</referencedColumn>
+<table>A89548F7-BD28-F058-C75A-4048D082F41D</table>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="TicketSeat" id="59B54FB2-6A08-79BE-2E67-9943CDC77241">
+<createdBy>User</createdBy>
+<createdTime>2023-01-31 10:28:43 UTC</createdTime>
+<ownerDesignName>ProjectBilet</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<dataType>VARCHAR2 (60)</dataType>
+<reference>false</reference>
+<referencedColumn>C20080D9-E26C-F7A8-73F4-B52F6CA7F5E3</referencedColumn>
+<table>A89548F7-BD28-F058-C75A-4048D082F41D</table>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="TicketID" id="E8209C23-C0B3-91E5-2645-0BA307DB1F4D">
+<createdBy>User</createdBy>
+<createdTime>2023-01-31 10:28:43 UTC</createdTime>
+<ownerDesignName>ProjectBilet</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<dataType>VARCHAR2 (50)</dataType>
+<reference>false</reference>
+<referencedColumn>4C41C417-3F9E-D16E-D201-7347A4604A7D</referencedColumn>
+<table>A89548F7-BD28-F058-C75A-4048D082F41D</table>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="User_UserID" id="F857A7A4-AFFE-7DA1-E3D9-29C5F4F938EE">
+<createdBy>User</createdBy>
+<createdTime>2023-01-31 10:28:43 UTC</createdTime>
+<ownerDesignName>ProjectBilet</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<dataType>NUMBER (5)</dataType>
+<reference>false</reference>
+<referencedColumn>F1136CE7-B079-E3D3-630D-76B59B8439C4</referencedColumn>
+<table>A89548F7-BD28-F058-C75A-4048D082F41D</table>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="Event_EventID" id="C4D9BA8A-7786-2079-B579-F2259458E933">
+<createdBy>User</createdBy>
+<createdTime>2023-01-31 10:28:43 UTC</createdTime>
+<ownerDesignName>ProjectBilet</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<dataType>NUMBER (10)</dataType>
+<reference>false</reference>
+<referencedColumn>D28A94D0-F1F9-95D8-27CC-8F85767547FD</referencedColumn>
+<table>A89548F7-BD28-F058-C75A-4048D082F41D</table>
+</viewElement>
+</viewElements>
+<usedObjects>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="A89548F7-BD28-F058-C75A-4048D082F41D">
+<container>true</container>
+<tableName>Ticket</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="455A549F-5E2E-AAA1-9E5E-B93DEDC3DAF1">
+<columnName>TicketSeatPrice</columnName>
+<tableName>Ticket</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="C20080D9-E26C-F7A8-73F4-B52F6CA7F5E3">
+<columnName>TicketSeat</columnName>
+<tableName>Ticket</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="4C41C417-3F9E-D16E-D201-7347A4604A7D">
+<columnName>TicketID</columnName>
+<tableName>Ticket</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="F1136CE7-B079-E3D3-630D-76B59B8439C4">
+<columnName>User_UserID</columnName>
+<tableName>Ticket</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="D28A94D0-F1F9-95D8-27CC-8F85767547FD">
+<columnName>Event_EventID</columnName>
+<tableName>Ticket</tableName>
+</UsedObject>
+</usedObjects>
+</TableView>

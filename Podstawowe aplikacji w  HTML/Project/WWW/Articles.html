@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=true">
+    <title>ZenGard</title>
+    <link rel="icon" href="gallery/mini/ico.jpg">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/additional.css">
+    <script src="JS/InteractiveArticles.js"></script>
+    <script src="JS/DataLoad.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>window.addEventListener('load', fetchArticles());</script>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-light">
+    <a class="navbar-brand" href="index.html">
+        <img src="gallery/mini/ico.jpg" alt="ZenGard logo" class="logo" width="50" height="50">
+        ZenGard
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="index.html">Strona główna</a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="Articles.html">Artykuły</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="Shop.html">Sklep internetowy</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="Contact.html">Kontakt</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<main>
+    <section id="main_content" class="container">
+        <h3>Dostępne artykuły:</h3>
+    </section>
+</main>
+<footer>
+    <div class="footer">
+        <div class="contact-info">
+            <p>Adres: ul.Nadbystrzycka 44A</p>
+            <p>Telefon: +48 666 123 456</p>
+            <p>Email: qwerty1440u1991@gmail.com</p>
+            <p><a href="Contact.html">Pozostaw swoją opinie!</a></p>
+            <p> &copy;Volodymyr Dobrohorskyi 2023</p>
+        </div>
+        <div>
+            <p>Nasz sklep fizyczny</p>
+            <iframe id="map-iframe"
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2443.630742821434!2d22.572999315787!3d51.231499979583!2m3!1f0!2f39.99999857731426!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471ffb0b0b0b0b0b%3A0x3b0b0b0b0b0b0b0b!2sNadbystrzycka%2036C%2C%2020-501%20Lublin!5e0!3m2!1spl!2spl!4v1614879660009!5m2!1spl!2spl"
+                    width="100%" height="100%" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

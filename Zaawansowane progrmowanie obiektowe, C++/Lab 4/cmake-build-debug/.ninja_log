@@ -1,0 +1,6 @@
+# ninja log v5
+10	1939	7207227974910154	CMakeFiles/Lab_4.dir/main.cpp.obj	39f0403f9fd0bc26
+1940	2366	7207227979088681	Lab_4.exe	e934ec96f73e3e4e
+30	1393	7201132927903447	CMakeFiles/Lab_4.dir/Citizen.cpp.obj	a7d93f5d5d0babc0
+42	2128	7207219825297056	CMakeFiles/Lab_4.dir/City.cpp.obj	19f51411986f2a0e
+26	1323	7207219817276698	CMakeFiles/Lab_4.dir/PostalIndex.cpp.obj	83df8bf537af1c23

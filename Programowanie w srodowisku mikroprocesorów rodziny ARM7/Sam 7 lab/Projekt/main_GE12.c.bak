@@ -1,0 +1,242 @@
+#include <targets\AT91SAM7.h>
+#include "pcf8833u8_lcd.h"
+#include "132small\bmp_132_0.h"
+//#include "fonts.h"
+
+#define LCD_BACKLIGHT PIOB_SODR_P20
+#define AUDIO_OUT PIOB_SODR_P19
+#define SW_1 PIOB_SODR_P24
+#define SW_2 PIOB_SODR_P25
+#define JOY_UP PIOA_SODR_P9     // zdefiniowanie portu odpowiadajacego za joystick skierowany w gore JOY_UP
+#define JOY_ENTER PIOA_SODR_P15 // zdefiniowanie portu odpowiadajacego za joystick wcisniety JOY_ENTER
+#define JOY_LEFT PIOA_SODR_P7   // zdefiniowanie portu odpowiadajacego za joystick skierowany w lewo JOY_LEFT
+#define JOY_DOWN PIOA_SODR_P8   // zdefiniowanie portu odpowiadajacego za joystick skierowany w dol JOY_DOWN
+#define JOY_RIGHT PIOA_SODR_P14 // zdefiniowanie portu odpowiadaj�cego za joystick skierowany w prawo JOY_RIGHT
+
+// void Zadanie1(){
+//   LCDPutStr("Imie i Nazwisko:", 10, 0, LARGE, BLACK, WHITE); // Wyświetlenie na LCD imienia i nazwiska
+//   LCDPutStr("Volodymyr Dobrohorsky:", 15, 1, SMALL, BLACK, WHITE); // Wyświetlenie na LCD imienia i nazwiska
+//   LCDPutStr("Grupa: ", 30, 0, LARGE, BLUE, WHITE); // Wyświetlenie grupy w kolejnej linii
+//   LCDPutStr("5.1", 43, 1, SMALL, BLUE, WHITE); // Wyświetlenie grupy w kolejnej linii
+// }
+
+const unsigned char FontCustom1[3][16] = {
+    {
+        0x08,                                                // width
+        0x10,                                                // height
+        0x10,                                                // amount of bytes per character
+        0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 // unused
+    },
+    {
+        // 0123456789abcdef
+        0b0000000110000000, // 0
+        0b0000000110000000, // 1
+        0b0000000110000000, // 2
+        0b0000000110000000, // 3
+        0b0000000110000000, // 4
+        0b0000000110110000, // 5
+        0b0000000111110000, // 6
+        0b0000000111000000, // 7
+        0b0000001110000000, // 8
+        0b0000111110000000, // 9
+        0b0000110110000000, // a
+        0b0000000110000000, // b
+        0b0000000110000000, // c
+        0b0000000110000000, // d
+        0b0000000110000000, // e
+        0b0000000110000000 // f
+    },
+    {
+        // 0123456789abcdef
+        0b0011111111111100, // 0
+        0b0110000000000110, // 1
+        0b1100000000000011, // 2
+        0b1000000000000001, // 3
+        0b1000110000110001, // 4
+        0b1000110000110001, // 5
+        0b1000000000000001, // 6
+        0b1000000000000001, // 7
+        0b1000000000000001, // 8
+        0b1000000000000001, // 9
+        0b1000110000110001, // a
+        0b1000111001110001, // b
+        0b1000011111100001, // c
+        0b1100001111000011, // d
+        0b0110000000000110, // e
+        0b0011111111111100 // f
+    }
+
+};
+
+void printColor(c)
+{
+  for (int i = 0; i < 131; i++)
+  {
+    for (int j = 0; j < 131; j++)
+    {
+      LCDSetPixel(i, j, c);
+    }
+  }
+}
+
+//Zadanie1(int color)
+//{
+//
+//  printColor(color);
+//
+//  while (1)
+//  {
+//    if ((PIOB_PDSR & SW_1) == 0)
+//    {
+//      LCDPutStr("SW1", 110, 10, MEDIUM, BLACK, color);
+//    }
+//    else
+//    {
+//      LCDPutStr("SW1", 110, 10, MEDIUM, color, color);
+//    }
+//
+//    if ((PIOB_PDSR & SW_2) == 0)
+//    {
+//      LCDPutStr("SW2", 110, 100, MEDIUM, BLACK, color);
+//    }
+//    else
+//    {
+//      LCDPutStr("SW2", 110, 100, MEDIUM, color, color);
+//    }
+//
+//    if ((PIOA_PDSR & JOY_UP) == 0)
+//    {
+//      LCDPutStr("UP", 20, 60, MEDIUM, BLACK, color);
+//    }
+//    else
+//    {
+//      LCDPutStr("UP", 20, 60, MEDIUM, color, color);
+//    }
+//
+//    if ((PIOA_PDSR & JOY_DOWN) == 0)
+//    {
+//      LCDPutStr("DOWN", 110, 50, MEDIUM, BLACK, color);
+//    }
+//    else
+//    {
+//      LCDPutStr("DOWN", 110, 50, MEDIUM, color, color);
+//    }
+//
+//    if ((PIOA_PDSR & JOY_LEFT) == 0)
+//    {
+//      LCDPutStr("LEFT", 60, 0, MEDIUM, BLACK, color);
+//    }
+//    else
+//    {
+//      LCDPutStr("LEFT", 60, 0, MEDIUM, color, color);
+//    }
+//
+//    if ((PIOA_PDSR & JOY_RIGHT) == 0)
+//    {
+//      LCDPutStr("RIGHT", 60, 90, MEDIUM, BLACK, color);
+//    }
+//    else
+//    {
+//      LCDPutStr("RIGHT", 60, 90, MEDIUM, color, color);
+//    }
+//
+//    if ((PIOA_PDSR & JOY_ENTER) == 0)
+//    {
+//      LCDPutStr("ENTER", 60, 45, MEDIUM, BLACK, color);
+//    }
+//    else
+//    {
+//      LCDPutStr("ENTER", 60, 45, MEDIUM, color, color);
+//    }
+//  }
+//}
+
+//Zadanie2(int color, int size)
+//{
+//  printColor(color);
+//
+//  int x = 65;
+//  int y = 65;
+//  LCDPutStr("X", x, y, MEDIUM, BLACK, color);
+//
+//  while (1)
+//  {
+//    LCDPutStr("X", x, y, MEDIUM, BLACK, color);
+//    Delay_(100000);
+//    if ((PIOA_PDSR & JOY_UP) == 0 && x > 5)
+//    {
+//      LCDPutStr("X", x, y, MEDIUM, color, color);
+//      x--;
+//    }
+//    if ((PIOA_PDSR & JOY_DOWN) == 0 && x < 125)
+//    {
+//      LCDPutStr("X", x, y, MEDIUM, color, color);
+//      x++;
+//    }
+//    if ((PIOA_PDSR & JOY_LEFT) == 0 && y > 5)
+//    {
+//      LCDPutStr("X", x, y, MEDIUM, color, color);
+//      y--;
+//    }
+//    if ((PIOA_PDSR & JOY_RIGHT) == 0 && y < 125)
+//    {
+//      LCDPutStr("X", x, y, MEDIUM, color, color);
+//      y++;
+//    }
+//  }
+//}
+
+void screenAnim()
+{
+  LCDWrite130x130bmp();
+}
+
+int main()
+{
+  PMC_PCER = PMC_PCER_PIOA;
+  PMC_PCER = PMC_PCER_PIOB;
+  InitLCD(); // Inicjalizacja ekranu LCD
+  // LCDSettings();
+  SetContrast(40);
+
+  LCDClearScreenColored(BLUE);
+  
+  LCDPutCharExtendedCustom(2, 10, 10, FontCustom1, BLACK, WHITE, TRANSPARENTBG);
+
+  screenAnim();
+
+  
+
+  // PMC_PCER=PMC_PCER_PIOB; //wlaczenie urzadzenia we/wy PIOB
+  // PMC_PCER=PMC_PCER_PIOA;
+  // PIOB_OER=LCD_BACKLIGHT | AUDIO_OUT; //OUTPUT ENABLE
+  // PIOB_PER=LCD_BACKLIGHT | AUDIO_OUT; //PIO ENABLE
+
+  // while(1)
+  //{
+  //   if ((PIOB_PDSR & SW_1)==0)
+  //     {
+  //       PIOB_SODR|=LCD_BACKLIGHT; //ustawienie 1
+  //       PIOB_SODR|=AUDIO_OUT;
+  //       Delay_(1000);
+  //       PIOB_CODR|=AUDIO_OUT;
+  //       Delay_(1000);
+  //     }
+  //     if ((PIOB_PDSR & SW_2)==0)
+  //       {
+  //         PIOB_CODR|=LCD_BACKLIGHT; //ustawienie 0
+  //         PIOB_SODR|=AUDIO_OUT;
+  //         Delay_(1000);
+  //         PIOB_CODR|=AUDIO_OUT;
+  //         Delay_(1000);
+  //       }
+  // }
+
+  //  LCDWrite130x130bmp(); // Wyświetlenie obrazu na LCD
+  //  Zadanie1();
+  ////Delaya(1); // Opóźnienie 5 sekund
+  ////LCDClearScreen(); // Wyczyszczenie ekranu
+  ////LCDWrite130x130bmp(); // Wyświetlenie obrazu na LCD
+  //
+  //
+}

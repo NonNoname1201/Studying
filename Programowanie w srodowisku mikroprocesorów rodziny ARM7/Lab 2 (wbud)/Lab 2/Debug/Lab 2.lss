@@ -1,0 +1,630 @@
+
+Lab 2.elf:     file format elf32-avr
+
+Sections:
+Idx Name          Size      VMA       LMA       File off  Algn
+  0 .text         000002ec  00000000  00000000  00000054  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  1 .data         00000000  00800060  00800060  00000340  2**0
+                  CONTENTS, ALLOC, LOAD, DATA
+  2 .comment      00000030  00000000  00000000  00000340  2**0
+                  CONTENTS, READONLY
+  3 .note.gnu.avr.deviceinfo 0000003c  00000000  00000000  00000370  2**2
+                  CONTENTS, READONLY
+  4 .debug_aranges 00000050  00000000  00000000  000003ac  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  5 .debug_info   0000092d  00000000  00000000  000003fc  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  6 .debug_abbrev 00000737  00000000  00000000  00000d29  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  7 .debug_line   00000592  00000000  00000000  00001460  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  8 .debug_frame  00000078  00000000  00000000  000019f4  2**2
+                  CONTENTS, READONLY, DEBUGGING
+  9 .debug_str    000003b0  00000000  00000000  00001a6c  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 10 .debug_loc    0000045e  00000000  00000000  00001e1c  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 11 .debug_ranges 00000048  00000000  00000000  0000227a  2**0
+                  CONTENTS, READONLY, DEBUGGING
+
+Disassembly of section .text:
+
+00000000 <__vectors>:
+   0:	0c 94 2a 00 	jmp	0x54	; 0x54 <__ctors_end>
+   4:	0c 94 34 00 	jmp	0x68	; 0x68 <__bad_interrupt>
+   8:	0c 94 34 00 	jmp	0x68	; 0x68 <__bad_interrupt>
+   c:	0c 94 34 00 	jmp	0x68	; 0x68 <__bad_interrupt>
+  10:	0c 94 34 00 	jmp	0x68	; 0x68 <__bad_interrupt>
+  14:	0c 94 34 00 	jmp	0x68	; 0x68 <__bad_interrupt>
+  18:	0c 94 34 00 	jmp	0x68	; 0x68 <__bad_interrupt>
+  1c:	0c 94 34 00 	jmp	0x68	; 0x68 <__bad_interrupt>
+  20:	0c 94 34 00 	jmp	0x68	; 0x68 <__bad_interrupt>
+  24:	0c 94 34 00 	jmp	0x68	; 0x68 <__bad_interrupt>
+  28:	0c 94 34 00 	jmp	0x68	; 0x68 <__bad_interrupt>
+  2c:	0c 94 34 00 	jmp	0x68	; 0x68 <__bad_interrupt>
+  30:	0c 94 34 00 	jmp	0x68	; 0x68 <__bad_interrupt>
+  34:	0c 94 34 00 	jmp	0x68	; 0x68 <__bad_interrupt>
+  38:	0c 94 34 00 	jmp	0x68	; 0x68 <__bad_interrupt>
+  3c:	0c 94 34 00 	jmp	0x68	; 0x68 <__bad_interrupt>
+  40:	0c 94 34 00 	jmp	0x68	; 0x68 <__bad_interrupt>
+  44:	0c 94 34 00 	jmp	0x68	; 0x68 <__bad_interrupt>
+  48:	0c 94 34 00 	jmp	0x68	; 0x68 <__bad_interrupt>
+  4c:	0c 94 34 00 	jmp	0x68	; 0x68 <__bad_interrupt>
+  50:	0c 94 34 00 	jmp	0x68	; 0x68 <__bad_interrupt>
+
+00000054 <__ctors_end>:
+  54:	11 24       	eor	r1, r1
+  56:	1f be       	out	0x3f, r1	; 63
+  58:	cf e5       	ldi	r28, 0x5F	; 95
+  5a:	d8 e0       	ldi	r29, 0x08	; 8
+  5c:	de bf       	out	0x3e, r29	; 62
+  5e:	cd bf       	out	0x3d, r28	; 61
+  60:	0e 94 72 01 	call	0x2e4	; 0x2e4 <main>
+  64:	0c 94 74 01 	jmp	0x2e8	; 0x2e8 <_exit>
+
+00000068 <__bad_interrupt>:
+  68:	0c 94 00 00 	jmp	0	; 0x0 <__vectors>
+
+0000006c <getkey>:
+#include <avr/io.h>
+#include <util/delay.h>
+#include <stdbool.h>
+#include "keyboard.h"
+
+unsigned char getkey(char port, bool isSmall){
+  6c:	cf 93       	push	r28
+  6e:	df 93       	push	r29
+  70:	00 d0       	rcall	.+0      	; 0x72 <getkey+0x6>
+  72:	00 d0       	rcall	.+0      	; 0x74 <getkey+0x8>
+  74:	cd b7       	in	r28, 0x3d	; 61
+  76:	de b7       	in	r29, 0x3e	; 62
+		}
+	}*/
+	
+	char read = 0;
+	char output = 0;
+	char rowresult[4] = {0, 0, 0, 0};
+  78:	19 82       	std	Y+1, r1	; 0x01
+  7a:	1a 82       	std	Y+2, r1	; 0x02
+  7c:	1b 82       	std	Y+3, r1	; 0x03
+  7e:	1c 82       	std	Y+4, r1	; 0x04
+	char isPressed = 0;
+	//char x = _PIN, base =_PIN;
+	char x, base;
+	switch(port){
+  80:	82 34       	cpi	r24, 0x42	; 66
+  82:	61 f0       	breq	.+24     	; 0x9c <getkey+0x30>
+  84:	18 f4       	brcc	.+6      	; 0x8c <getkey+0x20>
+  86:	81 34       	cpi	r24, 0x41	; 65
+  88:	31 f0       	breq	.+12     	; 0x96 <getkey+0x2a>
+  8a:	10 c0       	rjmp	.+32     	; 0xac <getkey+0x40>
+  8c:	83 34       	cpi	r24, 0x43	; 67
+  8e:	49 f0       	breq	.+18     	; 0xa2 <getkey+0x36>
+  90:	84 34       	cpi	r24, 0x44	; 68
+  92:	51 f0       	breq	.+20     	; 0xa8 <getkey+0x3c>
+  94:	0b c0       	rjmp	.+22     	; 0xac <getkey+0x40>
+		case 'A':{
+			x = base = PINA;
+  96:	29 b3       	in	r18, 0x19	; 25
+  98:	92 2f       	mov	r25, r18
+			break;
+  9a:	08 c0       	rjmp	.+16     	; 0xac <getkey+0x40>
+		}
+		case 'B':{
+			x = base = PINB;
+  9c:	26 b3       	in	r18, 0x16	; 22
+  9e:	92 2f       	mov	r25, r18
+			break;
+  a0:	05 c0       	rjmp	.+10     	; 0xac <getkey+0x40>
+		}
+		case 'C':{
+			x = base = PINC;
+  a2:	23 b3       	in	r18, 0x13	; 19
+  a4:	92 2f       	mov	r25, r18
+			break;
+  a6:	02 c0       	rjmp	.+4      	; 0xac <getkey+0x40>
+		}
+		case 'D':{
+			x = base = PIND;
+  a8:	20 b3       	in	r18, 0x10	; 16
+  aa:	92 2f       	mov	r25, r18
+	#else
+		//round up by default
+		__ticks_dc = (uint32_t)(ceil(fabs(__tmp)));
+	#endif
+
+	__builtin_avr_delay_cycles(__ticks_dc);
+  ac:	e7 e8       	ldi	r30, 0x87	; 135
+  ae:	f3 e1       	ldi	r31, 0x13	; 19
+  b0:	31 97       	sbiw	r30, 0x01	; 1
+  b2:	f1 f7       	brne	.-4      	; 0xb0 <getkey+0x44>
+  b4:	00 c0       	rjmp	.+0      	; 0xb6 <getkey+0x4a>
+  b6:	00 00       	nop
+			break;
+		}
+	}
+	_delay_ms(20);
+	while(x == base){
+  b8:	92 13       	cpse	r25, r18
+  ba:	d7 c0       	rjmp	.+430    	; 0x26a <getkey+0x1fe>
+		output = 0;
+		isPressed = 0;
+		if(isSmall){	
+  bc:	66 23       	and	r22, r22
+  be:	09 f4       	brne	.+2      	; 0xc2 <getkey+0x56>
+  c0:	a8 c0       	rjmp	.+336    	; 0x212 <getkey+0x1a6>
+  c2:	e3 ef       	ldi	r30, 0xF3	; 243
+  c4:	f1 e0       	ldi	r31, 0x01	; 1
+  c6:	31 97       	sbiw	r30, 0x01	; 1
+  c8:	f1 f7       	brne	.-4      	; 0xc6 <getkey+0x5a>
+  ca:	00 c0       	rjmp	.+0      	; 0xcc <getkey+0x60>
+  cc:	00 00       	nop
+			_delay_ms(2);
+			switch(port){
+  ce:	82 34       	cpi	r24, 0x42	; 66
+  d0:	61 f0       	breq	.+24     	; 0xea <getkey+0x7e>
+  d2:	18 f4       	brcc	.+6      	; 0xda <getkey+0x6e>
+  d4:	81 34       	cpi	r24, 0x41	; 65
+  d6:	31 f0       	breq	.+12     	; 0xe4 <getkey+0x78>
+  d8:	10 c0       	rjmp	.+32     	; 0xfa <getkey+0x8e>
+  da:	83 34       	cpi	r24, 0x43	; 67
+  dc:	49 f0       	breq	.+18     	; 0xf0 <getkey+0x84>
+  de:	84 34       	cpi	r24, 0x44	; 68
+  e0:	51 f0       	breq	.+20     	; 0xf6 <getkey+0x8a>
+  e2:	0b c0       	rjmp	.+22     	; 0xfa <getkey+0x8e>
+				case 'A':{
+					x = PINA & 0x0f;
+  e4:	99 b3       	in	r25, 0x19	; 25
+  e6:	9f 70       	andi	r25, 0x0F	; 15
+					break;
+  e8:	08 c0       	rjmp	.+16     	; 0xfa <getkey+0x8e>
+				}
+				case 'B':{
+					x = PINB & 0x0f;
+  ea:	96 b3       	in	r25, 0x16	; 22
+  ec:	9f 70       	andi	r25, 0x0F	; 15
+					break;
+  ee:	05 c0       	rjmp	.+10     	; 0xfa <getkey+0x8e>
+				}
+				case 'C':{
+					x = PINC & 0x0f;
+  f0:	93 b3       	in	r25, 0x13	; 19
+  f2:	9f 70       	andi	r25, 0x0F	; 15
+					break;
+  f4:	02 c0       	rjmp	.+4      	; 0xfa <getkey+0x8e>
+				}
+				case 'D':{
+					x = PIND & 0x0f;
+  f6:	90 b3       	in	r25, 0x10	; 16
+  f8:	9f 70       	andi	r25, 0x0F	; 15
+					break;
+				}
+			}
+			//x = *_PIN & 0x0f;
+			switch(x){
+  fa:	9d 30       	cpi	r25, 0x0D	; 13
+  fc:	69 f0       	breq	.+26     	; 0x118 <getkey+0xac>
+  fe:	28 f4       	brcc	.+10     	; 0x10a <getkey+0x9e>
+ 100:	97 30       	cpi	r25, 0x07	; 7
+ 102:	71 f0       	breq	.+28     	; 0x120 <getkey+0xb4>
+ 104:	9b 30       	cpi	r25, 0x0B	; 11
+ 106:	51 f0       	breq	.+20     	; 0x11c <getkey+0xb0>
+ 108:	0d c0       	rjmp	.+26     	; 0x124 <getkey+0xb8>
+ 10a:	9e 30       	cpi	r25, 0x0E	; 14
+ 10c:	09 f4       	brne	.+2      	; 0x110 <getkey+0xa4>
+ 10e:	af c0       	rjmp	.+350    	; 0x26e <getkey+0x202>
+ 110:	9f 30       	cpi	r25, 0x0F	; 15
+ 112:	41 f4       	brne	.+16     	; 0x124 <getkey+0xb8>
+				case 0x0f:{
+					return 0;
+ 114:	80 e0       	ldi	r24, 0x00	; 0
+ 116:	ac c0       	rjmp	.+344    	; 0x270 <getkey+0x204>
+				case 0b00001110:{ //1
+					return 1;
+					break;
+				}
+				case 0b00001101:{ //2
+					return 2;
+ 118:	82 e0       	ldi	r24, 0x02	; 2
+ 11a:	aa c0       	rjmp	.+340    	; 0x270 <getkey+0x204>
+					break;
+				}
+				case 0b00001011:{ //3
+					return 3;
+ 11c:	83 e0       	ldi	r24, 0x03	; 3
+ 11e:	a8 c0       	rjmp	.+336    	; 0x270 <getkey+0x204>
+					break;
+				}
+				case 0b00000111:{ //4
+					return 4;
+ 120:	84 e0       	ldi	r24, 0x04	; 4
+ 122:	a6 c0       	rjmp	.+332    	; 0x270 <getkey+0x204>
+					break;
+				}
+				default:{
+					return 5;
+ 124:	85 e0       	ldi	r24, 0x05	; 5
+ 126:	a4 c0       	rjmp	.+328    	; 0x270 <getkey+0x204>
+			}
+		}
+			
+		for(char k = 4; k < 8; k++){
+				read = 0;
+				switch(port){
+ 128:	82 34       	cpi	r24, 0x42	; 66
+ 12a:	a1 f0       	breq	.+40     	; 0x154 <getkey+0xe8>
+ 12c:	18 f4       	brcc	.+6      	; 0x134 <getkey+0xc8>
+ 12e:	81 34       	cpi	r24, 0x41	; 65
+ 130:	31 f0       	breq	.+12     	; 0x13e <getkey+0xd2>
+ 132:	30 c0       	rjmp	.+96     	; 0x194 <getkey+0x128>
+ 134:	83 34       	cpi	r24, 0x43	; 67
+ 136:	c9 f0       	breq	.+50     	; 0x16a <getkey+0xfe>
+ 138:	84 34       	cpi	r24, 0x44	; 68
+ 13a:	11 f1       	breq	.+68     	; 0x180 <getkey+0x114>
+ 13c:	2b c0       	rjmp	.+86     	; 0x194 <getkey+0x128>
+					case 'A':{
+						PORTA = ~_BV(k);
+ 13e:	41 e0       	ldi	r20, 0x01	; 1
+ 140:	50 e0       	ldi	r21, 0x00	; 0
+ 142:	02 2e       	mov	r0, r18
+ 144:	02 c0       	rjmp	.+4      	; 0x14a <getkey+0xde>
+ 146:	44 0f       	add	r20, r20
+ 148:	55 1f       	adc	r21, r21
+ 14a:	0a 94       	dec	r0
+ 14c:	e2 f7       	brpl	.-8      	; 0x146 <getkey+0xda>
+ 14e:	40 95       	com	r20
+ 150:	4b bb       	out	0x1b, r20	; 27
+						break;
+ 152:	20 c0       	rjmp	.+64     	; 0x194 <getkey+0x128>
+					}
+					case 'B':{
+						PORTB = ~_BV(k);
+ 154:	41 e0       	ldi	r20, 0x01	; 1
+ 156:	50 e0       	ldi	r21, 0x00	; 0
+ 158:	02 2e       	mov	r0, r18
+ 15a:	02 c0       	rjmp	.+4      	; 0x160 <getkey+0xf4>
+ 15c:	44 0f       	add	r20, r20
+ 15e:	55 1f       	adc	r21, r21
+ 160:	0a 94       	dec	r0
+ 162:	e2 f7       	brpl	.-8      	; 0x15c <getkey+0xf0>
+ 164:	40 95       	com	r20
+ 166:	48 bb       	out	0x18, r20	; 24
+						break;
+ 168:	15 c0       	rjmp	.+42     	; 0x194 <getkey+0x128>
+					}
+					case 'C':{
+						PORTC = ~_BV(k);
+ 16a:	41 e0       	ldi	r20, 0x01	; 1
+ 16c:	50 e0       	ldi	r21, 0x00	; 0
+ 16e:	02 2e       	mov	r0, r18
+ 170:	02 c0       	rjmp	.+4      	; 0x176 <getkey+0x10a>
+ 172:	44 0f       	add	r20, r20
+ 174:	55 1f       	adc	r21, r21
+ 176:	0a 94       	dec	r0
+ 178:	e2 f7       	brpl	.-8      	; 0x172 <getkey+0x106>
+ 17a:	40 95       	com	r20
+ 17c:	45 bb       	out	0x15, r20	; 21
+						break;
+ 17e:	0a c0       	rjmp	.+20     	; 0x194 <getkey+0x128>
+					}
+					case 'D':{
+						PORTD = ~_BV(k);
+ 180:	41 e0       	ldi	r20, 0x01	; 1
+ 182:	50 e0       	ldi	r21, 0x00	; 0
+ 184:	02 2e       	mov	r0, r18
+ 186:	02 c0       	rjmp	.+4      	; 0x18c <getkey+0x120>
+ 188:	44 0f       	add	r20, r20
+ 18a:	55 1f       	adc	r21, r21
+ 18c:	0a 94       	dec	r0
+ 18e:	e2 f7       	brpl	.-8      	; 0x188 <getkey+0x11c>
+ 190:	40 95       	com	r20
+ 192:	42 bb       	out	0x12, r20	; 18
+ 194:	e3 ef       	ldi	r30, 0xF3	; 243
+ 196:	f1 e0       	ldi	r31, 0x01	; 1
+ 198:	31 97       	sbiw	r30, 0x01	; 1
+ 19a:	f1 f7       	brne	.-4      	; 0x198 <getkey+0x12c>
+ 19c:	00 c0       	rjmp	.+0      	; 0x19e <getkey+0x132>
+ 19e:	00 00       	nop
+						break;
+					}
+				}
+				_delay_ms(2);
+				switch(port){
+ 1a0:	82 34       	cpi	r24, 0x42	; 66
+ 1a2:	61 f0       	breq	.+24     	; 0x1bc <getkey+0x150>
+ 1a4:	18 f4       	brcc	.+6      	; 0x1ac <getkey+0x140>
+ 1a6:	81 34       	cpi	r24, 0x41	; 65
+ 1a8:	31 f0       	breq	.+12     	; 0x1b6 <getkey+0x14a>
+ 1aa:	10 c0       	rjmp	.+32     	; 0x1cc <getkey+0x160>
+ 1ac:	83 34       	cpi	r24, 0x43	; 67
+ 1ae:	49 f0       	breq	.+18     	; 0x1c2 <getkey+0x156>
+ 1b0:	84 34       	cpi	r24, 0x44	; 68
+ 1b2:	51 f0       	breq	.+20     	; 0x1c8 <getkey+0x15c>
+ 1b4:	0b c0       	rjmp	.+22     	; 0x1cc <getkey+0x160>
+					case 'A':{
+						x = PINA & 0x0f;
+ 1b6:	99 b3       	in	r25, 0x19	; 25
+ 1b8:	9f 70       	andi	r25, 0x0F	; 15
+						break;
+ 1ba:	08 c0       	rjmp	.+16     	; 0x1cc <getkey+0x160>
+					}
+					case 'B':{
+						x = PINB & 0x0f;
+ 1bc:	96 b3       	in	r25, 0x16	; 22
+ 1be:	9f 70       	andi	r25, 0x0F	; 15
+						break;
+ 1c0:	05 c0       	rjmp	.+10     	; 0x1cc <getkey+0x160>
+					}
+					case 'C':{
+						x = PINC & 0x0f;
+ 1c2:	93 b3       	in	r25, 0x13	; 19
+ 1c4:	9f 70       	andi	r25, 0x0F	; 15
+						break;
+ 1c6:	02 c0       	rjmp	.+4      	; 0x1cc <getkey+0x160>
+					}
+					case 'D':{
+						x = PIND & 0x0f;
+ 1c8:	90 b3       	in	r25, 0x10	; 16
+ 1ca:	9f 70       	andi	r25, 0x0F	; 15
+						break;
+					}
+				}
+				//x = *_PIN & 0x0f;
+				
+				switch(x){
+ 1cc:	9d 30       	cpi	r25, 0x0D	; 13
+ 1ce:	61 f0       	breq	.+24     	; 0x1e8 <getkey+0x17c>
+ 1d0:	28 f4       	brcc	.+10     	; 0x1dc <getkey+0x170>
+ 1d2:	97 30       	cpi	r25, 0x07	; 7
+ 1d4:	69 f0       	breq	.+26     	; 0x1f0 <getkey+0x184>
+ 1d6:	9b 30       	cpi	r25, 0x0B	; 11
+ 1d8:	49 f0       	breq	.+18     	; 0x1ec <getkey+0x180>
+ 1da:	0c c0       	rjmp	.+24     	; 0x1f4 <getkey+0x188>
+ 1dc:	9e 30       	cpi	r25, 0x0E	; 14
+ 1de:	61 f0       	breq	.+24     	; 0x1f8 <getkey+0x18c>
+ 1e0:	9f 30       	cpi	r25, 0x0F	; 15
+ 1e2:	41 f4       	brne	.+16     	; 0x1f4 <getkey+0x188>
+					case 0x0f:{
+						read = 0;
+ 1e4:	30 e0       	ldi	r19, 0x00	; 0
+ 1e6:	09 c0       	rjmp	.+18     	; 0x1fa <getkey+0x18e>
+					case 0b00001110:{ //1
+						read = 1;
+						break;
+					}
+					case 0b00001101:{ //2
+						read = 2;
+ 1e8:	32 e0       	ldi	r19, 0x02	; 2
+						break;
+ 1ea:	07 c0       	rjmp	.+14     	; 0x1fa <getkey+0x18e>
+					}
+					case 0b00001011:{ //3
+						read = 3;
+ 1ec:	33 e0       	ldi	r19, 0x03	; 3
+						break;
+ 1ee:	05 c0       	rjmp	.+10     	; 0x1fa <getkey+0x18e>
+					}
+					case 0b00000111:{ //4
+						read = 4;
+ 1f0:	34 e0       	ldi	r19, 0x04	; 4
+						break;
+ 1f2:	03 c0       	rjmp	.+6      	; 0x1fa <getkey+0x18e>
+					}
+					default:{
+						read = 5;
+ 1f4:	35 e0       	ldi	r19, 0x05	; 5
+						break;
+ 1f6:	01 c0       	rjmp	.+2      	; 0x1fa <getkey+0x18e>
+					case 0x0f:{
+						read = 0;
+						break;
+					}
+					case 0b00001110:{ //1
+						read = 1;
+ 1f8:	31 e0       	ldi	r19, 0x01	; 1
+					default:{
+						read = 5;
+						break;
+					}
+				}
+				rowresult[k-4] = read;
+ 1fa:	e2 2f       	mov	r30, r18
+ 1fc:	f0 e0       	ldi	r31, 0x00	; 0
+ 1fe:	34 97       	sbiw	r30, 0x04	; 4
+ 200:	41 e0       	ldi	r20, 0x01	; 1
+ 202:	50 e0       	ldi	r21, 0x00	; 0
+ 204:	4c 0f       	add	r20, r28
+ 206:	5d 1f       	adc	r21, r29
+ 208:	e4 0f       	add	r30, r20
+ 20a:	f5 1f       	adc	r31, r21
+ 20c:	30 83       	st	Z, r19
+					break;
+				}
+			}
+		}
+			
+		for(char k = 4; k < 8; k++){
+ 20e:	2f 5f       	subi	r18, 0xFF	; 255
+ 210:	01 c0       	rjmp	.+2      	; 0x214 <getkey+0x1a8>
+ 212:	24 e0       	ldi	r18, 0x04	; 4
+ 214:	28 30       	cpi	r18, 0x08	; 8
+ 216:	08 f4       	brcc	.+2      	; 0x21a <getkey+0x1ae>
+ 218:	87 cf       	rjmp	.-242    	; 0x128 <getkey+0xbc>
+ 21a:	90 e0       	ldi	r25, 0x00	; 0
+ 21c:	20 e0       	ldi	r18, 0x00	; 0
+ 21e:	80 e0       	ldi	r24, 0x00	; 0
+ 220:	21 c0       	rjmp	.+66     	; 0x264 <getkey+0x1f8>
+				}
+				rowresult[k-4] = read;
+		
+		}
+		for(char i = 0; i < 4; i ++){
+			if(isPressed == 1 && rowresult[i] != 0){
+ 222:	21 30       	cpi	r18, 0x01	; 1
+ 224:	49 f4       	brne	.+18     	; 0x238 <getkey+0x1cc>
+ 226:	e1 e0       	ldi	r30, 0x01	; 1
+ 228:	f0 e0       	ldi	r31, 0x00	; 0
+ 22a:	ec 0f       	add	r30, r28
+ 22c:	fd 1f       	adc	r31, r29
+ 22e:	e9 0f       	add	r30, r25
+ 230:	f1 1d       	adc	r31, r1
+ 232:	30 81       	ld	r19, Z
+ 234:	31 11       	cpse	r19, r1
+			output = 255;}
+ 236:	8f ef       	ldi	r24, 0xFF	; 255
+			if(isPressed == 0 && rowresult[i] != 0){
+ 238:	21 11       	cpse	r18, r1
+ 23a:	13 c0       	rjmp	.+38     	; 0x262 <getkey+0x1f6>
+ 23c:	e1 e0       	ldi	r30, 0x01	; 1
+ 23e:	f0 e0       	ldi	r31, 0x00	; 0
+ 240:	ec 0f       	add	r30, r28
+ 242:	fd 1f       	adc	r31, r29
+ 244:	e9 0f       	add	r30, r25
+ 246:	f1 1d       	adc	r31, r1
+ 248:	30 81       	ld	r19, Z
+ 24a:	33 23       	and	r19, r19
+ 24c:	51 f0       	breq	.+20     	; 0x262 <getkey+0x1f6>
+				isPressed = 1;
+				if(rowresult[i] == 5){
+ 24e:	35 30       	cpi	r19, 0x05	; 5
+ 250:	31 f0       	breq	.+12     	; 0x25e <getkey+0x1f2>
+					output = 255;
+					}else{
+					output = rowresult[i] + i * 4;
+ 252:	89 2f       	mov	r24, r25
+ 254:	88 0f       	add	r24, r24
+ 256:	88 0f       	add	r24, r24
+ 258:	83 0f       	add	r24, r19
+		}
+		for(char i = 0; i < 4; i ++){
+			if(isPressed == 1 && rowresult[i] != 0){
+			output = 255;}
+			if(isPressed == 0 && rowresult[i] != 0){
+				isPressed = 1;
+ 25a:	21 e0       	ldi	r18, 0x01	; 1
+ 25c:	02 c0       	rjmp	.+4      	; 0x262 <getkey+0x1f6>
+ 25e:	21 e0       	ldi	r18, 0x01	; 1
+				if(rowresult[i] == 5){
+					output = 255;
+ 260:	8f ef       	ldi	r24, 0xFF	; 255
+					}
+				}
+				rowresult[k-4] = read;
+		
+		}
+		for(char i = 0; i < 4; i ++){
+ 262:	9f 5f       	subi	r25, 0xFF	; 255
+ 264:	94 30       	cpi	r25, 0x04	; 4
+ 266:	e8 f2       	brcs	.-70     	; 0x222 <getkey+0x1b6>
+ 268:	03 c0       	rjmp	.+6      	; 0x270 <getkey+0x204>
+				}
+			}
+		}
+		return output;
+	}
+	return 0x00;
+ 26a:	80 e0       	ldi	r24, 0x00	; 0
+ 26c:	01 c0       	rjmp	.+2      	; 0x270 <getkey+0x204>
+				case 0x0f:{
+					return 0;
+					break;
+				}
+				case 0b00001110:{ //1
+					return 1;
+ 26e:	81 e0       	ldi	r24, 0x01	; 1
+			}
+		}
+		return output;
+	}
+	return 0x00;
+}
+ 270:	0f 90       	pop	r0
+ 272:	0f 90       	pop	r0
+ 274:	0f 90       	pop	r0
+ 276:	0f 90       	pop	r0
+ 278:	df 91       	pop	r29
+ 27a:	cf 91       	pop	r28
+ 27c:	08 95       	ret
+
+0000027e <configPort>:
+void configPort(char port){
+	switch(port){
+ 27e:	82 34       	cpi	r24, 0x42	; 66
+ 280:	71 f0       	breq	.+28     	; 0x29e <configPort+0x20>
+ 282:	18 f4       	brcc	.+6      	; 0x28a <configPort+0xc>
+ 284:	81 34       	cpi	r24, 0x41	; 65
+ 286:	31 f0       	breq	.+12     	; 0x294 <configPort+0x16>
+ 288:	08 95       	ret
+ 28a:	83 34       	cpi	r24, 0x43	; 67
+ 28c:	69 f0       	breq	.+26     	; 0x2a8 <configPort+0x2a>
+ 28e:	84 34       	cpi	r24, 0x44	; 68
+ 290:	81 f0       	breq	.+32     	; 0x2b2 <configPort+0x34>
+ 292:	08 95       	ret
+		case 'A':{
+			DDRA = 0xf0;
+ 294:	80 ef       	ldi	r24, 0xF0	; 240
+ 296:	8a bb       	out	0x1a, r24	; 26
+			PORTA = 0x0f;
+ 298:	8f e0       	ldi	r24, 0x0F	; 15
+ 29a:	8b bb       	out	0x1b, r24	; 27
+			break;
+ 29c:	08 95       	ret
+		}
+		case 'B':{
+			DDRB = 0xf0;
+ 29e:	80 ef       	ldi	r24, 0xF0	; 240
+ 2a0:	87 bb       	out	0x17, r24	; 23
+			PORTB = 0x0f;
+ 2a2:	8f e0       	ldi	r24, 0x0F	; 15
+ 2a4:	88 bb       	out	0x18, r24	; 24
+			break;
+ 2a6:	08 95       	ret
+		}
+		case 'C':{
+			DDRC = 0xf0;
+ 2a8:	80 ef       	ldi	r24, 0xF0	; 240
+ 2aa:	84 bb       	out	0x14, r24	; 20
+			PORTC = 0x0f;
+ 2ac:	8f e0       	ldi	r24, 0x0F	; 15
+ 2ae:	85 bb       	out	0x15, r24	; 21
+			break;
+ 2b0:	08 95       	ret
+		}
+		case 'D':{
+			DDRD = 0xf0;
+ 2b2:	80 ef       	ldi	r24, 0xF0	; 240
+ 2b4:	81 bb       	out	0x11, r24	; 17
+			PORTD = 0x0f;
+ 2b6:	8f e0       	ldi	r24, 0x0F	; 15
+ 2b8:	82 bb       	out	0x12, r24	; 18
+ 2ba:	08 95       	ret
+
+000002bc <Zadanie1>:
+ 2bc:	8f ef       	ldi	r24, 0xFF	; 255
+ 2be:	87 bb       	out	0x17, r24	; 23
+ 2c0:	84 e4       	ldi	r24, 0x44	; 68
+ 2c2:	90 e0       	ldi	r25, 0x00	; 0
+ 2c4:	0e 94 3f 01 	call	0x27e	; 0x27e <configPort>
+ 2c8:	61 e0       	ldi	r22, 0x01	; 1
+ 2ca:	70 e0       	ldi	r23, 0x00	; 0
+ 2cc:	84 e4       	ldi	r24, 0x44	; 68
+ 2ce:	90 e0       	ldi	r25, 0x00	; 0
+ 2d0:	0e 94 36 00 	call	0x6c	; 0x6c <getkey>
+ 2d4:	88 bb       	out	0x18, r24	; 24
+ 2d6:	87 e8       	ldi	r24, 0x87	; 135
+ 2d8:	93 e1       	ldi	r25, 0x13	; 19
+ 2da:	01 97       	sbiw	r24, 0x01	; 1
+ 2dc:	f1 f7       	brne	.-4      	; 0x2da <Zadanie1+0x1e>
+ 2de:	00 c0       	rjmp	.+0      	; 0x2e0 <Zadanie1+0x24>
+ 2e0:	00 00       	nop
+ 2e2:	f2 cf       	rjmp	.-28     	; 0x2c8 <Zadanie1+0xc>
+
+000002e4 <main>:
+ 2e4:	0e 94 5e 01 	call	0x2bc	; 0x2bc <Zadanie1>
+
+000002e8 <_exit>:
+ 2e8:	f8 94       	cli
+
+000002ea <__stop_program>:
+ 2ea:	ff cf       	rjmp	.-2      	; 0x2ea <__stop_program>
