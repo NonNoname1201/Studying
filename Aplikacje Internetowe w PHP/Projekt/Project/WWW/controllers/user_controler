@@ -1,0 +1,41 @@
+<?php
+class UserControler{
+
+    public function createUser() {
+    // Pobierz dane z żądania HTTP
+    $username = $_POST['username'];
+    $password = $_POST['password'];
+
+    // Walidacja danych
+    if (empty($username) || empty($password)) {
+        return false;
+    }
+    
+    
+
+    // Haszowanie hasła
+    $hashedPassword = password_hash($password, PASSWORD_DEFAULT);
+
+    // Utwórzenie obiektu klasy UserModel
+    $userModel = new UserModel();
+
+    // Zapis użytkownika do bazy danych
+    $userModel->createUser($username, $hashedPassword);
+}
+
+
+    public function getUser() {
+
+    }
+
+
+    public function updateUser() {
+
+    }
+
+
+    public function deleteUser() {
+
+    }
+}
+?>

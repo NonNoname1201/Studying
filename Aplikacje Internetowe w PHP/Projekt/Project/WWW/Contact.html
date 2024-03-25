@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=true">
+    <title>ZenGard</title>
+    <link rel="icon" href="gallery/mini/ico.jpg">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/additional.css">
+    <script src="JS/DataLoad.js"></script>
+    <script src="JS/Validation.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>window.addEventListener('load', fetchRandomFact());</script>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-light">
+    <a class="navbar-brand" href="index.html">
+        <img src="gallery/mini/ico.jpg" alt="ZenGard logo" class="logo" width="50" height="50">
+        ZenGard
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="index.html">Strona główna</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="Articles.html">Artykuły</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="Shop.html">Sklep internetowy</a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="Contact.html">Kontakt</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+<main>
+    <section id="info" class="container">
+        <ul>
+            <h3>Ogolna informacja kontaktowa:</h3>
+            <li><p>ul. Nadbystrzycka 36c</p></li>
+            <li><p>20-618 Lublin</p></li>
+            <li><p>Poland</p></li>
+            <li><p>Phone: +48 12 345 67 89</p></li>
+            <li><p>Email:</p></li>
+        </ul>
+    </section>
+    <section id="map" class="container">
+        <h3>Nasza lokalizacja:</h3>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2443.630742821434!2d22.572999315787!3d51.231499979583!2m3!1f0!2f39.99999857731426!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471ffb0b0b0b0b0b%3A0x3b0b0b0b0b0b0b0b!2sNadbystrzycka%2036C%2C%2020-501%20Lublin!5e0!3m2!1spl!2spl!4v1614879660009!5m2!1spl!2spl"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </section>
+    <section class="container">
+        <div class="form-tshirt">
+            <form id="my-form" onsubmit="validateForm(event)">
+                <label for="name">Imię:<br>
+                    <input type="text" id="name" name="name" placeholder="Wpisz swoje imię" required
+                           pattern="[A-Za-zżźćńółęąśŻŹĆĄŚĘŁÓŃ]+"
+                           oninvalid="this.setCustomValidity('Wpisz swoje imię, używając tylko liter')"
+                           onchange="this.setCustomValidity('')" oninput="this.setCustomValidity('')">
+                </label>
+                <label for="surname">Nazwisko:<br>
+                    <input type="text" id="surname" name="surname" placeholder="Wpisz swoje nazwisko" required
+                           pattern="[A-Za-zżźćńółęąśŻŹĆĄŚĘŁÓŃ]+"
+                           oninvalid="this.setCustomValidity('Wpisz swoje nazwisko, używając tylko liter')"
+                           onchange="this.setCustomValidity('')" oninput="this.setCustomValidity('')">
+                </label>
+                <label for="email">Email:<br>
+                    <input type="email" id="email" name="email" placeholder="Wpisz swoj Email" required
+                           pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,4}$"
+                           oninvalid="this.setCustomValidity('Wpisz poprawny email')" onchange="this.setCustomValidity('')"
+                           oninput="this.setCustomValidity('')">
+                </label>
+                <label for="phone">Nr telefonu:<br>
+                    <input type="tel" id="phone" name="phone" placeholder="Wpisz swoj numer telefonu" required
+                           pattern="\d{9}"
+                           oninvalid="this.setCustomValidity('Wpisz poprawny numer telefonu')"
+                           onchange="this.setCustomValidity('')" oninput="this.setCustomValidity('')">
+                </label>
+                <label for="birthdate">Data urodzenia:<br>
+                    <input type="date" id="birthdate" name="birthdate" placeholder="Enter birth date" required
+                           oninvalid="this.setCustomValidity('Wprowadz poprawną datę urodzenia')"
+                           onchange="this.setCustomValidity('')" oninput="this.setCustomValidity('')">
+                </label>
+                <label for="problem-type">Rodzaj problemy:<br>
+                    <select id="problem-type" name="problem-type" required
+                            oninvalid="this.setCustomValidity('Wybierz rodzaj problemy')"
+                            onchange="this.setCustomValidity('')" oninput="this.setCustomValidity('')">
+                        <option value="">Rodzaj problemy:</option>
+                        <option value="1">Problem 1</option>
+                        <option value="2">Problem 2</option>
+                        <option value="3">Problem 3</option>
+                        <option value="4">Problem 4</option>
+                        <option value="other">Inne</option>
+                    </select>
+                </label>
+                <label>Płeć:<br>
+                    <label for="male"><input type="radio" name="gender" id="male" value="male" required>Mężczyzna</label>
+                    <label for="female"><input type="radio" name="gender" id="female" value="female"
+                                               required>Kobieta</label>
+                </label>
+                <label>Tag-y:<br>
+                    <label for="question"><input type="checkbox" name="tag" id="question"
+                                                  value="Question">Zapytanie</label>
+                    <label for="opinion"><input type="checkbox" name="tag" id="opinion" value="Opinion">Opinia</label>
+                    <label for="problem"><input type="checkbox" name="tag" id="problem"
+                                                 value="Problem">Problem</label>
+                    <label for="other"><input type="checkbox" name="memeType" id="other" value="Other">Inne</label>
+                </label>
+                <label for="about">Powiedz coś o swoim hobby:<br>
+                    <textarea id="about" name="about" placeholder="Napisz coś o swoim hobby" required></textarea>
+                </label>
+                <input type="submit" value="Wyslij">
+                <input type="reset" value="Resetuj">
+            </form>
+            <div id="data-container">
+                <button id="display-data-button" onclick="displayData()">Wyszwietl informację</button>
+                <button id="delete-all-button" onclick="deleteAllData()">Wyczyszć wszystko</button>
+            </div>
+            <div id="data-box"></div>
+        </div>
+    </section>
+</main>
+<footer>
+    <div class="footer">
+        <div class="contact-info">
+            <p>Adres: ul.Nadbystrzycka 44A</p>
+            <p>Telefon: +48 666 123 456</p>
+            <p>Email: qwerty1440u1991@gmail.com</p>
+            <p><a href="Contact.html">Pozostaw swoją opinie!</a></p>
+            <p> &copy;Volodymyr Dobrohorskyi 2023</p>
+        </div>
+        <div>
+            <p>Nasz sklep fizyczny</p>
+            <iframe id="map-iframe"
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2443.630742821434!2d22.572999315787!3d51.231499979583!2m3!1f0!2f39.99999857731426!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471ffb0b0b0b0b0b%3A0x3b0b0b0b0b0b0b0b!2sNadbystrzycka%2036C%2C%2020-501%20Lublin!5e0!3m2!1spl!2spl!4v1614879660009!5m2!1spl!2spl"
+                    width="100%" height="100%" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </div>
+</footer>
+</body>
+</html>
