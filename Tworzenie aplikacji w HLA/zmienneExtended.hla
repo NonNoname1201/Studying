@@ -1,0 +1,17 @@
+program zmienne;
+
+#include("stdlib.hhf");
+
+static
+	zmienna: int32 := 5;
+	wprowadzana: int32;
+
+	zmiennaLogiczna: boolean :=false; //bool is not supported by stdout.put()
+	naszZnak: char;
+	znakA: char:='A';
+
+begin zmienne;
+
+	stdout.put(znakA, nl);
+
+end zmienne;

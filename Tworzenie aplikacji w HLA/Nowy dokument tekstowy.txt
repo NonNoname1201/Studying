@@ -1,0 +1,63 @@
+.386
+.model flat, stdcall
+option casemap:none
+
+;*********************************
+;MB_OK
+;MB_ABORTENTRYIGNORE
+;MB_OKCANCEL
+;MB_RETRYCANCEL
+;MB_YESNO
+;MB_YESNOCANCEL
+;MB_ICONEXCLAMATION
+;MB_ICONWARNING
+;MB_ICONINFORMATION
+;MB_ICONASTERISK
+;MB_ICONQUESTION
+;MB_ICONSTOP
+;MB_ICONERROR
+;MB_ICONHAND
+;*********************************
+;IDABORT
+;IDCANCEL
+;IDIGNORE
+;IDNO
+;IDOK
+;IDRETRY
+;IDYES
+;*********************************
+
+include \masm32\include\windows.inc
+include \masm32\include\user32.inc
+include \masm32\include\kernel32.inc
+includelib \masm32\lib\user32.lib
+includelib \masm32\lib\kernel32.lib
+
+.const
+
+.data
+text_message1 db "Czy zrozumiales zasady tworzenia komunikatow?", 0
+text_message2 db "Mozemy zatem przejsc do nastepnej czesci", 0
+text_message3 db "Szkoda, czwic wiecej", 0
+text_message4 db "Nie odpowiedziales na pytanie", 0
+text_name db "Sonda studencka", 0
+
+.data?
+;variables without num
+
+.code
+program1:
+
+invoke MessageBox,0,addr text_message1,addr text_name,MB_YESNOCANCEL
+
+.if eax==IDYES
+invoke MessageBox,0,addr text_message2,addr text_name,MB_ICONINFORMATION
+.elseif eax==IDNO
+invoke MessageBox,0,addr text_message3,addr text_name,MB_ICONWARNING
+.elseif eax==IDCANCEL
+invoke MessageBox,0,addr text_message4,addr text_name,MB_ICONERROR
+.endif
+
+invoke ExitProcess,0
+
+end program1

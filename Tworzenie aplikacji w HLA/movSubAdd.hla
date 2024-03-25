@@ -1,0 +1,23 @@
+program rejestr;
+
+#include("stdlib.hhf");
+
+static
+	jedenbajt: int8 := -7;
+
+begin rejestr;
+
+	stdout.put(jedenbajt, nl);
+
+	//al = 0-jedenbajt;
+	//
+	mov(0, AL);
+	sub(jedenbajt, AL);
+	mov(AL, jedenbajt);
+	stdout.put("jedenbajt = ", jedenbajt, nl);
+
+	add(12, jedenbajt);
+	stdout.put("jedenbajt = ", jedenbajt, nl);
+
+
+end rejestr;

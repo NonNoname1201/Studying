@@ -1,0 +1,18 @@
+program znak;
+
+#include("stdlib.hhf");
+
+static
+	naszZnak: char;
+	znakA: char:='A';  //"a" != 'a'
+
+
+begin znak;
+
+	stdout.put(znakA, nl);
+
+	stdout.put("podaj char: ");
+	stdin.get(naszZnak);
+	stdout.put("Twoj znak: ", naszZnak, nl);
+
+end znak;

@@ -1,0 +1,52 @@
+program negacja;
+#include( "stdlib.hhf" );
+
+static
+	liczba: int8;
+	liczba2: int8;
+
+begin negacja;
+
+stdout.put("Podaj liczbe");
+stdout.newln();
+
+stdin.get(liczba);
+
+mov(liczba, al);
+stdout.put("liczba w postaci hex: ");
+stdout.put(al);
+stdout.newln();
+stdout.newln();
+
+not(al);
+stdout.put("liczba w postaci hex, inwertowana: ");
+stdout.put(al);
+stdout.newln();
+stdout.newln();
+
+
+stdout.put("Podaj nowa liczbe dodawana do poprzedniej: ");
+stdin.get(liczba2);
+stdout.put("liczba w postaci hex, inwertowana + dodana: ");
+add(liczba2, al);
+stdout.put(al);
+stdout.newln();
+stdout.newln();
+
+stdout.put("liczba w postaci dec: ");
+stdout.puti8(al);
+stdout.newln();
+stdout.newln();
+
+stdout.put("liczba1 i liczba2 postaci dec neg: ");
+neg(liczba);
+neg(liczba2);
+stdout.put(liczba);
+stdout.newln();
+stdout.put(liczba2);
+stdout.newln();
+
+
+
+
+end negacja;

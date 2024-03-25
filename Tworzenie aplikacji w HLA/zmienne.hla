@@ -1,0 +1,36 @@
+program zmienne;
+
+#include("stdlib.hhf");
+
+static
+	zmienna1: int8;
+	zmienna2: int16;
+	zmienna3: int32;
+
+	zmienna1def: int8 := 8;
+	zmienna2def: int16 := 1580;
+	zmienna3def: int32 := -311256;
+
+	zmienna: int32 := 5;
+	wprowadzana: int32;
+
+begin zmienne;
+
+	//To jest comentarz liniowy
+
+	/*
+	To
+	jest
+	comentarz
+	wieloliniowy
+	*/
+	
+	//wyszwietl zmienna
+	stdout.put("Wartosc zmiennej zadeklarowanej wynosi: ", zmienna, nl);
+
+	//pobierz wartosc od uzytkownika
+	stdout.put("Podaj liczbe calkowita: ");
+	stdin.get(wprowadzana);
+	stdout.put("Wprowadzono: ", wprowadzana, nl);
+
+end zmienne;

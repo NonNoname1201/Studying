@@ -1,0 +1,33 @@
+program rejestr;
+
+#include("stdlib.hhf");
+
+static
+	jedenbajt: int32 := -2000;
+
+var
+	zmienna: int8;
+
+begin rejestr;
+
+	stdout.put(jedenbajt, nl);
+
+	//al = 0-jedenbajt;
+	//
+	mov(0, EAX);
+	sub(jedenbajt, EAX);
+	stdout.put("EAX = ", EAX, nl);
+	add(12, EAX);
+	stdout.put("EAX = ", EAX:12, nl);
+	mov(EAX, jedenbajt);
+	stdout.put("jedenbajt = ", jedenbajt:12, nl);
+
+	
+	mov(-126, zmienna);
+	while(true) do
+		//something
+	sub(1, zmienna);
+	stdout.put(zmienna, " ");
+	endwhile;
+
+end rejestr;
