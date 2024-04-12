@@ -8,3 +8,5 @@ const isAuthorized = (req, res, next) => {
         res.status(401).send("Dostęp zabroniony")
     }
 }
+
+module.exports = {isAuthorized}

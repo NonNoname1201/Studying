@@ -4,6 +4,7 @@ tras. Instancja Routera jest kompletnym systemem middleware i routingu.
 const router = express.Router()*/
 const express = require('express');
 const path = require('path');
+const users = require('./users');
 const router = express.Router();
 
 router.get("/form", (req, res) => {
@@ -36,3 +37,5 @@ router.post("/result2", (req, res) => {
             + langs.join(", "))
     }
 })
+
+module.exports = router;
