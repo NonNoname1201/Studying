@@ -7,12 +7,21 @@ const {check, validationResult} = require('express-validator');
 const users = require('./users')
 const fs = require('fs');
 
-fs.writeFile('./data/users.json', JSON.stringify(users), (err) => {
+fs.writeFile('../data/users.json', JSON.stringify(users), (err) => {
     if (err) throw err;
     console.log('Data written to file');
 });
 
 app.use(express.urlencoded({extended: true}))
+
+let metoda = (req, res, next) => {
+    let info = "Metoda: " + req.method + "\n";
+    let sciezka = "Ścieżka: "+ req.protocol + "://" + req.get('host') + req.originalUrl;
+    info += sciezka;
+    res.send(info);
+}
+
+app.use(metoda)
 
 app.get('/api/users/:id', (req, res) => {
     const found = users.some(user => user.id === parseInt(req.params.id))

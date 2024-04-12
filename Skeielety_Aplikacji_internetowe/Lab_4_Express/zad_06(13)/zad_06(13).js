@@ -4,10 +4,10 @@ const app = express()
 const PORT = 3000
 const {check, validationResult} = require('express-validator');
 
-const users = require('./users')
+const users = require('../zad_05(12)/users')
 const fs = require('fs');
 
-fs.writeFile('./data/users.json', JSON.stringify(users), (err) => {
+fs.writeFile('../data/users.json', JSON.stringify(users), (err) => {
     if (err) throw err;
     console.log('Data written to file');
 });
