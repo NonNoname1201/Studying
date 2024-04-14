@@ -1,0 +1,6 @@
+Zadanie 1.18. Aplikacja konwertująca stopnie na radiany
+Utwórz aplikację, która według parametrów value oraz toRad (false lub true) będzie
+zamieniała wartości ze stopni na radiany oraz z radianów na stopnie (zależnie od przekazanej
+wartości toRad). Wartość podana w stopniach/radianach przekazywana jako parametr value.
+
+localhost:3000/?value=90&toRad=true
