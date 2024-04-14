@@ -1,0 +1,2 @@
+Zadanie 1.19. Aplikacja wykorzystująca parametry
+Korzystając parametru bg przesłanego w adresie przez klienta, ustaw kolor tła strony html.

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Change Background Color</title>
+    <style>
+        body {
+            background-color: {{bgColor}};
+            display: flex;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+    <form action="/" method="POST">
+        <label for="color">Enter a color in hexadecimal:</label>
+        <input type="text" id="color" name="color" required>
+        <button type="submit">Change Background Color</button>
+    </form>
+</body>
+</html>
