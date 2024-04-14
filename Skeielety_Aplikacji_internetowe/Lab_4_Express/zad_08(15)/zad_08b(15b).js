@@ -1,0 +1,11 @@
+const express = require('express')
+const path = require('path')
+const app = express()
+const reactEngine = require ('express-react-views')
+app.set('view engine', 'jsx')
+app.engine('jsx', reactEngine.createEngine())
+app.set('views', path.join(__dirname, 'views'))
+app.get('/about', (req, res) => {
+    res.render('about', {nazwisko: 'Kowalski', email: '213213@io.oi', age: '23'})
+})
+app.listen(3000, () => console.log('Serwer działa!'))
